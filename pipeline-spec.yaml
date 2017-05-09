@@ -15,3 +15,22 @@ clearmash:
       run: dump.to_path
       parameters:
         out-path: data/clearmash
+
+wikipedia:
+  title: Download, convert, validate and sync data from Wikipedia to MoJP databases
+  stream_reader_limit: 1048576
+  pipeline:
+    -
+      run: add_metadata
+      parameters:
+        name: wikipedia
+    -
+      run: mojp_dbs_pipelines.wikipedia.processors.download
+#    -
+#      run: mojp_dbs_pipelines.clearmash.processors.convert
+#    -
+#      run: mojp_dbs_pipelines.common.processors.sync
+    -
+      run: dump.to_path
+      parameters:
+        out-path: data/wikipedia

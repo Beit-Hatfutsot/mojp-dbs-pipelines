@@ -20,7 +20,10 @@ class BaseProcessor(object):
         # can be used like this in datapackage processor files:
         # if __main__ == '__main__':
         #      Processor.main()
-        spew(*cls(*ingest()).spew())
+        parameters, datapackage, resources = ingest()
+        processor = cls(parameters, datapackage, resources)
+        datapackage, resources = processor.spew()
+        spew(datapackage, resources)
 
     def spew(self):
         self._datapackage, self._resources = self._process(self._datapackage, self._resources)
