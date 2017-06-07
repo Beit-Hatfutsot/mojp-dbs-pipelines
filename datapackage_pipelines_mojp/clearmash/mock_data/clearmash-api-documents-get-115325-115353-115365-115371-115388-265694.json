@@ -1,0 +1,1957 @@
+{
+    "Entities": [
+        {
+            "Acl": null,
+            "Changeset": 707207,
+            "Document": {
+                "Fields_Boolean": [
+                    {
+                        "Id": "entity_has_pending_changes",
+                        "Value": false
+                    },
+                    {
+                        "Id": "is_archived",
+                        "Value": false
+                    },
+                    {
+                        "Id": "is_deleted",
+                        "Value": false
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_ugc",
+                        "Value": false
+                    }
+                ],
+                "Fields_ChildDocuments": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_old_numbers_parent",
+                        "ChildDocuments": [
+                            {
+                                "AllowedGroups": [],
+                                "Value": {
+                                    "Fields_Boolean": [],
+                                    "Fields_ChildDocuments": [],
+                                    "Fields_Datasource": [],
+                                    "Fields_Datetime": [],
+                                    "Fields_Files": [],
+                                    "Fields_Float32": [],
+                                    "Fields_Float64": [],
+                                    "Fields_FuzzyDate": [],
+                                    "Fields_FuzzyDateRange": [],
+                                    "Fields_Int32": [],
+                                    "Fields_Int64": [],
+                                    "Fields_LocalizedHtml": [],
+                                    "Fields_LocalizedText": [
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_base_template_file_child_old_num_fid",
+                                            "Value": [
+                                                {
+                                                    "ISO6391": "en",
+                                                    "Value": "HB001387.HTM-EB000791.HTM"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "Fields_MediaGalleries": [],
+                                    "Fields_RelatedDocuments": [],
+                                    "Id": "f61752d6005d45d089abe59f0c3612f0",
+                                    "TemplateReference": {
+                                        "ChangesetId": 774,
+                                        "TemplateId": "_c6_beit_hatfutsot_bh_base_template_old_number_child"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "Fields_Datasource": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_display_status",
+                        "DatasourceItemsIds": [
+                            "b9adf6f68ff34bd192a625f947c69382"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_rights",
+                        "DatasourceItemsIds": [
+                            "96eb7c641a2a4a2b9b6094a247d24a0a"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_working_status",
+                        "DatasourceItemsIds": [
+                            "29b539010497436aa15d18121e6fab05"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_place_type",
+                        "DatasourceItemsIds": [
+                            "18d9e92250a64d478c29991c703ff905"
+                        ]
+                    }
+                ],
+                "Fields_Datetime": [
+                    {
+                        "Id": "entity_creation_date",
+                        "Value": {
+                            "UtcTicks": 636297532049733376
+                        }
+                    },
+                    {
+                        "Id": "EntityFirstPublishDate",
+                        "Value": {
+                            "UtcTicks": 636297532049733376
+                        }
+                    },
+                    {
+                        "Id": "EntityLastPublishDate",
+                        "Value": {
+                            "UtcTicks": 636297532049733376
+                        }
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_last_updated_date_bhp",
+                        "Value": {
+                            "UtcTicks": 636043531200000000
+                        }
+                    }
+                ],
+                "Fields_Files": [],
+                "Fields_Float32": [],
+                "Fields_Float64": [],
+                "Fields_FuzzyDate": [],
+                "Fields_FuzzyDateRange": [],
+                "Fields_Int32": [
+                    {
+                        "Id": "community_id",
+                        "Value": 6
+                    },
+                    {
+                        "Id": "entity_id",
+                        "Value": 115325
+                    },
+                    {
+                        "Id": "entity_type_id",
+                        "Value": 1007
+                    }
+                ],
+                "Fields_Int64": [
+                    {
+                        "Id": "EntityViewsCount",
+                        "Value": 0
+                    }
+                ],
+                "Fields_LocalizedHtml": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_description",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "Neuchatel<br/><br/>German: Neuenburg<br/><br/>The capital of the Neuchatel Canton, Switzerland<br/><br/>In the year 2000 there were 266 Jews living in Neuchatel.<br/><br/>HISTORY<br/><br/>The earliest records of Jews in the canton date to 1288, when a blood libel accusation was levied against the community and a number of Jews were consequently killed. Later, during the Black Death epidemic of 1348-1349 the Jews of Neuchatel were once again the victims of violence when they were blamed for causing the plague. <br/><br/>After 1476 there are no further references to Jews living in the canton until 1767, when a few Jewish people who had arrived from Alsace were expelled. After a subsequent expulsion in 1790, it was only in 1812 that Jews began to return to Neuchatel; they received the right to legally reside in the city in 1830. <br/><br/>The Jewish population of the canton was 144 in 1844. The Jewish population rose to 1,020 in 1900, a result of the community's economic success. Shortly thereafter, however, the community began to decline, and by 1969 there were about 200 Jews living in the city."
+                            },
+                            {
+                                "ISO6391": "he",
+                                "Value": "\u05e0\u05e9\u05d0\u05d8\u05dc<br/><br/>\u05e2\u05d9\u05e8 \u05d1\u05de\u05e2\u05e8\u05d1 \u05e9\u05d5\u05d5\u05d9\u05d9\u05e5.<br/><br/><br/>\u05d1-1288 \u05e0\u05d4\u05e8\u05d2\u05d5 \u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05d1\u05e7\u05d0\u05e0\u05d8\u05d5\u05df \u05d1\u05e9\u05dc \u05e2\u05dc\u05d9\u05dc\u05ea-\u05d3\u05dd, \u05d5\u05d1\u05e2\u05ea \u05e4\u05e8\u05e2\u05d5\u05ea \"\u05d4\u05de\u05d2\u05e4\u05d4 \u05d4\u05e9\u05d7\u05d5\u05e8\u05d4\" (1348) \u05d4\u05d5\u05e2\u05dc\u05d5 \u05d9\u05d4\u05d5\u05d3\u05d9 \u05d4\u05de\u05e7\u05d5\u05dd \u05e2\u05dc \u05d4\u05de\u05d5\u05e7\u05d3.<br/><br/>\u05e0\u05e1\u05d9\u05d5\u05e0\u05d5\u05ea \u05e9\u05dc \u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05dc\u05d4\u05ea\u05d9\u05d9\u05e9\u05d1 \u05d1\u05e0\u05e9\u05d0\u05d8\u05dc \u05d1\u05de\u05d0\u05d4 \u05d4-18 \u05e0\u05db\u05e9\u05dc\u05d5. \u05d1-1790 \u05d2\u05d5\u05e8\u05e9\u05d5 \u05de\u05df \u05d4\u05e7\u05d0\u05e0\u05d8\u05d5\u05df \u05d2\u05dd \u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05e9\u05e0\u05d7\u05e9\u05d1\u05d5 \u05de\u05d5\u05e2\u05d9\u05dc\u05d9\u05dd \u05dc\u05d9\u05e6\u05d5\u05d0 \u05e9\u05e2\u05d5\u05e0\u05d9\u05dd.<br/><br/>\u05d4\u05ea\u05d9\u05d9\u05e9\u05d1\u05d5\u05ea \u05d7\u05d3\u05e9\u05d4 \u05e9\u05dc \u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05d4\u05ea\u05d7\u05d9\u05dc\u05d4 \u05d1- 1812, \u05d5\u05d6\u05db\u05d5\u05ea-\u05d4\u05d9\u05e9\u05d9\u05d1\u05d4 \u05d1\u05e7\u05d0\u05e0\u05d8\u05d5\u05df \u05d4\u05d5\u05e9\u05d2\u05d4 \u05d1-1830.<br/><br/>\u05d1\u05d0\u05de\u05e6\u05e2 \u05d4\u05de\u05d0\u05d4 \u05d4- 19 \u05de\u05e0\u05ea\u05d4 \u05d4\u05e7\u05d4\u05d9\u05dc\u05d4 \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9\u05ea \u05d1\u05e0\u05e9\u05d0\u05d8\u05dc \u05e4\u05d7\u05d5\u05ea \u05de-150 \u05d0\u05d9\u05e9, \u05d5\u05e2\u05dd \u05e9\u05d9\u05e4\u05d5\u05e8 \u05d4\u05de\u05e6\u05d1 \u05d4\u05db\u05dc\u05db\u05dc\u05d9 \u05e2\u05dc\u05d4 \u05de\u05e1\u05e4\u05e8 \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05d1\u05e7\u05d0\u05e0\u05d8\u05d5\u05df \u05dc-1,020 \u05d1\u05e1\u05d5\u05e3 \u05d4\u05de\u05d0\u05d4. \u05de\u05db\u05d0\u05df \u05d5\u05d0\u05d9\u05dc\u05da \u05d4\u05d9\u05d4 \u05d1\u05e7\u05d5 \u05d9\u05e8\u05d9\u05d3\u05d4.<br/><br/>\u05d1\u05e9\u05e0\u05ea 1969 \u05d4\u05ea\u05d2\u05d5\u05e8\u05e8\u05d5 \u05d1\u05e0\u05e9\u05d0\u05d8\u05dc \u05db\u05de\u05d0\u05ea\u05d9\u05d9\u05dd \u05d9\u05d4\u05d5\u05d3\u05d9\u05dd."
+                            }
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_editor_remarks",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "hasavot from Places"
+                            }
+                        ]
+                    }
+                ],
+                "Fields_LocalizedText": [
+                    {
+                        "Id": "entity_name",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "Neuchatel"
+                            },
+                            {
+                                "ISO6391": "he",
+                                "Value": "\u05e0\u05e9\u05d0\u05d8\u05dc"
+                            }
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_bhp_unit",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "72182"
+                            }
+                        ]
+                    }
+                ],
+                "Fields_MediaGalleries": [],
+                "Fields_RelatedDocuments": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_family_name",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_movies",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_music",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_photos",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_exhibition",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_musictext",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_personality",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_place",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_recieve_unit",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_source",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_located_in",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_locations",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_personality_birth",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_personality_death",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    }
+                ],
+                "Id": "65e99e43a7164999971d8336a53f335e",
+                "TemplateReference": {
+                    "ChangesetId": 774,
+                    "TemplateId": "_c6_beit_hatfutsot_bh_place"
+                }
+            },
+            "Metadata": {
+                "ActiveLock": null,
+                "CreatorUserId": 2,
+                "EntityTypeId": 1007,
+                "Id": 115325,
+                "IsArchived": false,
+                "IsBookmarked": false,
+                "IsLiked": false,
+                "LikesCount": 0,
+                "Url": "http://bh.clearmash.com/skn/c6/dummy/e115325/dummy/"
+            }
+        },
+        {
+            "Acl": null,
+            "Changeset": 707207,
+            "Document": {
+                "Fields_Boolean": [
+                    {
+                        "Id": "entity_has_pending_changes",
+                        "Value": false
+                    },
+                    {
+                        "Id": "is_archived",
+                        "Value": false
+                    },
+                    {
+                        "Id": "is_deleted",
+                        "Value": false
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_ugc",
+                        "Value": false
+                    }
+                ],
+                "Fields_ChildDocuments": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_old_numbers_parent",
+                        "ChildDocuments": [
+                            {
+                                "AllowedGroups": [],
+                                "Value": {
+                                    "Fields_Boolean": [],
+                                    "Fields_ChildDocuments": [],
+                                    "Fields_Datasource": [],
+                                    "Fields_Datetime": [],
+                                    "Fields_Files": [],
+                                    "Fields_Float32": [],
+                                    "Fields_Float64": [],
+                                    "Fields_FuzzyDate": [],
+                                    "Fields_FuzzyDateRange": [],
+                                    "Fields_Int32": [],
+                                    "Fields_Int64": [],
+                                    "Fields_LocalizedHtml": [],
+                                    "Fields_LocalizedText": [
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_base_template_file_child_old_num_fid",
+                                            "Value": [
+                                                {
+                                                    "ISO6391": "en",
+                                                    "Value": "HB000688.HTM-EB000234.HTM"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "Fields_MediaGalleries": [],
+                                    "Fields_RelatedDocuments": [],
+                                    "Id": "8b19eb08c1004949b5927ddb2698631a",
+                                    "TemplateReference": {
+                                        "ChangesetId": 774,
+                                        "TemplateId": "_c6_beit_hatfutsot_bh_base_template_old_number_child"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "Fields_Datasource": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_display_status",
+                        "DatasourceItemsIds": [
+                            "b9adf6f68ff34bd192a625f947c69382"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_rights",
+                        "DatasourceItemsIds": [
+                            "96eb7c641a2a4a2b9b6094a247d24a0a"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_working_status",
+                        "DatasourceItemsIds": [
+                            "29b539010497436aa15d18121e6fab05"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_place_type",
+                        "DatasourceItemsIds": [
+                            "18d9e92250a64d478c29991c703ff905"
+                        ]
+                    }
+                ],
+                "Fields_Datetime": [
+                    {
+                        "Id": "entity_creation_date",
+                        "Value": {
+                            "UtcTicks": 636297532295299968
+                        }
+                    },
+                    {
+                        "Id": "EntityFirstPublishDate",
+                        "Value": {
+                            "UtcTicks": 636297532295299968
+                        }
+                    },
+                    {
+                        "Id": "EntityLastPublishDate",
+                        "Value": {
+                            "UtcTicks": 636297532295299968
+                        }
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_last_updated_date_bhp",
+                        "Value": {
+                            "UtcTicks": 635731545000000000
+                        }
+                    }
+                ],
+                "Fields_Files": [],
+                "Fields_Float32": [],
+                "Fields_Float64": [],
+                "Fields_FuzzyDate": [],
+                "Fields_FuzzyDateRange": [],
+                "Fields_Int32": [
+                    {
+                        "Id": "community_id",
+                        "Value": 6
+                    },
+                    {
+                        "Id": "entity_id",
+                        "Value": 115353
+                    },
+                    {
+                        "Id": "entity_type_id",
+                        "Value": 1007
+                    }
+                ],
+                "Fields_Int64": [
+                    {
+                        "Id": "EntityViewsCount",
+                        "Value": 0
+                    }
+                ],
+                "Fields_LocalizedHtml": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_description",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "Canterbury<br/><br/>Cathedral city, Kent, England. <br/><br/>Canterbury had one of the most important medieval Anglo-Jewish communities, first mentioned c1160. The Jewish quarter was in the modern Jewry Street. Traces of the synagogue were to be seen in the High Street as late as the 17th century. Canterbury was the seat of one of the local archa instituted after 1190 for registering Jewish-held debts.<br/><br/>The names of 20 Jewish Canterbury householders figure in the Northampton Donum of 1194; the contribution of the Jews of Canterbury on this occasion was exceeded only by those from London and Lincoln. In the levy of 1255, however, they ranked only eighth. <br/><br/>The community was attacked in 1261 and again in 1264, when the archa was seized and several Jews were killed. Subsequently, there seems to have been some immigration into Canterbury. In 1266, 18 local Jewish householders bound themselves to see that no \"liars, improper persons, or slanderers\" should be admitted to the Jewish community. After the Statutum de Judaismo of 1275, the Canterbury Jews began trading in corn and wool. In 1279 they were implicated in the general accusation of debasing the coinage. The whole community was confined in the castle and six Jews were eventually hanged. <br/><br/>Jews resettled in Canterbury early in the 18th century. A congregation was formed c. 1730 and a burial ground was acquired in 1760. A synagogue erected in 1763 was demolished in 1847 to make place for the railway and replaced by another building with a quaint semi-Egyptian exterior.<br/><br/>By the early 20th century there was no Jewish congregation in Canterbury and the former synagogue is now used as a parish hall.<br/><br/>In the mid- 1990's the Jewish population numbered approximately 35. However, according to the 2001 British census, 210 Jews lived in Canterbury and its surrounding districts."
+                            },
+                            {
+                                "ISO6391": "he",
+                                "Value": "\u05e7\u05e0\u05d8\u05e8\u05d1\u05e8\u05d9<br/><br/>\u05e2\u05d9\u05e8 \u05d1\u05d0\u05e0\u05d2\u05dc\u05d9\u05d4.<br/><br/><br/>\u05d1\u05d9\u05de\u05d9 \u05d4\u05d1\u05d9\u05e0\u05d9\u05d9\u05dd \u05d4\u05d9\u05d9\u05ea\u05d4 \u05d1\u05e7\u05e0\u05d8\u05e8\u05d1\u05e8\u05d9 \u05e7\u05d4\u05d9\u05dc\u05d4 \u05d9\u05d4\u05d5\u05d3\u05d9\u05ea \u05de\u05df \u05d4\u05d7\u05e9\u05d5\u05d1\u05d5\u05ea \u05d1\u05d0\u05e0\u05d2\u05dc\u05d9\u05d4. \u05d1\u05e1\u05d5\u05e3 \u05d4\u05de\u05d0\u05d4 \u05d4-12 \u05e0\u05e8\u05e9\u05de\u05d5 \u05d1\u05d4 20 \u05d1\u05ea\u05d9-\u05d0\u05d1 \u05d9\u05d4\u05d5\u05d3\u05d9\u05d9\u05dd.<br/><br/>\u05d1\u05e9\u05e0\u05d9\u05dd 1261 \u05d5-1264 \u05d4\u05d5\u05ea\u05e7\u05e4\u05d5 \u05d9\u05d4\u05d5\u05d3\u05d9 \u05d4\u05e2\u05d9\u05e8, \u05e4\u05e0\u05e7\u05e1\u05d9 \u05d4\u05d7\u05d5\u05d1\u05d5\u05ea \u05d4\u05d5\u05e9\u05de\u05d3\u05d5 \u05d5\u05db\u05de\u05d4 \u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05e0\u05e8\u05e6\u05d7\u05d5. \u05d1-1266 \u05d4\u05ea\u05d7\u05d9\u05d9\u05d1\u05d5 18 \u05de\u05d9\u05d4\u05d5\u05d3\u05d9 \u05d4\u05de\u05e7\u05d5\u05dd \u05e9\u05dc\u05d0 \u05dc\u05d4\u05db\u05e0\u05d9\u05e1 \u05dc\u05e7\u05d4\u05d9\u05dc\u05d4 \"\u05e9\u05e7\u05e8\u05e0\u05d9\u05dd, \u05e0\u05e7\u05dc\u05d9\u05dd \u05d0\u05d5 \u05de\u05dc\u05e9\u05d9\u05e0\u05d9\u05dd\". \u05d1\u05e2\u05e7\u05d1\u05d5\u05ea \"\u05d7\u05d5\u05e7 \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9\u05dd\" \u05de-1275 \u05d4\u05ea\u05d7\u05d9\u05dc\u05d5 \u05dc\u05e1\u05d7\u05d5\u05e8 \u05d1\u05ea\u05d1\u05d5\u05d0\u05d4 \u05d5\u05d1\u05e6\u05de\u05e8; \u05db\u05e2\u05d1\u05d5\u05e8 \u05d0\u05e8\u05d1\u05e2 \u05e9\u05e0\u05d9\u05dd \u05e0\u05ea\u05dc\u05d5 \u05e9\u05d9\u05e9\u05d4 \u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05d1\u05d0\u05e9\u05de\u05ea \u05d2\u05d9\u05d6\u05d5\u05dd \u05de\u05d8\u05d1\u05e2.<br/><br/>\u05d1- 1290 \u05d2\u05d5\u05e8\u05e9\u05d5 \u05d9\u05d4\u05d5\u05d3\u05d9 \u05e7\u05e0\u05d8\u05e8\u05d1\u05e8\u05d9 \u05e2\u05dd \u05d2\u05d9\u05e8\u05d5\u05e9 \u05d9\u05d4\u05d5\u05d3\u05d9 \u05d0\u05e0\u05d2\u05dc\u05d9\u05d4.<br/><br/>\u05d4\u05d9\u05d9\u05e9\u05d5\u05d1 \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9 \u05d1\u05e2\u05d9\u05e8 \u05d4\u05ea\u05d7\u05d3\u05e9 \u05d1\u05ea\u05d7\u05d9\u05dc\u05ea \u05d4\u05de\u05d0\u05d4 \u05d4- 18, \u05d5\u05d4\u05ea\u05e7\u05d9\u05d9\u05dd \u05db\u05de\u05d0\u05ea\u05d9\u05d9\u05dd \u05e9\u05e0\u05d4. \u05d1\u05e0\u05d9\u05d9\u05df \u05d1\u05d9\u05ea-\u05d4\u05db\u05e0\u05e1\u05ea \u05dc\u05e9\u05e2\u05d1\u05e8 \u05de\u05e9\u05de\u05e9 \u05db\u05d0\u05d5\u05dc\u05dd \u05e6\u05d9\u05d1\u05d5\u05e8\u05d9."
+                            }
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_editor_remarks",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "hasavot from Places"
+                            }
+                        ]
+                    }
+                ],
+                "Fields_LocalizedText": [
+                    {
+                        "Id": "entity_name",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "CANTERBURY"
+                            },
+                            {
+                                "ISO6391": "he",
+                                "Value": "\u05e7\u05e0\u05d8\u05e8\u05d1\u05e8\u05d9"
+                            }
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_bhp_unit",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "71507"
+                            }
+                        ]
+                    }
+                ],
+                "Fields_MediaGalleries": [],
+                "Fields_RelatedDocuments": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_family_name",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_movies",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_music",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_photos",
+                        "FirstPageOfReletedDocumentsIds": [
+                            "92e5a62105bc4813b61b3e702c0561d6"
+                        ],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 1
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_exhibition",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_musictext",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_personality",
+                        "FirstPageOfReletedDocumentsIds": [
+                            "3efb420489684249887b8951b95a101b"
+                        ],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 1
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_place",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_recieve_unit",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_source",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_located_in",
+                        "FirstPageOfReletedDocumentsIds": [
+                            "0097419026234f63b5f911f83cab7925"
+                        ],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 1
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_locations",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_personality_birth",
+                        "FirstPageOfReletedDocumentsIds": [
+                            "3efb420489684249887b8951b95a101b"
+                        ],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 1
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_personality_death",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    }
+                ],
+                "Id": "63078f969b9a4567a72fc2da409927a8",
+                "TemplateReference": {
+                    "ChangesetId": 774,
+                    "TemplateId": "_c6_beit_hatfutsot_bh_place"
+                }
+            },
+            "Metadata": {
+                "ActiveLock": null,
+                "CreatorUserId": 2,
+                "EntityTypeId": 1007,
+                "Id": 115353,
+                "IsArchived": false,
+                "IsBookmarked": false,
+                "IsLiked": false,
+                "LikesCount": 0,
+                "Url": "http://bh.clearmash.com/skn/c6/dummy/e115353/dummy/"
+            }
+        },
+        {
+            "Acl": null,
+            "Changeset": 707207,
+            "Document": {
+                "Fields_Boolean": [
+                    {
+                        "Id": "entity_has_pending_changes",
+                        "Value": false
+                    },
+                    {
+                        "Id": "is_archived",
+                        "Value": false
+                    },
+                    {
+                        "Id": "is_deleted",
+                        "Value": false
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_ugc",
+                        "Value": false
+                    }
+                ],
+                "Fields_ChildDocuments": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_old_numbers_parent",
+                        "ChildDocuments": [
+                            {
+                                "AllowedGroups": [],
+                                "Value": {
+                                    "Fields_Boolean": [],
+                                    "Fields_ChildDocuments": [],
+                                    "Fields_Datasource": [],
+                                    "Fields_Datetime": [],
+                                    "Fields_Files": [],
+                                    "Fields_Float32": [],
+                                    "Fields_Float64": [],
+                                    "Fields_FuzzyDate": [],
+                                    "Fields_FuzzyDateRange": [],
+                                    "Fields_Int32": [],
+                                    "Fields_Int64": [],
+                                    "Fields_LocalizedHtml": [],
+                                    "Fields_LocalizedText": [
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_base_template_file_child_old_num_fid",
+                                            "Value": [
+                                                {
+                                                    "ISO6391": "en",
+                                                    "Value": "HB001963.HTM-EB001321.HTM"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "Fields_MediaGalleries": [],
+                                    "Fields_RelatedDocuments": [],
+                                    "Id": "f50a3b5fa16b49a3b0bc5d1dcb843713",
+                                    "TemplateReference": {
+                                        "ChangesetId": 774,
+                                        "TemplateId": "_c6_beit_hatfutsot_bh_base_template_old_number_child"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "Fields_Datasource": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_display_status",
+                        "DatasourceItemsIds": [
+                            "b9adf6f68ff34bd192a625f947c69382"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_rights",
+                        "DatasourceItemsIds": [
+                            "96eb7c641a2a4a2b9b6094a247d24a0a"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_working_status",
+                        "DatasourceItemsIds": [
+                            "29b539010497436aa15d18121e6fab05"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_place_type",
+                        "DatasourceItemsIds": [
+                            "75f7c97e0e5b4b6bbec78a07bb00ea54"
+                        ]
+                    }
+                ],
+                "Fields_Datetime": [
+                    {
+                        "Id": "entity_creation_date",
+                        "Value": {
+                            "UtcTicks": 636297532376833280
+                        }
+                    },
+                    {
+                        "Id": "EntityFirstPublishDate",
+                        "Value": {
+                            "UtcTicks": 636297532376833280
+                        }
+                    },
+                    {
+                        "Id": "EntityLastPublishDate",
+                        "Value": {
+                            "UtcTicks": 636297532376833280
+                        }
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_last_updated_date_bhp",
+                        "Value": {
+                            "UtcTicks": 635998528200000000
+                        }
+                    }
+                ],
+                "Fields_Files": [],
+                "Fields_Float32": [],
+                "Fields_Float64": [],
+                "Fields_FuzzyDate": [],
+                "Fields_FuzzyDateRange": [],
+                "Fields_Int32": [
+                    {
+                        "Id": "community_id",
+                        "Value": 6
+                    },
+                    {
+                        "Id": "entity_id",
+                        "Value": 115365
+                    },
+                    {
+                        "Id": "entity_type_id",
+                        "Value": 1007
+                    }
+                ],
+                "Fields_Int64": [
+                    {
+                        "Id": "EntityViewsCount",
+                        "Value": 0
+                    }
+                ],
+                "Fields_LocalizedHtml": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_description",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "KECSKEMET<br/><br/><br/>A town in the Pest-Pilis-Solt-Kiskun district, 50 Kms. from Budapest, central Hungary.<br/><br/>In the 16th century, during the Turkish occupation, Jewish peddlers traded in the town. In 1746 Jews first received permission to settle in Kecskemet, where they traded in leather and raised cattle and sheep. <br/>In 1791 the municipality of Kecskemet authorized the settlement only of those Jews who were already in the pest region. In 1794 all the Jewish stores were destroyed in a fire which swept through the town, and were rebuilt with the help of the municipality. <br/>Even until the end of the 18th century it was not possible for a Jew to buy a house. Only in 1840 were Jews permitted to settle in the towns, with the exception of those in the areas of the mines. <br/>In 1853 Jews were allowed to buy immovable property, and in 1858 to buy vineyards and estates.<br/>The majority of the Jews were merchants with a few tradesmen and members of the free professions. Jews established enterprises to process the agricultural products of the fertile area.<br/>Relations with the Christian inhabitants were generally friendly.<br/>In 1848, as a result of the War of Liberation, riots occurred against Jewish merchants and their shops were looted.<br/>The \"Hevra Kadisha\" was founded in 1828, five years after the consecration of the synagogue, which was followed by a second synagogue in 1871. There was a women's society as well as charitable institutions. A school was opened in 1844 and the following year the Talmud Torah was established.<br/>In 1869, following differences between Haredim (orthodox) and Maskilim (enlightened) at the Jewish Congress, the community joined the Neolog (reform) movement which advocated integration into Hungarian society and amendments to the religious way of life. However, in 1917 the Haredim broke away and formed their own orthodox community.<br/><br/>In World War I 270 Jews served in the armed forces; 27 of them were killed in action.<br/><br/>During the period of the \"white terror\" (pogroms against the Jews instigated by right wing military elements, 1919-21, after the fall of the Communist regime), Anti-Semitic gangs detained numbers of Jews on the charge of having assisted the Romanian army. They were badly beaten up, their property was confiscated and they were sent to a concentration camp. Others were cruelly tortured and finally hanged from trees on the outskirts of the town. None of the accused was ever brought to trial. In the late 1920's there were further Anti-Semitic occurrences. Anti-Semitism brought about the growth of Zionism in the town.<br/><br/>In 1930 the community numbered 1,567.<br/><br/>The Holocaust Period<br/>In 1939, after the publication of \"discriminatory laws\" which aimed at limiting Jewish participation in the economic and cultural fields, there was increasing hostility shown by the local inhabitants when groups of Jewish forced labor workers, wearing the yellow Star of David, came to Kecskemet. In particular it was the Jewish youth who suffered, with entrance to the university closed to them. As a result many went to other countries to continue their studies.<br/>On March 19, 1944, the Germans occupied the town and the relative freedom which the Jews had experienced until then, came to an end with an impressive display of power. A few days later a special unit of the Gestapo came to the town, and there was an immediate hunt for Jews; 30 leaders of the community were brought to Gestapo headquarters, previously the home of a wealthy Jew, and from there sent to a detention camp in Kistarcsa and finally to Auschwitz. There were daily arrests of Jews who were subject to degrading treatment and torture; the aim being to turn the inhabitants against them and thereby to settle accounts. Fascists appeared on the streets, organizing harassment of the Jews; no action was taken against them by the police. 60 Jews were marched through the main streets of the town to the large synagogue where they were forced to destroy the beautiful furniture. The purpose was to convert the synagogue into a stable for the horses of the S.S. officers.<br/><br/>The Jewish council was ordered to find suitable accommodation for the needs of the Hungarian fascist party. All Jewish shop owners were commanded to submit to the authorities a detailed report on all goods in their possession.<br/>After the passage of a few weeks all the Jews of the town were confined in a ghetto which was in two separate parts; the one consisted of a few Jewish buildings in the center of the town, and the other in the area of the Jewish old aged home. There was intense overcrowding. The council was responsible for the transfer to the ghetto, without interference by the Germans. The men who were in the ghetto were taken for forced labor; they were promised that they would return soon thereafter. After a fortnight the remaining Jews were taken from the ghetto to a brickfield outside the town where they were kept in the open. They were together with the other Jews from the surrounding area. S.S. guards oppressed and flogged them, and kept them without food and water. Many, especially women and children, suffered from sun-stroke. The night before their expulsion, 70 adults poisoned themselves; the majority died. At the last minute, before transportation to Auschwitz, representatives of the Zionist organization succeeded in getting 13 of the detainees to Budapest by means of forged papers.<br/><br/>After the war 70 women and four men returned from Auschwitz; another 70 men came back from forced labor. They renewed communal life, and opened a public kitchen to help returning survivors who passed through the town. 400 survivors who couldn't find refuge in their home town of Budapest, came to Kecskemet. The community secured accommodation and work for them until they got back their property.<br/>Because of the hostility of the population, the Jews could not make a place for themselves and elected to move elsewhere after 1947. Some of them went on Aliyah to Israel. In 1955 only 81 Jews remained in the town."
+                            },
+                            {
+                                "ISO6391": "he",
+                                "Value": "\u05e7\u05e6'\u05e7\u05de\u05d8 KECSKEMET<br/><br/>\u05e2\u05d9\u05e8 \u05d1\u05de\u05d7\u05d5\u05d6 \u05e4\u05e9\u05d8-\u05e4\u05d9\u05dc\u05d9\u05e9-\u05e9\u05d5\u05dc\u05d8-\u05e7\u05d9\u05e9\u05e7\u05d5\u05df (PEST-PILIS-SOLT-KISKUN), \u05de\u05e8\u05db\u05d6 \u05d4\u05d5\u05e0\u05d2\u05e8\u05d9\u05d4.<br/><br/><br/>\u05d1-1746 \u05d4\u05d5\u05ea\u05e8 \u05dc\u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05dc\u05d4\u05ea\u05d9\u05d9\u05e9\u05d1 \u05d1\u05de\u05e7\u05d5\u05dd. \u05e8\u05d5\u05d1\u05dd \u05e2\u05e1\u05e7\u05d5 \u05d1\u05de\u05e1\u05d7\u05e8, \u05de\u05d9\u05e2\u05d5\u05d8\u05dd \u05d4\u05d9\u05d5 \u05d1\u05e2\u05dc\u05d9 \u05de\u05dc\u05d0\u05db\u05d4 \u05d5\u05d1\u05e2\u05dc\u05d9 \u05de\u05e7\u05e6\u05d5\u05e2\u05d5\u05ea \u05d7\u05d5\u05e4\u05e9\u05d9\u05d9\u05dd. \u05d1\u05e2\u05e7\u05d1\u05d5\u05ea \u05e7\u05d5\u05e0\u05d2\u05e8\u05e1 \u05d9\u05d4\u05d5\u05d3\u05d9 \u05d4\u05d5\u05e0\u05d2\u05e8\u05d9\u05d4 (1868) \u05d4\u05e6\u05d8\u05e8\u05e4\u05d4 \u05d4\u05e7\u05d4\u05d9\u05dc\u05d4 \u05dc\u05d6\u05e8\u05dd \u05d4\u05e0\u05d9\u05d0\u05d5\u05dc\u05d5\u05d2\u05d9 \u05e9\u05d2\u05e8\u05e1 \u05d4\u05e9\u05ea\u05dc\u05d1\u05d5\u05ea \u05d1\u05d7\u05d1\u05e8\u05d4 \u05d4\u05d4\u05d5\u05e0\u05d2\u05e8\u05d9\u05ea \u05d5\u05ea\u05d9\u05e7\u05d5\u05df \u05e1\u05d3\u05e8\u05d9 \u05d4\u05d7\u05d9\u05d9\u05dd \u05d4\u05d3\u05ea\u05d9\u05d9\u05dd. \u05d1-1917 \u05e4\u05e8\u05e9\u05d5 \u05d4\u05d7\u05e8\u05d3\u05d9\u05dd \u05de\u05df \u05d4\u05e7\u05d4\u05d9\u05dc\u05d4 \u05d5\u05d9\u05e1\u05d3\u05d5 \u05e7\u05d4\u05d9\u05dc\u05d4 \u05d0\u05d5\u05e8\u05ea\u05d5\u05d3\u05d5\u05e7\u05e1\u05d9\u05ea. \u05d1\u05de\u05e7\u05d5\u05dd \u05d4\u05d9\u05d5 \u05d7\u05d1\u05e8\u05d4 \u05e7\u05d3\u05d9\u05e9\u05d0 \u05d5\u05d0\u05d2\u05d5\u05d3\u05ea \u05e0\u05e9\u05d9\u05dd. \u05d1\u05d9\u05ea \u05d4\u05db\u05e0\u05e1\u05ea \u05d4\u05e8\u05d0\u05e9\u05d5\u05df \u05e0\u05d7\u05e0\u05da \u05d1-1823. \u05d1\u05d9\u05ea \u05d4\u05db\u05e0\u05e1\u05ea \u05d4\u05d7\u05d3\u05e9, \u05e9\u05d4\u05d5\u05e7\u05dd \u05d1-1871, \u05e0\u05e4\u05d2\u05e2 \u05d1\u05e8\u05e2\u05d9\u05d3\u05ea \u05d0\u05d3\u05de\u05d4 \u05d1-1911 \u05d5\u05e9\u05d5\u05e4\u05e5 \u05d1-1913. \u05db\u05df \u05d4\u05d9\u05d5 \u05d1\u05d9\u05ea \u05e1\u05e4\u05e8 \u05d9\u05e1\u05d5\u05d3\u05d9 \u05d9\u05d4\u05d5\u05d3\u05d9 \u05d5\"\u05ea\u05dc\u05de\u05d5\u05d3 \u05ea\u05d5\u05e8\u05d4\".<br/><br/>\u05d1\u05d9\u05df \u05e8\u05d1\u05e0\u05d9 \u05d4\u05e7\u05d4\u05d9\u05dc\u05d4 \u05d4\u05d9\u05d5 \u05d4\u05e8\u05d1 \u05d3\"\u05e8 \u05d0\u05e8\u05de\u05d9\u05df \u05e4\u05e8\u05dc\u05e1 (PERLS - 1914-1853); \u05d4\u05e8\u05d1 \u05d3\"\u05e8 \u05d9\u05d5\u05e1\u05e3 \u05d1\u05d0\u05e8\u05d0\u05df' (BARANY) \u05d5\u05d4\u05e8\u05d1 \u05d3\"\u05e8 \u05d9\u05d5\u05e1\u05e3 \u05d1\u05d5\u05e8\u05e9\u05d5\u05d3\u05d9, \u05d7\u05d5\u05e7\u05e8\u05d9 \u05ea\u05d5\u05dc\u05d3\u05d5\u05ea \u05d9\u05d4\u05d5\u05d3\u05d9 \u05d4\u05d5\u05e0\u05d2\u05e8\u05d9\u05d4, \u05d5\u05d4\u05e8\u05d1 \u05d3\"\u05e8 \u05d9\u05d5\u05e1\u05e3 \u05e9\u05d9\u05e0\u05d3\u05dc\u05e8.<br/><br/>\u05e8\u05d1\u05e0\u05d9\u05dd \u05e0\u05d5\u05d3\u05e2\u05d9\u05dd \u05d9\u05dc\u05d9\u05d3\u05d9 \u05e7\u05e6'\u05e7\u05de\u05d8 \u05d4\u05d9\u05d5 \u05d3\"\u05e8 \u05dc\u05d9\u05e4\u05d5\u05d8 \u05e7\u05e6'\u05e7\u05de\u05d8\u05d9 (KECSKEMETI) \u05e9\u05db\u05d9\u05d4\u05df \u05d1\u05d0\u05d5\u05e8\u05d0\u05d3\u05d9\u05d4 (ORADEA) \u05d5\u05d3\"\u05e8 \u05d0\u05e8\u05de\u05d9\u05df \u05e7\u05e6'\u05e7\u05de\u05d8\u05d9 (1944-1874), \u05e9\u05db\u05d9\u05d4\u05df \u05d1\u05de\u05d0\u05e7\u05d5 (MAKO) \u05d5\u05e4\u05d9\u05e8\u05e1\u05dd \u05d7\u05d9\u05d1\u05d5\u05e8\u05d9\u05dd \u05e2\u05dc \u05ea\u05d5\u05dc\u05d3\u05d5\u05ea \u05e2\u05dd \u05d9\u05e9\u05e8\u05d0\u05dc \u05d5\u05e1\u05e4\u05e8\u05d5\u05ea\u05d5. \u05d2\u05dd \u05de\u05e9\u05d4 \u05d6\u05e0\u05d1\u05e8, \u05dc\u05d9\u05de\u05d9\u05dd \u05e0\u05d2\u05d9\u05d3 \u05d1\u05e0\u05e7 \u05d9\u05e9\u05e8\u05d0\u05dc, \u05e0\u05d5\u05dc\u05d3 \u05d1\u05e7\u05e6'\u05e7\u05de\u05d8.<br/><br/>\u05d1\u05de\u05dc\u05d7\u05de\u05ea \u05d4\u05e2\u05d5\u05dc\u05dd \u05d4\u05e8\u05d0\u05e9\u05d5\u05e0\u05d4 \u05e9\u05e8\u05ea\u05d5 \u05d1\u05e6\u05d1\u05d0 270 \u05de\u05d9\u05d4\u05d5\u05d3\u05d9 \u05e7'\u05e6\u05e7\u05de\u05d8, 27 \u05de\u05d4\u05dd \u05e0\u05e4\u05dc\u05d5 \u05d1\u05e7\u05e8\u05d1\u05d5\u05ea.<br/><br/>\u05d1-1919, \u05d1\u05de\u05e9\u05da \u05d9\u05de\u05d9\u05dd \u05de\u05e1\u05e4\u05e8, \u05d4\u05d9\u05d9\u05ea\u05d4 \u05d4\u05e2\u05d9\u05e8 \u05ea\u05d7\u05ea \u05db\u05d9\u05d1\u05d5\u05e9 \u05e8\u05d5\u05de\u05e0\u05d9. \u05dc\u05d0\u05d7\u05e8 \u05e0\u05e1\u05d9\u05d2\u05ea \u05d4\u05e8\u05d5\u05de\u05e0\u05d9\u05dd, \u05d1\u05d9\u05de\u05d9 \"\u05d4\u05d8\u05e8\u05d5\u05e8 \u05d4\u05dc\u05d1\u05df\" (1921-1919), \u05e0\u05e2\u05e6\u05e8\u05d5 \u05e0\u05db\u05d1\u05d3\u05d9 \u05d4\u05e7\u05d4\u05d9\u05dc\u05d4, \u05d4\u05d5\u05d0\u05e9\u05de\u05d5 \u05d1\u05ea\u05de\u05d9\u05db\u05d4 \u05d1\u05e8\u05d5\u05de\u05e0\u05d9\u05dd, \u05d4\u05d5\u05db\u05d5 \u05d5\u05e0\u05db\u05dc\u05d0\u05d5 \u05dc\u05d7\u05d5\u05d3\u05e9 \u05d9\u05de\u05d9\u05dd \u05d1\u05de\u05d7\u05e0\u05d4 \u05e8\u05d9\u05db\u05d5\u05d6, \u05d5\u05e8\u05db\u05d5\u05e9\u05dd \u05d4\u05d5\u05d7\u05e8\u05dd. \u05d0\u05d7\u05e8\u05d9\u05dd \u05de\u05e7\u05e8\u05d1 \u05d4\u05d0\u05d9\u05e0\u05d8\u05dc\u05d9\u05d2\u05e0\u05e6\u05d9\u05d4 \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9\u05ea \u05d4\u05d5\u05d0\u05e9\u05de\u05d5 \u05d1\u05e1\u05d9\u05d5\u05e2 \u05dc\u05e7\u05d5\u05de\u05d5\u05e0\u05d9\u05e1\u05d8\u05d9\u05dd, \u05e2\u05d5\u05e0\u05d5 \u05d5\u05dc\u05d1\u05e1\u05d5\u05e3 \u05e0\u05d9\u05ea\u05dc\u05d5 \u05d1\u05db\u05d9\u05db\u05e8 \u05d4\u05e2\u05d9\u05e8. \u05d1\u05de\u05e9\u05da \u05d0\u05e8\u05d1\u05e2 \u05e9\u05e0\u05d9\u05dd \u05d7\u05d9\u05d5 \u05d9\u05d4\u05d5\u05d3\u05d9 \u05e7\u05e6'\u05e7\u05de\u05d8 \u05ea\u05d7\u05ea \u05d0\u05d9\u05de\u05d4 \u05de\u05e4\u05e0\u05d9 \u05e4\u05d5\u05e8\u05e2\u05d9\u05dd. \u05d2\u05dd \u05d0\u05d7\u05e8\u05d9 \u05e8\u05d9\u05e1\u05d5\u05df \u05db\u05e0\u05d5\u05e4\u05d9\u05d5\u05ea \"\u05d4\u05d8\u05e8\u05d5\u05e8 \u05d4\u05dc\u05d1\u05df\" \u05dc\u05d0 \u05e4\u05e1\u05e7\u05d5 \u05d2\u05dc\u05d5\u05d9\u05d9 \u05d0\u05e0\u05d8\u05d9\u05e9\u05de\u05d9\u05d5\u05ea \u05d1\u05e2\u05d9\u05e8 \u05d5\u05e6\u05e2\u05d9\u05e8\u05d9\u05dd \u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05dc\u05d0 \u05e0\u05ea\u05e7\u05d1\u05dc\u05d5 \u05dc\u05d1\u05ea\u05d9 \u05e1\u05e4\u05e8 \u05d2\u05d1\u05d5\u05d4\u05d9\u05dd.<br/><br/>\u05d1\u05e2\u05e7\u05d1\u05d5\u05ea \u05d6\u05d0\u05ea \u05d2\u05d1\u05e8\u05d4 \u05d1\u05e7\u05e6'\u05e7\u05de\u05d8 \u05d4\u05e4\u05e2\u05d9\u05dc\u05d5\u05ea \u05d4\u05e6\u05d9\u05d5\u05e0\u05d9\u05ea. \u05d4\u05e7\u05e9\u05e8 \u05e2\u05dd \u05d4\u05e7\u05d4\u05d9\u05dc\u05d5\u05ea \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9\u05d5\u05ea \u05d4\u05e1\u05de\u05d5\u05db\u05d5\u05ea \u05d4\u05ea\u05d7\u05d6\u05e7, \u05d4\u05ea\u05d0\u05e8\u05d2\u05e0\u05d5 \u05ea\u05d7\u05e8\u05d5\u05d9\u05d5\u05ea \u05e1\u05e4\u05d5\u05e8\u05d8 \u05de\u05e9\u05d5\u05ea\u05e4\u05d5\u05ea, \u05d5\u05e0\u05e2\u05e8\u05db\u05d5 \u05d4\u05e8\u05e6\u05d0\u05d5\u05ea \u05d5\u05e9\u05e2\u05d5\u05e8\u05d9\u05dd \u05dc\u05e2\u05d1\u05e8\u05d9\u05ea.<br/><br/>\u05d1\u05e9\u05e0\u05ea 1930 \u05de\u05e0\u05ea\u05d4 \u05e7\u05d4\u05d9\u05dc\u05ea \u05e7\u05e6'\u05e7\u05de\u05d8 1,567 \u05d9\u05d4\u05d5\u05d3\u05d9\u05dd.<br/><br/><br/>\u05ea\u05e7\u05d5\u05e4\u05ea \u05d4\u05e9\u05d5\u05d0\u05d4<br/><br/>\u05de\u05e2\u05de\u05d3\u05dd \u05d5\u05d6\u05db\u05d5\u05d9\u05d5\u05ea\u05d9\u05d4\u05dd \u05e9\u05dc \u05d9\u05d4\u05d5\u05d3\u05d9 \u05d4\u05d5\u05e0\u05d2\u05e8\u05d9\u05d4 \u05d4\u05d5\u05d2\u05d1\u05dc\u05d5 \u05e2\u05d5\u05d3 \u05dc\u05e4\u05e0\u05d9 \u05e4\u05e8\u05d5\u05e5 \u05de\u05dc\u05d7\u05de\u05ea \u05d4\u05e2\u05d5\u05dc\u05dd \u05d4\u05e9\u05e0\u05d9\u05d9\u05d4 (\u05e1\u05e4\u05d8\u05de\u05d1\u05e8 1939), \u05db\u05e9\u05de\u05de\u05e9\u05dc\u05ea \u05d4\u05d5\u05e0\u05d2\u05e8\u05d9\u05d4 \u05d4\u05e4\u05e8\u05d5-\u05d2\u05e8\u05de\u05e0\u05d9\u05ea \u05d7\u05d5\u05e7\u05e7\u05d4 \u05d1\u05e9\u05e0\u05ea 1938 \u05d0\u05ea \"\u05d4\u05d7\u05d5\u05e7\u05d9\u05dd \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9\u05d9\u05dd\", \u05d7\u05d5\u05e7\u05d9 \u05d0\u05e4\u05dc\u05d9\u05d9\u05d4 \u05e9\u05d4\u05d2\u05d1\u05d9\u05dc\u05d5 \u05d0\u05ea \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05d7\u05d1\u05e8\u05ea\u05d9\u05ea \u05d5\u05db\u05dc\u05db\u05dc\u05d9\u05ea. \u05d0\u05d7\u05e8\u05d9 \u05e4\u05e8\u05d5\u05e5 \u05d4\u05de\u05dc\u05d7\u05de\u05d4 \u05d4\u05d5\u05d7\u05dc\u05d8 \u05e2\u05dc \u05d2\u05d9\u05d5\u05e1 \u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05dc\u05e2\u05d1\u05d5\u05d3\u05d5\u05ea \u05db\u05e4\u05d9\u05d9\u05d4 \u05d1\u05de\u05e1\u05d2\u05e8\u05ea \u05e6\u05d1\u05d0\u05d9\u05ea. \u05de\u05de\u05d0\u05d9 1940 \u05d5\u05d0\u05d9\u05dc\u05da \u05d2\u05d5\u05d9\u05d9\u05e1\u05d5 \u05d2\u05d1\u05e8\u05d9\u05dd \u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05de\u05e7\u05e6'\u05e7\u05de\u05d8.<br/><br/>\u05d1-19 \u05d1\u05de\u05d0\u05e8\u05e1 1944 \u05e0\u05db\u05e0\u05e1 \u05d4\u05e6\u05d1\u05d0 \u05d4\u05d2\u05e8\u05de\u05e0\u05d9 \u05dc\u05d4\u05d5\u05e0\u05d2\u05e8\u05d9\u05d4, \u05d5\u05d1\u05d5 \u05d1\u05d9\u05d5\u05dd \u05e2\u05e8\u05db\u05d5 \u05d4\u05d2\u05e8\u05de\u05e0\u05d9\u05dd \u05de\u05e4\u05d2\u05df \u05db\u05d5\u05d7 \u05d1\u05e7\u05e6'\u05e7\u05de\u05d8. \u05db\u05e2\u05d1\u05d5\u05e8 \u05d9\u05de\u05d9\u05dd \u05d0\u05d7\u05d3\u05d9\u05dd \u05d4\u05ea\u05d9\u05d9\u05e9\u05d1\u05d5 \u05d1\u05e2\u05d9\u05e8 \u05e7\u05e6\u05d9\u05e0\u05d9 \u05de\u05d8\u05d4 \u05d2\u05e8\u05de\u05e0\u05d9\u05d9\u05dd. \u05d4\u05de\u05e4\u05e7\u05d3\u05d4 \u05e0\u05e7\u05d1\u05e2\u05d4 \u05d1\u05d1\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d0\u05d7\u05d3 \u05de\u05e2\u05e9\u05d9\u05e8\u05d9 \u05d4\u05e7\u05d4\u05d9\u05dc\u05d4 \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9\u05ea, \u05d5\u05de\u05e9\u05dd \u05e2\u05e8\u05db\u05d5 \u05d4\u05d2\u05e8\u05de\u05e0\u05d9\u05dd \u05de\u05e6\u05d5\u05d3 \u05d0\u05d7\u05e8 \u05d9\u05d4\u05d5\u05d3\u05d9\u05dd. \u05ea\u05d5\u05da \u05d9\u05de\u05d9\u05dd \u05e1\u05e4\u05d5\u05e8\u05d9\u05dd \u05d4\u05d5\u05d1\u05dc\u05d5 30 \u05de\u05e0\u05db\u05d1\u05d3\u05d9 \u05d4\u05e7\u05d4\u05d9\u05dc\u05d4 \u05dc\u05de\u05d7\u05e0\u05d4 \u05d4\u05de\u05e2\u05e6\u05e8 \u05e7\u05d9\u05e9\u05d8\u05d0\u05e8\u05e6'\u05d4 (KISTARCSA), \u05de\u05e9\u05dd \u05e9\u05d5\u05dc\u05d7\u05d5 \u05dc\u05d0\u05d5\u05e9\u05d5\u05d5\u05d9\u05e5.<br/><br/>\u05e7\u05d1\u05d5\u05e6\u05d4 \u05e9\u05dc 60 \u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05e6\u05d5\u05d5\u05ea\u05d4 \u05dc\u05d4\u05e8\u05d5\u05e1 \u05d0\u05ea \u05d0\u05d5\u05dc\u05dd \u05d1\u05d9\u05ea \u05d4\u05db\u05e0\u05e1\u05ea \u05d5\u05dc\u05e4\u05e0\u05d5\u05ea \u05d0\u05ea \u05d4\u05de\u05d1\u05e0\u05d4 \u05db\u05d3\u05d9 \u05dc\u05d4\u05e4\u05db\u05d5 \u05dc\u05d0\u05d5\u05e8\u05d5\u05d5\u05d4. \u05db\u05e2\u05d1\u05d5\u05e8 \u05e9\u05d1\u05d5\u05e2\u05d5\u05ea \u05de\u05e1\u05e4\u05e8 \u05d4\u05d5\u05e2\u05d1\u05e8\u05d5 940 \u05d9\u05d4\u05d5\u05d3\u05d9 \u05e7\u05e6'\u05e7\u05de\u05d8 \u05dc\u05e9\u05ea\u05d9 \u05e9\u05db\u05d5\u05e0\u05d5\u05ea \u05d1\u05e2\u05d9\u05e8 \u05e9\u05d4\u05d5\u05db\u05e8\u05d6\u05d5 \u05db\u05d2\u05d9\u05d8\u05d0\u05d5\u05ea. \u05d2\u05d1\u05e8\u05d9\u05dd \u05e0\u05e9\u05dc\u05d7\u05d5 \u05d1\u05de\u05e1\u05d2\u05e8\u05ea \u05e6\u05d1\u05d0\u05d9\u05ea \u05dc\u05e4\u05dc\u05d5\u05d2\u05d5\u05ea \u05dc\u05e2\u05d1\u05d5\u05d3\u05d5\u05ea \u05db\u05e4\u05d9\u05d9\u05d4. \u05dc\u05d0\u05d7\u05e8 \u05e9\u05d4\u05d5\u05ea \u05e9\u05dc \u05e9\u05d1\u05d5\u05e2\u05d9\u05d9\u05dd \u05d1\u05d2\u05d9\u05d8\u05d0\u05d5\u05ea \u05d4\u05d5\u05e2\u05d1\u05e8\u05d5 \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05dc\u05d1\u05d9\u05ea \u05d4\u05d7\u05e8\u05d5\u05e9\u05ea \u05dc\u05dc\u05d1\u05e0\u05d9\u05dd \u05de\u05d7\u05d5\u05e5 \u05dc\u05e2\u05d9\u05e8. \u05e9\u05dd \u05d4\u05d5\u05d7\u05d6\u05e7\u05d5 \u05ea\u05d7\u05ea \u05db\u05d9\u05e4\u05ea \u05d4\u05e9\u05de\u05d9\u05d9\u05dd, \u05dc\u05dc\u05d0 \u05de\u05d6\u05d5\u05df \u05d5\u05dc\u05dc\u05d0 \u05de\u05d9\u05dd. 13 \u05de\u05d4\u05dd \u05e6\u05d5\u05d9\u05d9\u05d3\u05d5 \u05d1\u05ea\u05e2\u05d5\u05d3\u05d5\u05ea \u05de\u05d6\u05d5\u05d9\u05d9\u05e4\u05d5\u05ea, \u05e9\u05d4\u05db\u05d9\u05e0\u05d5 \u05e0\u05e6\u05d9\u05d2\u05d9 \u05d4\u05d4\u05e1\u05ea\u05d3\u05e8\u05d5\u05ea \u05d4\u05e6\u05d9\u05d5\u05e0\u05d9\u05ea \u05d1\u05e4\u05e9\u05d8, \u05d5\u05d4\u05d5\u05d1\u05e8\u05d7\u05d5 \u05dc\u05d1\u05d5\u05d3\u05d0\u05e4\u05e9\u05d8. \u05dc\u05de\u05d7\u05e8\u05ea \u05e9\u05d5\u05dc\u05d7\u05d5 \u05e9\u05d0\u05e8 \u05d9\u05d4\u05d5\u05d3\u05d9 \u05e7\u05e6'\u05e7\u05de\u05d8 \u05dc\u05d0\u05d5\u05e9\u05d5\u05d5\u05d9\u05e5.<br/><br/><br/>\u05dc\u05d0\u05d7\u05e8 \u05d4\u05de\u05dc\u05d7\u05de\u05d4 \u05d7\u05d6\u05e8\u05d5 \u05dc\u05de\u05e7\u05d5\u05dd \u05db-150 \u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05e9\u05e9\u05e8\u05d3\u05d5, \u05d5\u05d7\u05d9\u05d3\u05e9\u05d5 \u05d0\u05ea \u05d7\u05d9\u05d9 \u05d4\u05e7\u05d4\u05d9\u05dc\u05d4. 410 \u05e0\u05d9\u05e6\u05d5\u05dc\u05d9\u05dd \u05d1\u05e0\u05d9 \u05d1\u05d5\u05d3\u05d0\u05e4\u05e9\u05d8 \u05de\u05e6\u05d0\u05d5 \u05d1\u05de\u05e7\u05d5\u05dd \u05de\u05e7\u05dc\u05d8, \u05e2\u05d3 \u05e9\u05d4\u05d5\u05d7\u05d6\u05e8\u05d5 \u05dc\u05d4\u05dd \u05d1\u05ea\u05d9\u05d4\u05dd. \u05d1\u05d2\u05dc\u05dc \u05e2\u05d5\u05d9\u05d9\u05e0\u05d5\u05ea \u05d4\u05ea\u05d5\u05e9\u05d1\u05d9\u05dd \u05e2\u05d6\u05d1\u05d5 \u05e8\u05d5\u05d1 \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05e2\u05dd \u05d4\u05d6\u05de\u05df \u05d0\u05ea \u05d4\u05e2\u05d9\u05e8 \u05d5\u05e2\u05d3 \u05e9\u05e0\u05ea 1955 \u05d9\u05e8\u05d3 \u05de\u05e1\u05e4\u05e8\u05dd \u05dc-81."
+                            }
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_editor_remarks",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "hasavot from Places"
+                            }
+                        ]
+                    }
+                ],
+                "Fields_LocalizedText": [
+                    {
+                        "Id": "entity_name",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "KECSKEMET"
+                            },
+                            {
+                                "ISO6391": "he",
+                                "Value": "\u05e7\u05e6'\u05e7\u05de\u05d8"
+                            }
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_bhp_unit",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "72739"
+                            }
+                        ]
+                    }
+                ],
+                "Fields_MediaGalleries": [],
+                "Fields_RelatedDocuments": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_family_name",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_movies",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_music",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_photos",
+                        "FirstPageOfReletedDocumentsIds": [
+                            "3a18b553fce24f5ba8a6aa9ef73416c5",
+                            "03ee32a9d8c04709a50077e43ba4d412",
+                            "1fb971955cd140a9ad65bb78ea6a2ad1"
+                        ],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 3
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_exhibition",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_musictext",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_personality",
+                        "FirstPageOfReletedDocumentsIds": [
+                            "ecf09192f8b14b5d9b003e519780efdb",
+                            "01187334661b430b8647ac2ce6329ca5",
+                            "4b6374cbf2eb4200ad208741230c499d",
+                            "43bd92c47fb243adaa98cd936006bdc6",
+                            "26a4fccadaa947f48edb44412304946c",
+                            "280422e42ebd48c29320dd1519c29cfe",
+                            "6c7b9523c6774e68bb5fe43ae0e2fdc1",
+                            "a1c5425093634c5db034285af6f6446c"
+                        ],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 8
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_place",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_recieve_unit",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_source",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_located_in",
+                        "FirstPageOfReletedDocumentsIds": [
+                            "f615cb0bb14347efa078f9023826f44b"
+                        ],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 1
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_locations",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_personality_birth",
+                        "FirstPageOfReletedDocumentsIds": [
+                            "a1c5425093634c5db034285af6f6446c",
+                            "4b6374cbf2eb4200ad208741230c499d",
+                            "26a4fccadaa947f48edb44412304946c",
+                            "6c7b9523c6774e68bb5fe43ae0e2fdc1",
+                            "01187334661b430b8647ac2ce6329ca5",
+                            "280422e42ebd48c29320dd1519c29cfe"
+                        ],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 6
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_personality_death",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    }
+                ],
+                "Id": "8e52c640ed3c4e57bc27b1385f71850a",
+                "TemplateReference": {
+                    "ChangesetId": 774,
+                    "TemplateId": "_c6_beit_hatfutsot_bh_place"
+                }
+            },
+            "Metadata": {
+                "ActiveLock": null,
+                "CreatorUserId": 2,
+                "EntityTypeId": 1007,
+                "Id": 115365,
+                "IsArchived": false,
+                "IsBookmarked": false,
+                "IsLiked": false,
+                "LikesCount": 0,
+                "Url": "http://bh.clearmash.com/skn/c6/dummy/e115365/dummy/"
+            }
+        },
+        {
+            "Acl": null,
+            "Changeset": 707207,
+            "Document": {
+                "Fields_Boolean": [
+                    {
+                        "Id": "entity_has_pending_changes",
+                        "Value": false
+                    },
+                    {
+                        "Id": "is_archived",
+                        "Value": false
+                    },
+                    {
+                        "Id": "is_deleted",
+                        "Value": false
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_ugc",
+                        "Value": false
+                    }
+                ],
+                "Fields_ChildDocuments": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_old_numbers_parent",
+                        "ChildDocuments": [
+                            {
+                                "AllowedGroups": [],
+                                "Value": {
+                                    "Fields_Boolean": [],
+                                    "Fields_ChildDocuments": [],
+                                    "Fields_Datasource": [],
+                                    "Fields_Datetime": [],
+                                    "Fields_Files": [],
+                                    "Fields_Float32": [],
+                                    "Fields_Float64": [],
+                                    "Fields_FuzzyDate": [],
+                                    "Fields_FuzzyDateRange": [],
+                                    "Fields_Int32": [],
+                                    "Fields_Int64": [],
+                                    "Fields_LocalizedHtml": [],
+                                    "Fields_LocalizedText": [
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_base_template_file_child_old_num_fid",
+                                            "Value": [
+                                                {
+                                                    "ISO6391": "en",
+                                                    "Value": "2615"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "Fields_MediaGalleries": [],
+                                    "Fields_RelatedDocuments": [],
+                                    "Id": "061db8eefccf435193cfc99011ac4b05",
+                                    "TemplateReference": {
+                                        "ChangesetId": 774,
+                                        "TemplateId": "_c6_beit_hatfutsot_bh_base_template_old_number_child"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "Fields_Datasource": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_display_status",
+                        "DatasourceItemsIds": [
+                            "b9adf6f68ff34bd192a625f947c69382"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_rights",
+                        "DatasourceItemsIds": [
+                            "96eb7c641a2a4a2b9b6094a247d24a0a"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_working_status",
+                        "DatasourceItemsIds": [
+                            "29b539010497436aa15d18121e6fab05"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_place_type",
+                        "DatasourceItemsIds": [
+                            "18d9e92250a64d478c29991c703ff905"
+                        ]
+                    }
+                ],
+                "Fields_Datetime": [
+                    {
+                        "Id": "entity_creation_date",
+                        "Value": {
+                            "UtcTicks": 636297532411266688
+                        }
+                    },
+                    {
+                        "Id": "EntityFirstPublishDate",
+                        "Value": {
+                            "UtcTicks": 636297532411266688
+                        }
+                    },
+                    {
+                        "Id": "EntityLastPublishDate",
+                        "Value": {
+                            "UtcTicks": 636297532411266688
+                        }
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_last_updated_date_bhp",
+                        "Value": {
+                            "UtcTicks": 633796443600000000
+                        }
+                    }
+                ],
+                "Fields_Files": [],
+                "Fields_Float32": [],
+                "Fields_Float64": [],
+                "Fields_FuzzyDate": [],
+                "Fields_FuzzyDateRange": [],
+                "Fields_Int32": [
+                    {
+                        "Id": "community_id",
+                        "Value": 6
+                    },
+                    {
+                        "Id": "entity_id",
+                        "Value": 115371
+                    },
+                    {
+                        "Id": "entity_type_id",
+                        "Value": 1007
+                    }
+                ],
+                "Fields_Int64": [
+                    {
+                        "Id": "EntityViewsCount",
+                        "Value": 0
+                    }
+                ],
+                "Fields_LocalizedHtml": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_editor_remarks",
+                        "Value": [
+                            {
+                                "ISO6391": "he",
+                                "Value": "\u05d9\u05d6'\u05d9\u05d5\u05e8\u05d9-YAZHJORI*\u05d1\u05d9\u05dc\u05d5\u05e8\u05d5\u05e1\u05d9\u05d4-BELORUSSIA*\u05e8\u05d5\u05e1\u05d9\u05d4 - \u05d1\u05e8\u05d9\u05ea \u05d4\u05de\u05d5\u05e2\u05e6\u05d5\u05ea-RUSSIA - USSR"
+                            }
+                        ]
+                    }
+                ],
+                "Fields_LocalizedText": [
+                    {
+                        "Id": "entity_name",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "YAZHJORI"
+                            },
+                            {
+                                "ISO6391": "he",
+                                "Value": "\u05d9\u05d6'\u05d9\u05d5\u05e8\u05d9"
+                            }
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_bhp_unit",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "68054"
+                            }
+                        ]
+                    }
+                ],
+                "Fields_MediaGalleries": [],
+                "Fields_RelatedDocuments": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_family_name",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_movies",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_music",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_photos",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_exhibition",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_musictext",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_personality",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_place",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_recieve_unit",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_source",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_located_in",
+                        "FirstPageOfReletedDocumentsIds": [
+                            "d1a61fe52858421c945fd05bf213714b"
+                        ],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 1
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_locations",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_personality_birth",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_personality_death",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    }
+                ],
+                "Id": "c5a300be088042209c2a677f19146e73",
+                "TemplateReference": {
+                    "ChangesetId": 774,
+                    "TemplateId": "_c6_beit_hatfutsot_bh_place"
+                }
+            },
+            "Metadata": {
+                "ActiveLock": null,
+                "CreatorUserId": 2,
+                "EntityTypeId": 1007,
+                "Id": 115371,
+                "IsArchived": false,
+                "IsBookmarked": false,
+                "IsLiked": false,
+                "LikesCount": 0,
+                "Url": "http://bh.clearmash.com/skn/c6/dummy/e115371/dummy/"
+            }
+        },
+        {
+            "Acl": null,
+            "Changeset": 707207,
+            "Document": {
+                "Fields_Boolean": [
+                    {
+                        "Id": "entity_has_pending_changes",
+                        "Value": false
+                    },
+                    {
+                        "Id": "is_archived",
+                        "Value": false
+                    },
+                    {
+                        "Id": "is_deleted",
+                        "Value": false
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_ugc",
+                        "Value": false
+                    }
+                ],
+                "Fields_ChildDocuments": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_old_numbers_parent",
+                        "ChildDocuments": [
+                            {
+                                "AllowedGroups": [],
+                                "Value": {
+                                    "Fields_Boolean": [],
+                                    "Fields_ChildDocuments": [],
+                                    "Fields_Datasource": [],
+                                    "Fields_Datetime": [],
+                                    "Fields_Files": [],
+                                    "Fields_Float32": [],
+                                    "Fields_Float64": [],
+                                    "Fields_FuzzyDate": [],
+                                    "Fields_FuzzyDateRange": [],
+                                    "Fields_Int32": [],
+                                    "Fields_Int64": [],
+                                    "Fields_LocalizedHtml": [],
+                                    "Fields_LocalizedText": [
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_base_template_file_child_old_num_fid",
+                                            "Value": [
+                                                {
+                                                    "ISO6391": "en",
+                                                    "Value": "HB068742.HTM-EB068591.HTM"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "Fields_MediaGalleries": [],
+                                    "Fields_RelatedDocuments": [],
+                                    "Id": "be26050124c64cc3afcea09931dd1360",
+                                    "TemplateReference": {
+                                        "ChangesetId": 774,
+                                        "TemplateId": "_c6_beit_hatfutsot_bh_base_template_old_number_child"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "Fields_Datasource": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_display_status",
+                        "DatasourceItemsIds": [
+                            "b9adf6f68ff34bd192a625f947c69382"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_rights",
+                        "DatasourceItemsIds": [
+                            "96eb7c641a2a4a2b9b6094a247d24a0a"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_working_status",
+                        "DatasourceItemsIds": [
+                            "29b539010497436aa15d18121e6fab05"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_place_type",
+                        "DatasourceItemsIds": [
+                            "75f7c97e0e5b4b6bbec78a07bb00ea54"
+                        ]
+                    }
+                ],
+                "Fields_Datetime": [
+                    {
+                        "Id": "entity_creation_date",
+                        "Value": {
+                            "UtcTicks": 636297532522300032
+                        }
+                    },
+                    {
+                        "Id": "EntityFirstPublishDate",
+                        "Value": {
+                            "UtcTicks": 636297532522300032
+                        }
+                    },
+                    {
+                        "Id": "EntityLastPublishDate",
+                        "Value": {
+                            "UtcTicks": 636297532522300032
+                        }
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_last_updated_date_bhp",
+                        "Value": {
+                            "UtcTicks": 635949539400000000
+                        }
+                    }
+                ],
+                "Fields_Files": [],
+                "Fields_Float32": [],
+                "Fields_Float64": [],
+                "Fields_FuzzyDate": [],
+                "Fields_FuzzyDateRange": [],
+                "Fields_Int32": [
+                    {
+                        "Id": "community_id",
+                        "Value": 6
+                    },
+                    {
+                        "Id": "entity_id",
+                        "Value": 115388
+                    },
+                    {
+                        "Id": "entity_type_id",
+                        "Value": 1007
+                    }
+                ],
+                "Fields_Int64": [
+                    {
+                        "Id": "EntityViewsCount",
+                        "Value": 0
+                    }
+                ],
+                "Fields_LocalizedHtml": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_description",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "Hluboka nad Vlatvou<br/><br/><br/>Until 1912 known as Podhradi<br/>German: Frauenberg<br/><br/>A town in the South Bohemian Region, Czech Republic<br/><br/>Hluboka was founded during the 15th century and is located about 6 miles (9km) north of the district town of Ceske Budejovice. Until 1918 the region was part of the Austro-Hungarian Empire. Between the two World Wars, and between the end of World War II until 1993, it was part of the Republic of Czechoslovakia. <br/><br/>The Jewish cemetery, which is still accessible, is located near the Munice Pond (Municky Rybnik). Restoration work took place during the 1990s and in 2009. The City of Hluboka is responsible for maintaining the cemetery.<br/><br/>HISTORY<br/><br/>The first Jewish families arrived in Hluboka during the middle of the 17th century; by the end of the century the town was home to a large Jewish community. The community began organizing in 1752 and its regulations were officially approved in 1785. The prayer house, cemetery (which was active between 1750 and 1941), and the chevra kaddisha of Hluboka also served Jews living in the neighboring villages. <br/><br/>The Jewish Street, which eventually became known as Tyrsova Street, was located southwest of the town square. The mikveh, a Jewish school, and a synagogue (built in 1907) were located there. The town's Jews spoke Czech, and most worked as traders.<br/><br/>In 1848 Jews throughout the Austro-Hungarian Empire were granted full civil rights. Settlement restrictions were removed, and many Jews in rural areas began moving to larger towns and cities, in search of greater economic and educational opportunities. Hluboka was no exception to this trend; during the first half of the 19th century there were approximately 130 Jews living in Hluboka, but by 1893 that number had dropped to 80. In 1921, when Hink Huller and Joseph Huller led the community, there were only 25 Jews left in the town. <br/><br/>Professor Dr. Karl Thieberger was among the rabbis who led the community of Hluboka. Leopold Schleissner was the community's cantor. Eduard Bloch, the physician for Adolf Hitler's family, was born in Hluboka.  <br/><br/>In 1930 there were 20 Jews living in Hluboka.<br/><br/>THE HOLOCAUST<br/><br/>The Republic of Czechoslovakia was dissolved after the Munich Agreement of September 1938. Shortly thereafter, in March 1939, the regions of Bohemia and Moravia became protectorates of Nazi Germany, initiating a period of discrimination and violence against the areas' Jews. <br/><br/>The Jews of Hluboka and the surrounding areas were sent to Terezin (Theresienstadt) around April, 1942. From there they were deported to concentration and death camps. Before their deportation to Terezin, six books and 105 ritual objects from the community were sent to the Central Jewish Museum in Prague."
+                            },
+                            {
+                                "ISO6391": "he",
+                                "Value": "\u05d4\u05dc\u05d5\u05d1\u05d5\u05e7\u05d4 \u05e0\u05d0\u05d3 \u05d5\u05dc\u05d8\u05d0\u05d1\u05d5\u05d0\u05d5 Hluboka Nad Vltavou<br/><br/>(\u05d1\u05e2\u05d1\u05e8 \u05e0\u05e7\u05e8\u05d0 \u05d4\u05de\u05e7\u05d5\u05dd \u05d1\u05e9\u05dd \u05e4\u05d5\u05d3\u05d4\u05e8\u05d0\u05d3\u05d9 PODHRADI, \u05d5\u05d1\u05d2\u05e8\u05de\u05e0\u05d9\u05ea FRAUENBERG)<br/><br/>\u05e2\u05d9\u05d9\u05e8\u05d4 \u05d1\u05d3\u05e8\u05d5\u05dd \u05d1\u05d5\u05d4\u05de\u05d9\u05d4, \u05e6'\u05db\u05d9\u05d4.<br/><br/><br/>\u05d4\u05dc\u05d5\u05d1\u05d5\u05e7\u05d4 \u05e0\u05d5\u05e1\u05d3\u05d4 \u05d1\u05de\u05d0\u05d4 \u05d4- 15 \u05d5\u05e9\u05d5\u05db\u05e0\u05ea 9 \u05e7\"\u05de \u05de\u05e6\u05e4\u05d5\u05df \u05dc\u05e2\u05d9\u05e8 \u05d4\u05de\u05d7\u05d5\u05d6 \u05e6'\u05e1\u05e7\u05d4-\u05d1\u05d5\u05d3\u05d9\u05d5\u05d1\u05d9\u05e6\u05d4 CESKE BUDEJOVICE. \u05e2\u05d3 1918 \u05d4\u05d9\u05d4 \u05d4\u05d0\u05d6\u05d5\u05e8 \u05d1\u05e7\u05d9\u05e1\u05e8\u05d5\u05ea \u05d0\u05d5\u05e1\u05d8\u05e8\u05d9\u05d4-\u05d4\u05d5\u05e0\u05d2\u05e8\u05d9\u05d4, \u05d5\u05de\u05d0\u05d6 \u05e2\u05d3 1993 \u05d1\u05e8\u05e4\u05d5\u05d1\u05dc\u05d9\u05e7\u05d4 \u05d4\u05e6'\u05db\u05d5\u05e1\u05dc\u05d5\u05d1\u05e7\u05d9\u05ea.<br/><br/>\u05d4\u05de\u05e9\u05e4\u05d7\u05d5\u05ea \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9\u05d5\u05ea \u05d4\u05e8\u05d0\u05e9\u05d5\u05e0\u05d5\u05ea \u05d1\u05d0\u05d5 \u05dc\u05d4\u05dc\u05d5\u05d1\u05d5\u05e7\u05d4 \u05d1\u05d0\u05de\u05e6\u05e2 \u05d4\u05de\u05d0\u05d4 \u05d4- 17 \u05d5\u05d1\u05e1\u05d5\u05e3 \u05d4\u05de\u05d0\u05d4 \u05db\u05d1\u05e8 \u05d4\u05d9\u05d9\u05ea\u05d4 \u05e9\u05dd \u05e7\u05d4\u05d9\u05dc\u05d4 \u05d9\u05d4\u05d5\u05d3\u05d9\u05ea \u05d2\u05d3\u05d5\u05dc\u05d4 \u05dc\u05de\u05d3\u05d9. \u05d4\u05e7\u05d4\u05d9\u05dc\u05d4 \u05d4\u05ea\u05d0\u05e8\u05d2\u05e0\u05d4 \u05d1- 1752 \u05d5\u05ea\u05e7\u05e0\u05d5\u05ea\u05d9\u05d4 \u05d0\u05d5\u05e9\u05e8\u05d5 \u05d1- 1785. \u05d1\u05d9\u05ea \u05ea\u05e4\u05d9\u05dc\u05d4, \u05d1\u05d9\u05ea \u05e2\u05dc\u05de\u05d9\u05df \u05d5\u05d7\u05d1\u05e8\u05d4 \u05e7\u05d3\u05d9\u05e9\u05d0 \u05e9\u05d9\u05de\u05e9\u05d5 \u05d2\u05dd \u05d0\u05ea \u05d9\u05d4\u05d5\u05d3\u05d9 \u05d4\u05db\u05e4\u05e8\u05d9\u05dd \u05d1\u05e1\u05d1\u05d9\u05d1\u05d4. \u05d1\u05d9\u05ea \u05d4\u05e2\u05dc\u05de\u05d9\u05df \u05d4\u05d9\u05d4 \u05d1\u05e9\u05d9\u05de\u05d5 \u05de- 1750 \u05e2\u05d3 1941.<br/><br/>\"\u05d4\u05e8\u05d7\u05d5\u05d1 \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9\", \u05dc\u05d9\u05de\u05d9\u05dd \u05e8\u05d7\u05d5\u05d1 \u05d8\u05d9\u05e8\u05e9\u05d5\u05d1\u05d4 TYRSOVA, \u05e9\u05db\u05df \u05de\u05d3\u05e8\u05d5\u05dd- \u05de\u05e2\u05e8\u05d1 \u05dc\u05db\u05db\u05e8 \u05d4\u05e2\u05d9\u05d9\u05e8\u05d4. \u05e9\u05dd \u05d4\u05d9\u05d5 \u05de\u05e7\u05d5\u05d5\u05d4 \u05d8\u05d4\u05e8\u05d4, \u05d1\u05d9\u05ea \u05e1\u05e4\u05e8 \u05d9\u05d4\u05d5\u05d3\u05d9 \u05d5\u05d1\u05d9\u05ea \u05db\u05e0\u05e1\u05ea \u05e9\u05d4\u05d5\u05e7\u05dd \u05d1- 1907. \u05e9\u05e4\u05ea \u05d4\u05d3\u05d9\u05d1\u05d5\u05e8 \u05d1\u05e8\u05d7\u05d5\u05d1 \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9 \u05d4\u05d9\u05d9\u05ea\u05d4 \u05e6'\u05db\u05d9\u05ea. \u05d1\u05de\u05d7\u05e6\u05d9\u05ea \u05d4\u05e8\u05d0\u05e9\u05d5\u05e0\u05d4 \u05e9\u05dc \u05d4\u05de\u05d0\u05d4 \u05d4- 19 \u05d9\u05e9\u05d1\u05d5 \u05d1\u05d4\u05dc\u05d5\u05d1\u05d5\u05e7\u05d4 \u05db- 130 \u05d9\u05d4\u05d5\u05d3\u05d9\u05dd. \u05d1- 1848 \u05e0\u05d9\u05ea\u05e0\u05d5 \u05dc\u05d9\u05d4\u05d5\u05d3\u05d9 \u05e7\u05d9\u05e1\u05e8\u05d5\u05ea \u05d0\u05d5\u05e1\u05d8\u05e8\u05d9\u05d4 \u05d6\u05db\u05d5\u05d9\u05d5\u05ea \u05d0\u05d6\u05e8\u05d7, \u05d1\u05d5\u05d8\u05dc\u05d5 \u05d4\u05d2\u05d1\u05dc\u05d5\u05ea \u05d4\u05d4\u05ea\u05d9\u05d9\u05e9\u05d1\u05d5\u05ea \u05e9\u05dc\u05d4\u05dd, \u05d5\u05e8\u05d5\u05d1 \u05d9\u05d4\u05d5\u05d3\u05d9 \u05d4\u05d0\u05d6\u05d5\u05e8\u05d9\u05dd \u05d4\u05db\u05e4\u05e8\u05d9\u05d9\u05dd \u05e2\u05e7\u05e8\u05d5 \u05dc\u05e2\u05e8\u05d9\u05dd \u05d4\u05d2\u05d3\u05d5\u05dc\u05d5\u05ea. \u05d1- 1893 \u05e0\u05d5\u05ea\u05e8\u05d5 \u05d1\u05d4\u05dc\u05d5\u05d1\u05d5\u05e7\u05d4 80 \u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05d5\u05d1- 1921 - 25 \u05d1\u05dc\u05d1\u05d3. \u05e8\u05d5\u05d1 \u05d9\u05d4\u05d5\u05d3\u05d9 \u05d4\u05d0\u05d6\u05d5\u05e8 \u05d4\u05ea\u05e4\u05e8\u05e0\u05e1\u05d5 \u05de\u05de\u05e1\u05d7\u05e8.<br/><br/>\u05d1\u05e2\u05d9\u05d9\u05e8\u05d4 \u05db\u05d9\u05d4\u05e0\u05d5 \u05db\u05de\u05d4 \u05e8\u05d1\u05e0\u05d9\u05dd \u05d9\u05d3\u05d5\u05e2\u05d9\u05dd, \u05d1\u05d9\u05e0\u05d9\u05d4\u05dd \u05e4\u05e8\u05d5\u05e4\u05e1\u05d5\u05e8 \u05d3\"\u05e8 \u05e7\u05d0\u05e8\u05dc \u05d8\u05d9\u05d1\u05e8\u05d2\u05e8 THIEBERGER. \u05dc\u05d9\u05d0\u05d5\u05e4\u05d5\u05dc\u05d3 \u05e9\u05dc\u05d9\u05d9\u05e1\u05e0\u05e8 SCHLEISSNER \u05d4\u05d9\u05d4 \u05d7\u05d6\u05df, \u05d5\u05d1\u05d9\u05df \u05e8\u05d0\u05e9\u05d9 \u05d4\u05e7\u05d4\u05dc \u05d4\u05d9\u05d5 \u05d4\u05d9\u05e0\u05e7 \u05d4\u05d5\u05dc\u05e8 HULLER \u05d5\u05d9\u05d5\u05e1\u05e3 \u05d4\u05d5\u05dc\u05e8.<br/><br/>\u05d1- 1930 \u05d9\u05e9\u05d1\u05d5 \u05d1\u05d4\u05dc\u05d5\u05d1\u05d5\u05e7\u05d4 20 \u05d9\u05d4\u05d5\u05d3\u05d9\u05dd.<br/><br/><br/>\u05ea\u05e7\u05d5\u05e4\u05ea \u05d4\u05e9\u05d5\u05d0\u05d4<br/><br/>\u05d4\u05e1\u05db\u05dd \u05de\u05d9\u05e0\u05db\u05df \u05e9\u05e0\u05d7\u05ea\u05dd \u05d1\u05e1\u05e4\u05d8\u05de\u05d1\u05e8 1938, \u05db\u05de\u05e2\u05d8 \u05e9\u05e0\u05d4 \u05dc\u05e4\u05e0\u05d9 \u05e4\u05e8\u05d5\u05e5 \u05de\u05dc\u05d7\u05de\u05ea \u05d4\u05e2\u05d5\u05dc\u05dd \u05d4\u05e9\u05e0\u05d9\u05d9\u05d4, \u05d4\u05d1\u05d9\u05d0 \u05dc\u05e4\u05d9\u05e8\u05d5\u05e7\u05d4 \u05e9\u05dc \u05d4\u05e8\u05e4\u05d5\u05d1\u05dc\u05d9\u05e7\u05d4 \u05d4\u05e6'\u05db\u05d5\u05e1\u05dc\u05d5\u05d1\u05e7\u05d9\u05ea. \u05d1- 15 \u05d1\u05de\u05d0\u05e8\u05e1 1939 \u05e0\u05e2\u05e9\u05ea\u05d4 \u05e6'\u05db\u05d9\u05d4 (\u05d1\u05d5\u05d4\u05de\u05d9\u05d4 \u05d5\u05de\u05d5\u05e8\u05d0\u05d5\u05d5\u05d9\u05d4) \u05e4\u05e8\u05d5\u05d8\u05e7\u05d8\u05d5\u05e8\u05d0\u05d8 \u05e9\u05dc \u05d2\u05e8\u05de\u05e0\u05d9\u05d4 \u05d4\u05e0\u05d0\u05e6\u05d9\u05ea. \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05d4\u05d5\u05e8\u05d7\u05e7\u05d5 \u05d1\u05d4\u05d3\u05e8\u05d2\u05d4 \u05de\u05d7\u05d9\u05d9 \u05d4\u05e6\u05d9\u05d1\u05d5\u05e8 \u05d5\u05e0\u05d5\u05e9\u05dc\u05d5 \u05de\u05e4\u05e8\u05e0\u05e1\u05ea\u05dd \u05d5\u05de\u05e8\u05db\u05d5\u05e9\u05dd. \u05d9\u05d4\u05d5\u05d3\u05d9 \u05d4\u05dc\u05d5\u05d1\u05d5\u05e7\u05d4 \u05d5\u05d4\u05e1\u05d1\u05d9\u05d1\u05d4 \u05d2\u05d5\u05e8\u05e9\u05d5 \u05db\u05e0\u05e8\u05d0\u05d4 \u05d1\u05d0\u05e4\u05e8\u05d9\u05dc 1942 \u05dc\u05d2\u05d9\u05d8\u05d5 \u05d8\u05e8\u05d6\u05d9\u05df TEREZIN (THERESIENSTADT), \u05de\u05e9\u05dd \u05e9\u05d5\u05dc\u05d7\u05d5 \u05dc\u05de\u05d7\u05e0\u05d5\u05ea \u05e8\u05d9\u05db\u05d5\u05d6 \u05d5\u05d4\u05e9\u05de\u05d3\u05d4.<br/><br/>\u05e9\u05e9\u05d4 \u05e1\u05e4\u05e8\u05d9\u05dd \u05d5- 105 \u05ea\u05e9\u05de\u05d9\u05e9\u05d9 \u05e7\u05d3\u05d5\u05e9\u05d4 \u05e9\u05dc \u05d4\u05e7\u05d4\u05d9\u05dc\u05d4 \u05d4\u05d5\u05e2\u05d1\u05e8\u05d5 \u05dc\u05de\u05d5\u05d6\u05d9\u05d0\u05d5\u05df \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9 \u05d4\u05de\u05e8\u05db\u05d6\u05d9 \u05d1\u05e4\u05e8\u05d0\u05d2.<br/><br/><br/>\u05d0\u05d7\u05e8\u05d9 \u05de\u05dc\u05d7\u05de\u05ea \u05d4\u05e2\u05d5\u05dc\u05dd \u05d4\u05e9\u05e0\u05d9\u05d9\u05d4 \u05dc\u05d0 \u05d4\u05d9\u05d5 \u05e2\u05d5\u05d3 \u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05d1\u05de\u05e7\u05d5\u05dd. \u05db\u05de\u05d4 \u05de\u05d4\u05d1\u05ea\u05d9\u05dd \u05d1\u05e8\u05d7\u05d5\u05d1 \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9 \u05dc\u05e9\u05e2\u05d1\u05e8 \u05e0\u05e9\u05ea\u05de\u05e8\u05d5; \u05d1\u05e0\u05d9\u05d9\u05df \u05d1\u05d9\u05ea \u05d4\u05db\u05e0\u05e1\u05ea \u05e9\u05d9\u05de\u05e9 \u05de- 1945 \u05d0\u05ea \u05d4\u05db\u05e0\u05e1\u05d9\u05d9\u05d4 \u05d4\u05d4\u05d5\u05e1\u05d9\u05d8\u05d9\u05ea."
+                            }
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_editor_remarks",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "hasavot from Places"
+                            }
+                        ]
+                    }
+                ],
+                "Fields_LocalizedText": [
+                    {
+                        "Id": "entity_name",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "Hluboka nad Vlatvou"
+                            },
+                            {
+                                "ISO6391": "he",
+                                "Value": "\u05d4\u05dc\u05d5\u05d1\u05d5\u05e7\u05d4 \u05e0\u05d0\u05d3 \u05d5\u05dc\u05d8\u05d0\u05d1\u05d5\u05d0\u05d5"
+                            }
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_bhp_unit",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "73967"
+                            }
+                        ]
+                    }
+                ],
+                "Fields_MediaGalleries": [],
+                "Fields_RelatedDocuments": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_family_name",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_movies",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_music",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_photos",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_exhibition",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_musictext",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_personality",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_place",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_recieve_unit",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_source",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_located_in",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_locations",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_personality_birth",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_personality_death",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    }
+                ],
+                "Id": "84c5df8bf87a4b62bc1f30ca83e2f711",
+                "TemplateReference": {
+                    "ChangesetId": 774,
+                    "TemplateId": "_c6_beit_hatfutsot_bh_place"
+                }
+            },
+            "Metadata": {
+                "ActiveLock": null,
+                "CreatorUserId": 2,
+                "EntityTypeId": 1007,
+                "Id": 115388,
+                "IsArchived": false,
+                "IsBookmarked": false,
+                "IsLiked": false,
+                "LikesCount": 0,
+                "Url": "http://bh.clearmash.com/skn/c6/dummy/e115388/dummy/"
+            }
+        },
+        {
+            "Acl": null,
+            "Changeset": 707207,
+            "Document": {
+                "Fields_Boolean": [
+                    {
+                        "Id": "entity_has_pending_changes",
+                        "Value": false
+                    },
+                    {
+                        "Id": "is_archived",
+                        "Value": false
+                    },
+                    {
+                        "Id": "is_deleted",
+                        "Value": false
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_ugc",
+                        "Value": false
+                    }
+                ],
+                "Fields_ChildDocuments": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_old_numbers_parent",
+                        "ChildDocuments": [
+                            {
+                                "AllowedGroups": [],
+                                "Value": {
+                                    "Fields_Boolean": [],
+                                    "Fields_ChildDocuments": [],
+                                    "Fields_Datasource": [],
+                                    "Fields_Datetime": [],
+                                    "Fields_Files": [],
+                                    "Fields_Float32": [],
+                                    "Fields_Float64": [],
+                                    "Fields_FuzzyDate": [],
+                                    "Fields_FuzzyDateRange": [],
+                                    "Fields_Int32": [],
+                                    "Fields_Int64": [],
+                                    "Fields_LocalizedHtml": [],
+                                    "Fields_LocalizedText": [
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_base_template_file_child_old_num_fid",
+                                            "Value": [
+                                                {
+                                                    "ISO6391": "en",
+                                                    "Value": "HB068740.HTM-EB068585.HTM"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "Fields_MediaGalleries": [],
+                                    "Fields_RelatedDocuments": [],
+                                    "Id": "10acff254fd94b239d3e4721cb19b75b",
+                                    "TemplateReference": {
+                                        "ChangesetId": 774,
+                                        "TemplateId": "_c6_beit_hatfutsot_bh_base_template_old_number_child"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "Fields_Datasource": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_display_status",
+                        "DatasourceItemsIds": [
+                            "b9adf6f68ff34bd192a625f947c69382"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_rights",
+                        "DatasourceItemsIds": [
+                            "96eb7c641a2a4a2b9b6094a247d24a0a"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_working_status",
+                        "DatasourceItemsIds": [
+                            "29b539010497436aa15d18121e6fab05"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_place_type",
+                        "DatasourceItemsIds": [
+                            "0d771e5ceaaf4d3f86232060373c4fb3"
+                        ]
+                    }
+                ],
+                "Fields_Datetime": [
+                    {
+                        "Id": "entity_creation_date",
+                        "Value": {
+                            "UtcTicks": 636298768585466624
+                        }
+                    },
+                    {
+                        "Id": "EntityFirstPublishDate",
+                        "Value": {
+                            "UtcTicks": 636298768585466624
+                        }
+                    },
+                    {
+                        "Id": "EntityLastPublishDate",
+                        "Value": {
+                            "UtcTicks": 636298768585466624
+                        }
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_last_updated_date_bhp",
+                        "Value": {
+                            "UtcTicks": 635780826600000000
+                        }
+                    }
+                ],
+                "Fields_Files": [],
+                "Fields_Float32": [],
+                "Fields_Float64": [],
+                "Fields_FuzzyDate": [],
+                "Fields_FuzzyDateRange": [],
+                "Fields_Int32": [
+                    {
+                        "Id": "community_id",
+                        "Value": 6
+                    },
+                    {
+                        "Id": "entity_id",
+                        "Value": 265694
+                    },
+                    {
+                        "Id": "entity_type_id",
+                        "Value": 1007
+                    }
+                ],
+                "Fields_Int64": [
+                    {
+                        "Id": "EntityViewsCount",
+                        "Value": 0
+                    }
+                ],
+                "Fields_LocalizedHtml": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_description",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "Gabcikovo<br/><br/>(IN HUNGARIAN: BOES)<br/><br/>A VILLAGE IN WEST SLOVAKIA.<br/><br/>GABCIKOVO IS SITUATED ON THE STRECH OF LAND BETWEEN THE TWO STREAMS OF THE RIVER DANUBE, NEAR THE HUNGARIAN BORDER. UNTIL 1918 THE REGION WAS PART OF THE AUSTRO-HUNGARIAN EMPIRE AND SINCE THEN, UNTIL 1993, PART OF THE REPUBLIC OF CZECHOSLOVAKIA.<br/><br/>IT IS NOT KNOWN WHEN JEWS BEGAN TO SETTLE AT GABCIKOVO. THE FIRST JEWS AT THE PLACE LIVED THERE APPARENTLY UNDER PROTECTION OF THE LOCAL NOBLES. ACCORDING TO DOCUMENTS OF THE 19TH CENTURY THE LOCAL ESTATE OWNER PROVIDED MEANS OF LIVING TO A NUMBER OF JEWISH FAMILIES AND LEASED THEM LANDS. THE FAMILY SCHREIBER LEASED THE ARENDA OF THE ESTATE AND ALMOST ALL THE JEWS OF THE VILLAGE WORKED THERE.<br/><br/>IN 1851 16 JEWISH FAMILIES LIVED AT GABCIKOVO. THE VILLAGE WAS SECLUDED FROM SOCIAL AND CULTURAL CENTRES AND NOT EXPOSED TO POLITICAL INFLUENCES. MOST OF THE VILLAGE JEWS WERE FARM WORKERS AND WOODCUTTERS, THEY LACKED GENERAL EDUCATION AND FOLLOWED A TRADITIONAL JEWISH WAY OF LIFE. THERE WAS APPARENTLY NO ORGANIZED COMMUNITY AND NO RECORDS WERE KEPT. THE GABCIKOVO JEWS WERE LINKED TO THE RABBINATE OF DUNAJSKA STREDA AND THEIR CHILDREN ATTENDED THE SCHOOL THERE.<br/><br/>IN THE 1870\u2019S THE JEWS OF GABCIKOVO JOINED THE MODERATE ORTHODOX STREAM. THERE WAS A SMALL SYNAGOGUE AT THE VILLAGE AND NEAR IT A HOUSE WHERE THE CANTOR AND THE SHOHET (RITUAL SLAUGHTERER) LIVED.<br/><br/>A CEMETERY WAS CONSECRATED NORTH OF THE VILLAGE, ABOUT 300-400 METRES FROM THE HIGHWAY. THE TOMBSTONES, OF THE LATE 19TH/ EARLY 20TH CENTURY WERE MADE OF MARBLE, WITH INSCRIPTIONS IN HEBREW AND HUNGARIAN.<br/><br/>IN 1900 SOME 28-30 JEWISH FAMILIES (100-120 PERSONS) LIVED AT GABCIKOVO. UNTIL 1910 THEIR NUMBER DIMINISHED TO 39.<br/><br/>THE RELATIONS BETWEEN THE JEWS AND THE NON-JEWS OF THE VILLAGE WERE VERY GOOD. IT IS TOLD THAT THE CHRISTIAN PRIEST USED TO PLAY CARDS WITH THE JEWS.<br/><br/>IN 1930 79 JEWS WERE LIVING AT GABCIKOVO.<br/><br/><br/>THE HOLOCAUST PERIOD<br/><br/>THE MUNICH AGREEMENT OF SEPTEMBER 1938, ABOUT A YEAR BEFORE THE OUTBREAK OF WORLD WAR II, BROUGHT ABOUT THE DISINTEGRATION OF THE CZECHOSLOVAK REPUBLIC. FOLLOWING THE VIENNA ARBITRATION OF NOVEMBER 1938 A PART OF SOUTHERN SLOVAKIA, INCLUDING THE AREA OF GABCIKOVO, WAS ANNEXED TO HUNGARY. THE \u201cJEWISH LAWS\u201d OF THE PRO-GERMAN HUNGARIAN GOVERNMENT REMOVED THE JEWS FROM THE SOCIAL AND PUBLIC LIFE AND MANY OF THEM WERE LEFT WITHOUT ANY MEANS OF LIVING. IN 1941 29 JEWS WERE COUNTED AT THE VILLAGE.<br/><br/>ON 19.3.1944 THE GERMAN AREMY ENTERED HUNGARY. A FEW WEEKS LATER THE JEWS OF HUNGARY WERE CONCENTRATED IN GHETTOS IN THE LARGER SETTLEMENTS AND FROM THERE DEPORTED IN THE SUMMER TO AUSCHWITZ.<br/><br/>JEWISH LIFE WAS NOT REVIVED AT GABCIKOVO AFTER THE WAR."
+                            },
+                            {
+                                "ISO6391": "he",
+                                "Value": "\u05d2\u05d0\u05d1\u05e6'\u05d9\u05e7\u05d5\u05d1\u05d5 Gabchikovo<br/><br/>\u05e9\u05dd \u05e0\u05d5\u05e1\u05e3: \u05d1\u05e9 BES -, \u05d1\u05d4\u05d5\u05e0\u05d2\u05e8\u05d9\u05ea: BOES<br/><br/>\u05db\u05e4\u05e8 \u05d1\u05d3\u05e8\u05d5\u05dd \u05de\u05e2\u05e8\u05d1 \u05e1\u05dc\u05d5\u05d1\u05e7\u05d9\u05d4.<br/><br/><br/>\u05d4\u05db\u05e4\u05e8 \u05d2\u05d0\u05d1\u05e6'\u05d9\u05e7\u05d5\u05d1\u05d5 \u05e9\u05d5\u05db\u05df \u05e2\u05dc \u05d0\u05d9 \u05d1\u05d9\u05df \u05e9\u05e0\u05d9 \u05e4\u05dc\u05d2\u05d9 \u05d4\u05d3\u05d0\u05e0\u05d5\u05d1\u05d4 \u05e1\u05de\u05d5\u05da \u05dc\u05d2\u05d1\u05d5\u05dc \u05d4\u05d5\u05e0\u05d2\u05e8\u05d9\u05d4. \u05e2\u05d3 1918 \u05d4\u05d9\u05d4 \u05d4\u05d0\u05d6\u05d5\u05e8 \u05d1\u05e7\u05d9\u05e1\u05e8\u05d5\u05ea \u05d0\u05d5\u05e1\u05d8\u05e8\u05d9\u05d4-\u05d4\u05d5\u05e0\u05d2\u05e8\u05d9\u05d4 \u05d5\u05de\u05d0\u05d6 \u05e2\u05d3 1993 \u05d1\u05e8\u05e4\u05d5\u05d1\u05dc\u05d9\u05e7\u05d4 \u05d4\u05e6'\u05db\u05d5\u05e1\u05dc\u05d5\u05d1\u05e7\u05d9\u05ea.<br/><br/>\u05dc\u05d0 \u05d9\u05d3\u05d5\u05e2 \u05de\u05ea\u05d9 \u05d4\u05d7\u05dc\u05d5 \u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05dc\u05d4\u05ea\u05d9\u05d9\u05e9\u05d1 \u05d1\u05d2\u05d0\u05d1\u05e6'\u05d9\u05e7\u05d5\u05d1\u05d5. \u05d4\u05e8\u05d0\u05e9\u05d5\u05e0\u05d9\u05dd \u05d9\u05e9\u05d1\u05d5 \u05e9\u05dd \u05db\u05db\u05dc \u05d4\u05e0\u05e8\u05d0\u05d4 \u05d1\u05d7\u05e1\u05d5\u05ea \u05d4\u05d0\u05e6\u05d9\u05dc\u05d9\u05dd \u05d4\u05de\u05e7\u05d5\u05de\u05d9\u05d9\u05dd. \u05dc\u05e4\u05d9 \u05de\u05e1\u05de\u05db\u05d9\u05dd \u05de\u05d4\u05de\u05d0\u05d4 \u05d4- 19 \u05e1\u05d9\u05e4\u05e7 \u05d1\u05e2\u05dc \u05d4\u05d0\u05d7\u05d5\u05d6\u05d4 \u05e4\u05e8\u05e0\u05e1\u05d4 \u05dc\u05db\u05de\u05d4 \u05de\u05e9\u05e4\u05d7\u05d5\u05ea \u05d9\u05d4\u05d5\u05d3\u05d9\u05d5\u05ea \u05d5\u05d4\u05d7\u05db\u05d9\u05e8 \u05dc\u05d4\u05df \u05d0\u05d3\u05de\u05d5\u05ea. \u05db\u05da \u05d7\u05db\u05e8\u05d4 \u05de\u05e9\u05e4\u05d7\u05ea \u05e9\u05e8\u05d9\u05d9\u05d1\u05e8 SCHREIBER \u05d0\u05ea \u05d0\u05d7\u05d5\u05d6\u05ea \u05d4\u05d0\u05e6\u05d9\u05dc\u05d9\u05dd, \u05d5\u05db\u05de\u05e2\u05d8 \u05db\u05dc \u05d9\u05d4\u05d5\u05d3\u05d9 \u05d4\u05db\u05e4\u05e8 \u05e2\u05d1\u05d3\u05d5 \u05e9\u05dd \u05dc\u05e4\u05e8\u05e0\u05e1\u05ea\u05dd.<br/><br/>\u05d11851- \u05d9\u05e9\u05d1\u05d5 \u05d1\u05d2\u05d0\u05d1\u05e6'\u05d9\u05e7\u05d5\u05d1\u05d5 16 \u05de\u05e9\u05e4\u05d7\u05d5\u05ea \u05d9\u05d4\u05d5\u05d3\u05d9\u05d5\u05ea. \u05d4\u05db\u05e4\u05e8 \u05d4\u05d9\u05d4 \u05de\u05d1\u05d5\u05d3\u05d3 \u05de\u05de\u05e8\u05db\u05d6\u05d9\u05dd \u05d7\u05d1\u05e8\u05ea\u05d9\u05d9\u05dd \u05d5\u05ea\u05e8\u05d1\u05d5\u05ea\u05d9\u05d9\u05dd \u05d5\u05de\u05d4\u05e9\u05e4\u05e2\u05d5\u05ea \u05e4\u05d5\u05dc\u05d9\u05d8\u05d9\u05d5\u05ea. \u05e8\u05d5\u05d1 \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05d4\u05d9\u05d5 \u05d0\u05d9\u05db\u05e8\u05d9\u05dd \u05d5\u05d7\u05d5\u05d8\u05d1\u05d9 \u05e2\u05e6\u05d9\u05dd, \u05e7\u05d9\u05d9\u05de\u05d5 \u05d0\u05d5\u05e8\u05d7 \u05d7\u05d9\u05d9\u05dd \u05d9\u05d4\u05d5\u05d3\u05d9 \u05de\u05e1\u05d5\u05e8\u05ea\u05d9 \u05d5\u05dc\u05d0 \u05e0\u05d8\u05d5 \u05dc\u05d4\u05e9\u05db\u05dc\u05d4 \u05db\u05dc\u05dc\u05d9\u05ea. \u05db\u05db\u05dc \u05d4\u05e0\u05e8\u05d0\u05d4 \u05dc\u05d0 \u05d4\u05ea\u05e7\u05d9\u05d9\u05de\u05d4 \u05e9\u05dd \u05e7\u05d4\u05d9\u05dc\u05d4 \u05de\u05d0\u05d5\u05e8\u05d2\u05e0\u05ea \u05d5\u05dc\u05d0 \u05e0\u05e8\u05e9\u05de\u05d5 \u05e1\u05e4\u05e8\u05d9 \u05e7\u05d4\u05d9\u05dc\u05d4. \u05d9\u05d4\u05d5\u05d3\u05d9 \u05d2\u05d0\u05d1\u05e6'\u05d9\u05e7\u05d5\u05d1\u05d5 \u05d4\u05e9\u05ea\u05d9\u05d9\u05db\u05d5 \u05dc\u05e8\u05d1\u05e0\u05d5\u05ea \u05d4\u05e2\u05d9\u05e8 \u05d3\u05d5\u05e0\u05d0\u05d9\u05d9\u05e1\u05e7\u05d4 \u05e1\u05d8\u05e8\u05d3\u05d4 DUNAJSKA STREDA \u05d5\u05d9\u05dc\u05d3\u05d9\u05d4\u05dd \u05dc\u05de\u05d3\u05d5 \u05d1\u05d1\u05ea\u05d9 \u05e1\u05e4\u05e8 \u05d1\u05d0\u05d5\u05ea\u05d4 \u05d4\u05e2\u05d9\u05e8.<br/><br/>\u05d1\u05e9\u05e0\u05d5\u05ea \u05d4\u05e9\u05d1\u05e2\u05d9\u05dd \u05e9\u05dc \u05d4\u05de\u05d0\u05d4 \u05d4- 19 \u05d4\u05e6\u05d8\u05e8\u05e4\u05d5 \u05d9\u05d4\u05d5\u05d3\u05d9 \u05d2\u05d0\u05d1\u05e6'\u05d9\u05e7\u05d5\u05d1\u05d5 \u05dc\u05d6\u05e8\u05dd \u05d4\u05d0\u05d5\u05e8\u05ea\u05d5\u05d3\u05d5\u05e7\u05e1\u05d9 \u05d4\u05de\u05ea\u05d5\u05df. \u05d1\u05e2\u05d9\u05d9\u05e8\u05d4 \u05d4\u05d9\u05d4 \u05d1\u05d9\u05ea \u05db\u05e0\u05e1\u05ea \u05e7\u05d8\u05df \u05d5\u05dc\u05d9\u05d3\u05d5 \u05d1\u05d9\u05ea \u05e9\u05e9\u05d9\u05de\u05e9 \u05dc\u05de\u05d2\u05d5\u05e8\u05d9 \u05d4\u05e9\u05d5\u05d7\u05d8 \u05d5\u05d4\u05d7\u05d6\u05df.<br/><br/>\u05d1\u05d9\u05ea \u05e2\u05dc\u05de\u05d9\u05df \u05e7\u05d5\u05d3\u05e9 \u05de\u05e6\u05e4\u05d5\u05df \u05dc\u05e2\u05d9\u05d9\u05e8\u05d4 \u05d1\u05de\u05e8\u05d7\u05e7 300 - 400 \u05de\u05d8\u05e8 \u05de\u05d4\u05db\u05d1\u05d9\u05e9. \u05d4\u05de\u05e6\u05d1\u05d5\u05ea \u05de\u05e1\u05d5\u05e3 \u05d4\u05de\u05d0\u05d4 \u05d4- 19 \u05d5\u05de\u05ea\u05d7\u05d9\u05dc\u05ea \u05d4- 20 \u05e2\u05e9\u05d5\u05d9\u05d5\u05ea \u05e9\u05d9\u05d9\u05e9 \u05d5\u05db\u05ea\u05d5\u05d1\u05d5\u05ea \u05d1\u05e2\u05d1\u05e8\u05d9\u05ea \u05d5\u05d1\u05d4\u05d5\u05e0\u05d2\u05e8\u05d9\u05ea.<br/><br/>\u05d1- 1900 \u05d9\u05e9\u05d1\u05d5 \u05d1\u05de\u05e7\u05d5\u05dd 28 - 30 \u05de\u05e9\u05e4\u05d7\u05d5\u05ea \u05d9\u05d4\u05d5\u05d3\u05d9\u05d5\u05ea (\u05db- 100 \u05e2\u05d3 120 \u05e0\u05e4\u05e9\u05d5\u05ea). \u05e2\u05d3 1910 \u05d9\u05e8\u05d3 \u05de\u05e1\u05e4\u05e8 \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05dc- 39. \u05d9\u05d7\u05e1\u05d9 \u05e9\u05db\u05e0\u05d5\u05ea \u05d1\u05d9\u05df \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05dc\u05d0\u05d5\u05db\u05dc\u05d5\u05e1\u05d9\u05d9\u05d4 \u05d4\u05db\u05dc\u05dc\u05d9\u05ea \u05d4\u05d9\u05d5 \u05d8\u05d5\u05d1\u05d9\u05dd \u05de\u05d0\u05d3. (\u05de\u05e1\u05e4\u05e8\u05d9\u05dd \u05e9\u05d4\u05db\u05d5\u05de\u05e8 \u05d4\u05d9\u05d4 \u05de\u05e9\u05d7\u05e7 \u05d1\u05e7\u05dc\u05e4\u05d9\u05dd \u05e2\u05dd \u05d9\u05d3\u05d9\u05d3\u05d9\u05dd \u05d9\u05d4\u05d5\u05d3\u05d9\u05dd).<br/><br/>\u05d1- 1930 \u05d9\u05e9\u05d1\u05d5 \u05d1\u05d2\u05d0\u05d1\u05e6'\u05d9\u05e7\u05d5\u05d1\u05d5 79 \u05d9\u05d4\u05d5\u05d3\u05d9\u05dd.<br/><br/><br/>\u05ea\u05e7\u05d5\u05e4\u05ea \u05d4\u05e9\u05d5\u05d0\u05d4<br/><br/>\u05d4\u05e1\u05db\u05dd \u05de\u05d9\u05e0\u05db\u05df \u05de\u05e1\u05e4\u05d8\u05de\u05d1\u05e8 1938, \u05db\u05de\u05e2\u05d8 \u05e9\u05e0\u05d4 \u05dc\u05e4\u05e0\u05d9 \u05e4\u05e8\u05d5\u05e5 \u05de\u05dc\u05d7\u05de\u05ea \u05d4\u05e2\u05d5\u05dc\u05dd \u05d4\u05e9\u05e0\u05d9\u05d9\u05d4, \u05d4\u05d1\u05d9\u05d0 \u05dc\u05d4\u05ea\u05e4\u05e8\u05e7\u05d5\u05ea \u05d4\u05e8\u05e4\u05d5\u05d1\u05dc\u05d9\u05e7\u05d4 \u05d4\u05e6'\u05db\u05d5\u05e1\u05dc\u05d5\u05d1\u05e7\u05d9\u05ea. \u05d1\u05e2\u05e7\u05d1\u05d5\u05ea \u05d1\u05d5\u05e8\u05e8\u05d5\u05ea \u05d5\u05d9\u05e0\u05d4 \u05de\u05e0\u05d5\u05d1\u05de\u05d1\u05e8 1938 \u05e1\u05d5\u05e4\u05d7 \u05d7\u05dc\u05e7 \u05de\u05e9\u05d8\u05d7\u05d4 \u05e9\u05dc \u05e1\u05dc\u05d5\u05d1\u05e7\u05d9\u05d4 \u05d4\u05d3\u05e8\u05d5\u05de\u05d9\u05ea, \u05dc\u05e8\u05d1\u05d5\u05ea \u05d0\u05d6\u05d5\u05e8 \u05d2\u05d0\u05d1\u05e6'\u05d9\u05e7\u05d5\u05d1\u05d5, \u05dc\u05d4\u05d5\u05e0\u05d2\u05e8\u05d9\u05d4. \"\u05d4\u05d7\u05d5\u05e7\u05d9\u05dd \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9\u05d9\u05dd\" \u05e9\u05dc \u05de\u05de\u05e9\u05dc\u05ea \u05d4\u05d5\u05e0\u05d2\u05e8\u05d9\u05d4 \u05d4\u05e4\u05e8\u05d5-\u05d2\u05e8\u05de\u05e0\u05d9\u05ea \u05d4\u05e8\u05d7\u05d9\u05e7\u05d5 \u05d0\u05ea \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05de\u05d7\u05d9\u05d9 \u05d4\u05e6\u05d9\u05d1\u05d5\u05e8 \u05d5\u05de\u05d4\u05db\u05dc\u05db\u05dc\u05d4, \u05d5\u05e8\u05d1\u05d9\u05dd \u05e0\u05d5\u05ea\u05e8\u05d5 \u05d1\u05dc\u05d9 \u05e4\u05e8\u05e0\u05e1\u05d4. \u05d11941- \u05d4\u05ea\u05e4\u05e7\u05d3\u05d5 29 \u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05d1\u05d2\u05d0\u05d1\u05e6'\u05d9\u05e7\u05d5\u05d1\u05d5.<br/><br/>\u05d1- 19 \u05d1\u05de\u05e8\u05e1 1944 \u05e0\u05db\u05e0\u05e1 \u05d4\u05e6\u05d1\u05d0 \u05d4\u05d2\u05e8\u05de\u05e0\u05d9 \u05dc\u05d4\u05d5\u05e0\u05d2\u05e8\u05d9\u05d4. \u05d0\u05d7\u05e8\u05d9 \u05db\u05de\u05d4 \u05e9\u05d1\u05d5\u05e2\u05d5\u05ea \u05e8\u05d5\u05db\u05d6\u05d5 \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05d1\u05d2\u05d9\u05d8\u05d0\u05d5\u05ea \u05e9\u05d4\u05d5\u05e7\u05de\u05d5 \u05d1\u05d9\u05d9\u05e9\u05d5\u05d1\u05d9\u05dd \u05d4\u05d2\u05d3\u05d5\u05dc\u05d9\u05dd, \u05d5\u05d1\u05e7\u05d9\u05e5 \u05d0\u05d5\u05ea\u05d4 \u05d4\u05e9\u05e0\u05d4 \u05d2\u05d5\u05e8\u05e9\u05d5 \u05dc\u05de\u05d7\u05e0\u05d4 \u05d4\u05d4\u05e9\u05de\u05d3\u05d4 \u05d1\u05d0\u05d5\u05e9\u05d5\u05d5\u05d9\u05e5.<br/><br/>\u05d0\u05d7\u05e8\u05d9 \u05d4\u05de\u05dc\u05d7\u05de\u05d4 \u05dc\u05d0 \u05d4\u05d9\u05d5 \u05e2\u05d5\u05d3 \u05d7\u05d9\u05d9\u05dd \u05d9\u05d4\u05d5\u05d3\u05d9\u05d9\u05dd \u05d1\u05d2\u05d0\u05d1\u05e6'\u05d9\u05e7\u05d5\u05d1\u05d5."
+                            }
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_editor_remarks",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "hasavot from Places"
+                            }
+                        ]
+                    }
+                ],
+                "Fields_LocalizedText": [
+                    {
+                        "Id": "entity_name",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "GABCIKOVO"
+                            },
+                            {
+                                "ISO6391": "he",
+                                "Value": "\u05d2\u05d0\u05d1\u05e6'\u05d9\u05e7\u05d5\u05d1\u05d5"
+                            }
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_bhp_unit",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "73965"
+                            }
+                        ]
+                    }
+                ],
+                "Fields_MediaGalleries": [],
+                "Fields_RelatedDocuments": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_family_name",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_movies",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_music",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_photos",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_exhibition",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_musictext",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_personality",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_place",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_recieve_unit",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_source",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_located_in",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_locations",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_personality_birth",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_personality_death",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    }
+                ],
+                "Id": "3a2c33c4c0c64103915337ca03bffbf9",
+                "TemplateReference": {
+                    "ChangesetId": 774,
+                    "TemplateId": "_c6_beit_hatfutsot_bh_place"
+                }
+            },
+            "Metadata": {
+                "ActiveLock": null,
+                "CreatorUserId": 2,
+                "EntityTypeId": 1007,
+                "Id": 265694,
+                "IsArchived": false,
+                "IsBookmarked": false,
+                "IsLiked": false,
+                "LikesCount": 0,
+                "Url": "http://bh.clearmash.com/skn/c6/dummy/e265694/dummy/"
+            }
+        }
+    ],
+    "ReferencedDatasourceItems": [
+        {
+            "Id": "b9adf6f68ff34bd192a625f947c69382",
+            "ImageUrl": null,
+            "Name": [
+                {
+                    "ISO6391": "en",
+                    "Value": "Museum only"
+                },
+                {
+                    "ISO6391": "he",
+                    "Value": "\u05de\u05d5\u05d6\u05d9\u05d0\u05d5\u05df \u05d1\u05dc\u05d1\u05d3"
+                }
+            ]
+        },
+        {
+            "Id": "96eb7c641a2a4a2b9b6094a247d24a0a",
+            "ImageUrl": null,
+            "Name": [
+                {
+                    "ISO6391": "en",
+                    "Value": "Full"
+                },
+                {
+                    "ISO6391": "he",
+                    "Value": "\u05de\u05dc\u05d0"
+                }
+            ]
+        },
+        {
+            "Id": "29b539010497436aa15d18121e6fab05",
+            "ImageUrl": null,
+            "Name": [
+                {
+                    "ISO6391": "en",
+                    "Value": "Completed"
+                },
+                {
+                    "ISO6391": "he",
+                    "Value": "\u05d4\u05e1\u05ea\u05d9\u05d9\u05dd"
+                }
+            ]
+        },
+        {
+            "Id": "18d9e92250a64d478c29991c703ff905",
+            "ImageUrl": null,
+            "Name": [
+                {
+                    "ISO6391": "en",
+                    "Value": "City"
+                },
+                {
+                    "ISO6391": "he",
+                    "Value": "\u05e2\u05d9\u05e8"
+                }
+            ]
+        },
+        {
+            "Id": "75f7c97e0e5b4b6bbec78a07bb00ea54",
+            "ImageUrl": null,
+            "Name": [
+                {
+                    "ISO6391": "en",
+                    "Value": "Town"
+                },
+                {
+                    "ISO6391": "he",
+                    "Value": "\u05e2\u05d9\u05d9\u05e8\u05d4"
+                }
+            ]
+        },
+        {
+            "Id": "0d771e5ceaaf4d3f86232060373c4fb3",
+            "ImageUrl": null,
+            "Name": [
+                {
+                    "ISO6391": "en",
+                    "Value": "Village"
+                },
+                {
+                    "ISO6391": "he",
+                    "Value": "\u05db\u05e4\u05e8"
+                }
+            ]
+        }
+    ]
+}

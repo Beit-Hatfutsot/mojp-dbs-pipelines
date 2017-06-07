@@ -6,13 +6,13 @@ from datapackage_pipelines_mojp.common.processors.base_processors import FilterR
 from datapackage_pipelines_mojp.common.utils import populate_iso_639_language_field
 
 
-TABLE_SCHEMA = DBS_DOCS_TABLE_SCHEMA
-
 class ClearmashConvertProcessor(FilterResourcesProcessor):
 
     def _filter_resource_descriptor(self, descriptor):
         if descriptor["name"] == "clearmash":
-            descriptor.update(name=DBS_DOCS_RESOURCE_NAME, path="{}.csv".format(DBS_DOCS_RESOURCE_NAME), schema=TABLE_SCHEMA)
+            descriptor.update(name=DBS_DOCS_RESOURCE_NAME,
+                              path="{}.csv".format(DBS_DOCS_RESOURCE_NAME),
+                              schema=DBS_DOCS_TABLE_SCHEMA)
         return descriptor
 
     def _filter_row(self, row, resource_descirptor):
@@ -30,7 +30,7 @@ class ClearmashConvertProcessor(FilterResourcesProcessor):
         return dbs_row
 
     def _get_collection(self, cm_row):
-        return "places"
+        return cm_row["collection"]
 
 
 if __name__ == '__main__':

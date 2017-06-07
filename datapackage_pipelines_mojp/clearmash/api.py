@@ -2,6 +2,9 @@ from .constants import WCM_BASE_URL, FOLDER_TYPE_WebDocumentSystemFolder
 from datapackage_pipelines_mojp import settings
 import requests
 from pyquery import PyQuery as pq
+import os, json
+from itertools import cycle
+from copy import deepcopy
 
 
 def parse_error_response_content(content):
@@ -84,3 +87,31 @@ class ClearmashApi(object):
     def _get_headers(self):
         return {"ClientToken": self._token,
                 "Content-Type": "application/json"}
+
+
+class MockClearMashApi(ClearmashApi):
+
+    def __init__(self):
+        super(MockClearMashApi, self).__init__(token="FAKE INVALID TOKEN")
+
+    def get_web_document_system_folder(self, folder_id):
+        return {"Folders": [],
+                "Items": [{"Id": (folder_id*100+i)} for i in range(1, 50)]}
+
+    def get_documents(self, entity_ids):
+        response = {}
+        with open(os.path.join(os.path.dirname(__file__), "mock_data",
+                               "clearmash-api-documents-get-115325-115353-115365-115371-115388-265694.json")) as f:
+            mock_response = json.load(f)
+        response["ReferencedDatasourceItems"] = mock_response["ReferencedDatasourceItems"]
+        response["Entities"] = []
+        infinite_entities = cycle(mock_response["Entities"])
+        for entity_id in entity_ids:
+            folder_id = int(entity_id / 100)
+            entity = deepcopy(next(infinite_entities))
+            entity["Document"].update(Id="foobarbaz-{}".format(entity_id),
+                                      TemplateReference={"ChangesetId": folder_id*3,
+                                                         "TemplateId": "fake-template-{}".format(folder_id)})
+            entity["Metadata"].update(Id=entity_id, Url="http://foo.bar.baz/{}".format(entity_id))
+            response["Entities"].append(entity)
+        return response

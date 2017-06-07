@@ -1,3 +1,5 @@
+from datapackage_pipelines_mojp.common import constants as common_constants
+
 WCM_BASE_URL = "https://bh.clearmash.com/API/V5/Services/WebContentManagement.svc"
 
 # the identifier of this source in the BH databases
@@ -38,3 +40,31 @@ WEB_CONTENT_FOLDER_ID_Personality = 49  #: 'אישיות',  --> 'personalities',
 # WEB_CONTENT_FOLDER_ID_Family_Tree = 51  #: 'עץ משפחה',
 # 53: 'מקור'
 
+CONTENT_FOLDERS = {
+    WEB_CONTENT_FOLDER_ID_FamilyName: {"collection": common_constants.COLLECTION_FAMILY_NAMES},
+    WEB_CONTENT_FOLDER_ID_Place: {"collection": common_constants.COLLECTION_PLACES},
+    WEB_CONTENT_FOLDER_ID_Movies: {"collection": common_constants.COLLECTION_MOVIES},
+    WEB_CONTENT_FOLDER_ID_Personality: {"collection": common_constants.COLLECTION_PERSONALITIES},
+    WEB_CONTENT_FOLDER_ID_Photos: {"collection": common_constants.COLLECTION_PHOTOUNITS},
+}
+
+DOWNLOAD_TABLE_SCHEMA = {"fields": [{"name": "document_id", "type": "string",
+                                     "description": "some sort of internal GUID"},
+                                    {"name": "item_id", "type": "integer",
+                                     "description": "the item id as requested from the folder"},
+                                    {"name": "item_url", "type": "string",
+                                     "description": "url to view the item in CM"},
+                                    {"name": "collection", "type": "string",
+                                     "description": "common dbs docs collection string"},
+                                    {"name": "template_changeset_id", "type": "integer",
+                                     "description": "I guess it's the id of template when doc was saved"},
+                                    {"name": "template_id", "type": "string",
+                                     "description": "can help to identify the item type"},
+                                    {"name": "changeset", "type": "integer",
+                                     "description": ""},
+                                    {"name": "metadata", "type": "string",
+                                     "description": "json of remaining unparsed attribute"},
+                                    {"name": "parsed_doc", "type": "string",
+                                     "description": "json of remaining unparsed attribute"}]}
+
+ITEM_IDS_BUFFER_LENGTH = 10

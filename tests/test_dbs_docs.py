@@ -1,10 +1,8 @@
-from .common import (ELASTICSEARCH_TESTS_INDEX,
-                     given_empty_elasticsearch_instance,
+from .common import (given_empty_elasticsearch_instance,
                      when_running_sync_processor_on_mock_data,
                      es_doc,
                      MOCK_DATA_FOR_SYNC,
                      EXPECTED_ES_DOCS_FROM_MOCK_DATA_SYNC)
-from datapackage_pipelines_mojp.clearmash.constants import CLEARMASH_SOURCE_ID
 from copy import deepcopy
 
 
