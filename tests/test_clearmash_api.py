@@ -161,7 +161,7 @@ def test_get_documents_places():
 
 def test_get_related_docs_of_places_item():
     try:
-        documents_response = MockClearmashApi().get_document_photos_docs("220590")
+        documents_response = MockClearmashApi().get_document_photos_docs(220590)
         # comapre related elemts with response for api.get_documents(["220590"])
         reference_data = GERMANY_FROM_GET_DOCUMENTS_CLEARMASH_API
         entities = documents_response.pop("Entities")
