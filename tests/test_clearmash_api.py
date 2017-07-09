@@ -1,5 +1,5 @@
 from datapackage_pipelines_mojp.clearmash.api import ClearmashApi, parse_error_response_content, parse_clearmash_document
-from .mocks.data import GERMANY_FROM_GET_DOCUMENTS_CLEARMASH_API
+from .mocks.data import PLACE_GERMANY_FROM_GET_DOCUMENTS_CLEARMASH_API
 import os, json
 from requests.exceptions import HTTPError
 from datapackage_pipelines_mojp.clearmash.constants import WEB_CONTENT_FOLDER_ID_Place
@@ -163,7 +163,7 @@ def test_get_related_docs_of_places_item():
     try:
         documents_response = MockClearmashApi().get_document_photos_docs(220590)
         # comapre related elemts with response for api.get_documents(["220590"])
-        reference_data = GERMANY_FROM_GET_DOCUMENTS_CLEARMASH_API
+        reference_data = PLACE_GERMANY_FROM_GET_DOCUMENTS_CLEARMASH_API
         entities = documents_response.pop("Entities")
         related_documents = reference_data["Entities"][0]["Document"]["Fields_RelatedDocuments"][0]
         for i in related_documents:
