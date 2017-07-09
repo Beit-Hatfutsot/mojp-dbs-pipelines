@@ -37,6 +37,8 @@ pip-delete-this-directory.txt
 # Unit test / coverage reports
 htmlcov/
 .tox/
+.idea/
+.travis/
 .coverage
 .coverage.*
 .cache
@@ -44,6 +46,7 @@ nosetests.xml
 coverage.xml
 *,cover
 .hypothesis/
+
 
 # VS Code
 .vscode
@@ -72,6 +75,7 @@ target/
 
 # IPython Notebook
 .ipynb_checkpoints
+.ipynb_checkpoints/
 .ipynb
 *.ipynb
 
