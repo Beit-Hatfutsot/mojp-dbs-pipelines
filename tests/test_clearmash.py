@@ -126,6 +126,21 @@ def assert_mock_clearmash_dbs_doc(doc):
     # there are some predefined collections which each document must belong to, it's just a string of the collection name
     assert doc["collection"] == COLLECTION_FAMILY_NAMES
 
+def assert_item_permissions(display_status, rights, working_status, is_permitted):
+    datapackage, downloaded_doc = given_mock_clearmash_downloaded_doc()
+    downloaded_doc["parsed_doc"]['_c6_beit_hatfutsot_bh_base_template_display_status'][0]["en"] = display_status
+    downloaded_doc["parsed_doc"]['_c6_beit_hatfutsot_bh_base_template_rights'][0]["en"] = rights
+    downloaded_doc["parsed_doc"]['_c6_beit_hatfutsot_bh_base_template_working_status'][0]["en"] = working_status
+    resources = assert_processor(ClearmashConvertProcessor,
+                                 parameters={}, datapackage=datapackage, resources=[[downloaded_doc]],
+                                 expected_datapackage={"resources": [{"name": "dbs_docs",
+                                                                      "path": "dbs_docs.csv",
+                                                                      "schema": DBS_DOCS_TABLE_SCHEMA}]})
+    if is_permitted:
+        assert len(list(next(resources))) == 1, "expected item to be permitted"
+    else:
+        assert len(list(next(resources))) == 0, "expected item to be blocked"
+
 
 ## test functions
 
@@ -149,3 +164,9 @@ def test_download_folder_id_param():
                                          expected_base_id=43,
                                          expected_template_changeset_id=129,
                                          expected_collection=COLLECTION_PLACES)
+
+def test_not_allowed_item_should_not_be_processed():
+    assert_item_permissions(display_status="invalid", rights="wrong", working_status="not good", is_permitted=False)
+    assert_item_permissions(display_status="Museum only", rights="wrong", working_status="not good", is_permitted=False)
+    assert_item_permissions(display_status="Museum only", rights="Full", working_status="not good", is_permitted=False)
+    assert_item_permissions(display_status="Museum only", rights="Full", working_status="Completed", is_permitted=True)

@@ -3,7 +3,7 @@ from elasticsearch import Elasticsearch, NotFoundError
 from datapackage_pipelines_mojp.common.processors.base_processors import FilterResourcesProcessor
 from datapackage_pipelines_mojp.settings import temp_loglevel, logging
 from datapackage_pipelines_mojp.common.constants import (ALL_KNOWN_COLLECTIONS, COLLECTION_UNKNOWN,
-                                                         SLUG_LANGUAGES_MAP)
+                                                         SLUG_LANGUAGES_MAP, SUPPORTED_SUGGEST_LANGS)
 import iso639
 from copy import deepcopy
 import logging
@@ -59,79 +59,99 @@ class CommonSyncProcessor(FilterResourcesProcessor):
                                "schema": DBS_DOCS_SYNC_LOG_TABLE_SCHAME})
         return descriptor
 
+    def _get_sync_response(self, doc, sync_msg):
+        return {"source": doc["source"], "id": doc.get("source_id", doc.get("id")), "version": doc["version"],
+                "collection": doc["collection"], "sync_msg": sync_msg}
+
     def _add_doc(self, new_doc):
         with temp_loglevel(logging.ERROR):
             self._es.index(index=self._idx, doc_type=self._get_settings(
                 "MOJP_ELASTICSEARCH_DOCTYPE"), body=new_doc, id="{}_{}".format(new_doc["source"], new_doc["source_id"]))
-        return {"source": new_doc["source"], "id": new_doc["source_id"], "version": new_doc["version"],
-                "collection": new_doc["collection"], "sync_msg": "added to ES"}
+        return self._get_sync_response(new_doc, "added to ES")
 
     def _update_doc(self, new_doc, old_doc):
         if old_doc["version"] != new_doc["version"]:
-            for lang in iso639.languages.part1:
-                old_slug = old_doc["slug_{}".format(lang)] if "slug_{}".format(lang) in old_doc else None
-                if old_slug:
-                    new_slug = new_doc["slug_{}".format(lang)] if "slug_{}".format(lang) in new_doc else None
-                    if new_slug:
-                        new_slug = [new_slug] if isinstance(new_slug, str) else new_slug
-                        old_slug = [old_slug] if isinstance(old_slug, str) else old_slug
-                        for s in old_slug:
-                            if s not in new_slug:
-                                new_slug.append(s)
-                        if len(new_slug) == 1:
-                            new_slug = new_slug[0]
-                        new_doc["slug_{}".format(lang)] = new_slug
-                    else:
-                        new_doc["slug_{}".format(lang)] = old_slug
+            self._update_doc_slugs(new_doc, old_doc)
             with temp_loglevel(logging.ERROR):
                 self._es.index(index=self._idx, doc_type="common",
                                 id="{}_{}".format(
                                     new_doc["source"], new_doc["source_id"]),
                                 body=new_doc)
-            return {"source": new_doc["source"], "id": new_doc["source_id"], "version": new_doc["version"],
-                    "collection": new_doc["collection"],
-                    "sync_msg": "updated doc in ES (old version = {})".format(json.dumps(old_doc["version"]))}
+            return self._get_sync_response(new_doc, "updated doc in ES (old version = {})".format(json.dumps(old_doc["version"])))
         else:
-            return {"source": new_doc["source"], "id": new_doc["source_id"], "version": new_doc["version"],
-                    "collection": new_doc["collection"],
-                    "sync_msg": "no update needed"}
+            return self._get_sync_response(new_doc, "no update needed")
 
-
+    def _update_doc_slugs(self, new_doc, old_doc):
+        # aggregate the new and old doc slugs - so that we will never delete any existing slugs, only add new ones
+        for lang in iso639.languages.part1:
+            old_slug = old_doc["slug_{}".format(lang)] if "slug_{}".format(lang) in old_doc else None
+            if old_slug:
+                new_slug = new_doc["slug_{}".format(lang)] if "slug_{}".format(lang) in new_doc else None
+                if new_slug:
+                    new_slug = [new_slug] if isinstance(new_slug, str) else new_slug
+                    old_slug = [old_slug] if isinstance(old_slug, str) else old_slug
+                    for s in old_slug:
+                        if s not in new_slug:
+                            new_slug.append(s)
+                    if len(new_slug) == 1:
+                        new_slug = new_slug[0]
+                    new_doc["slug_{}".format(lang)] = new_slug
+                else:
+                    new_doc["slug_{}".format(lang)] = old_slug
+        # aggregate the slugs field which contains slugs from all languages
+        if "slugs" in old_doc:
+            for slug in old_doc["slugs"]:
+                if slug not in new_doc["slugs"]:
+                    new_doc["slugs"].append(slug)
 
     def _filter_row(self, row, resource_descriptor):
         if resource_descriptor["name"] == "dbs_docs_sync_log":
-            logging.info("processing row ({source}:{collection},{id}@{version}".format(source=row.get("source"),
-                                                                                       collection=row.get(
-                                                                                           "collection"),
-                                                                                       version=row.get(
-                                                                                           "version"),
-                                                                                       id=row.get("id")))
-            original_row = deepcopy(row)
-            try:
-                row = deepcopy(original_row)
-                source_doc = row.pop("source_doc")
-                new_doc = self._initialize_new_doc(row, source_doc)
-                self._populate_language_fields(new_doc, row)
-                self._add_title_related_fields(new_doc)
-                self._validate_collection(new_doc)
-                self._validate_slugs(new_doc)
-                with temp_loglevel(logging.ERROR):
-                    try:
-                        old_doc = self._es.get(index=self._idx, id="{}_{}".format(
-                            new_doc["source"], new_doc["source_id"]))["_source"]
-                    except NotFoundError:
-                        old_doc = None
-                if old_doc:
-                    return self._update_doc(new_doc, old_doc)
-                else:
-                    return self._add_doc(new_doc)
-            except Exception:
-                logging.exception("unexpected exception, "
-                                  "resource_descirptor={0}, "
-                                  "row={1}".format(resource_descriptor,
-                                                   original_row))
-                raise
-        return row
+            pre_validate_response = self._pre_validate_row(row)
+            if pre_validate_response:
+                logging.info("skipping invalid row ({source}:{collection},{id}@{version}".format(
+                    source=row.get("source"), collection=row.get("collection"),
+                    version=row.get("version"), id=row.get("id")))
+                pre_validate_response["sync_msg"] = "not synced ({})".format(pre_validate_response["sync_msg"])
+                return pre_validate_response
+            else:
+                logging.info("processing row ({source}:{collection},{id}@{version}".format(
+                    source=row.get("source"), collection=row.get("collection"),
+                    version=row.get("version"), id=row.get("id")))
+                original_row = deepcopy(row)
+                try:
+                    row = deepcopy(original_row)
+                    source_doc = row.pop("source_doc")
+                    new_doc = self._initialize_new_doc(row, source_doc)
+                    self._populate_language_fields(new_doc, row)
+                    self._add_title_related_fields(new_doc)
+                    self._validate_collection(new_doc)
+                    self._validate_slugs(new_doc)
+                    with temp_loglevel(logging.ERROR):
+                        try:
+                            old_doc = self._es.get(index=self._idx, id="{}_{}".format(
+                                new_doc["source"], new_doc["source_id"]))["_source"]
+                        except NotFoundError:
+                            old_doc = None
+                    if old_doc:
+                        return self._update_doc(new_doc, old_doc)
+                    else:
+                        return self._add_doc(new_doc)
+                except Exception:
+                    logging.exception("unexpected exception, "
+                                      "resource_descirptor={0}, "
+                                      "row={1}".format(resource_descriptor,
+                                                       original_row))
+                    raise
+        else:
+            return row
+
+    def _pre_validate_row(self, row):
+        content_html_he = row.get("content_html_he", "")
+        content_html_en = row.get("content_html_en", "")
+        if ((content_html_he is None or len(content_html_he) < 1)
+            and (content_html_en is None or len(content_html_en) < 1)):
+            return self._get_sync_response(row, "missing content in en and he")
+        return None
 
     def _validate_collection(self, new_doc):
         if "collection" not in new_doc or new_doc["collection"] not in ALL_KNOWN_COLLECTIONS:
@@ -170,10 +190,20 @@ class CommonSyncProcessor(FilterResourcesProcessor):
             new_doc["slug_{}".format(lang)] = slug
 
     def _validate_slugs(self, new_doc):
-        # ensure every doc has at least 1 slug
-        if len([True for lang in iso639.languages.part1
-                if "slug_{}".format(lang) in new_doc]) == 0:
+        # all unique slugs for all languages
+        slugs = []
+        for lang in iso639.languages.part1:
+            if "slug_{}".format(lang) in new_doc:
+                slug = new_doc["slug_{}".format(lang)]
+                if slug not in slugs:
+                    slugs.append(slug)
+        # ensure every doc has at least 1 slug (in any language)
+        if len(slugs) == 0:
+            # add english slug comprised of doc id
             self._add_slug(new_doc, new_doc["source_id"], "en")
+            slugs.append(new_doc["slug_en"])
+        # add the slugs attribute (needed for fetching item page based on slug)
+        new_doc["slugs"] = slugs
 
     def _add_title_related_fields(self, new_doc):
         for lang in iso639.languages.part1:
@@ -183,6 +213,12 @@ class CommonSyncProcessor(FilterResourcesProcessor):
                 new_doc["title_{}_lc".format(lang)] = title.lower() if title is not None else ""
                 # slug
                 self._add_slug(new_doc, title, lang)
+        # ensure there is a value for all suggest supported langs
+        for lang in SUPPORTED_SUGGEST_LANGS:
+            val = new_doc.get("title_{}".format(lang), "")
+            if val is None or len(val) < 1:
+                val = "_"
+            new_doc["title_{}_suggest".format(lang)] = val
 
     def _populate_language_fields(self, new_doc, row):
         for lang_field in ["title", "content_html"]:

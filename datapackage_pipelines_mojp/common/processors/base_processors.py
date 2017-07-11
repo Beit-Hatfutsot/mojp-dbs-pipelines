@@ -1,6 +1,8 @@
 from itertools import chain
 from datapackage_pipelines.wrapper import ingest, spew
 from datapackage_pipelines_mojp import settings as mojp_settings
+import logging
+import json
 
 
 class BaseProcessor(object):
@@ -73,9 +75,15 @@ class FilterResourcesProcessor(BaseProcessor):
 
     def _filter_resource(self, resource, descriptor):
         for row in resource:
-            yield self._filter_row(row, descriptor)
+            try:
+                filtered_row = self._filter_row(row, descriptor)
+            except Exception:
+                logging.info(json.dumps(row))
+                raise
+            if filtered_row is not None:
+                yield filtered_row
 
-    def _filter_row(self, row, resource_descirptor):
+    def _filter_row(self, row, resource_descriptor):
         return row
 
     def _process(self, datapackage, resources):
