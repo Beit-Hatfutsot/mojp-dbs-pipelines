@@ -72,6 +72,8 @@ target/
 
 # IPython Notebook
 .ipynb_checkpoints
+.ipynb_checkpoints/
+*.ipynb
 
 # pyenv
 .python-version
@@ -100,3 +102,7 @@ ENV/
 /*.pid
 
 /deploy-mojp-dbs-pipelines.id_rsa
+
+
+# Other
+*.ede
