@@ -72,6 +72,9 @@ class ClearmashApi(object):
     def get_documents(self, entity_ids):
         return self._wcm_api_call("/Documents/Get", {"entitiesIds": entity_ids})
 
+    def get_document_related_docs_by_fields(self, entity_id, field, max_nesting_depth=1):
+        return self._wcm_api_call("/Document/ByRelationField", {"EntityId": entity_id, "FieldId": field, "MaxNestingDepth": max_nesting_depth})
+    
     def _wcm_api_call(self, path, post_data=None):
         logging.info("_wcm_api_call({}, {})".format(path, post_data))
         return self._get_request_json("{}{}".format(WCM_BASE_URL, path),
