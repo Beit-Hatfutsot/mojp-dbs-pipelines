@@ -15,7 +15,7 @@ def parse_error_response_content(content):
 def parse_clearmash_document(document, reference_datasource_items):
     parsed_doc = {}
     for k in document:
-        if k == "Metadata":
+        if k == "Metadata": # to be used for getting related documents
             entity_id = k["Id"]
         if k.startswith("Fields_"):
             fields_type = k[7:]
@@ -31,9 +31,9 @@ def parse_clearmash_document(document, reference_datasource_items):
                 elif fields_type in ["LocalizedHtml", "LocalizedText"]:
                     value = {i["ISO6391"]: i["Value"] for i in field["Value"]}
                 parsed_doc[field["Id"]] = value
+                # TODO: add use of ClearmashRelatedDocuments
         else:
             raise Exception("Unknown field: {}".format(k))
-        
     return parsed_doc
 
 
