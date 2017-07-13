@@ -1,4 +1,4 @@
-from datapackage_pipelines_mojp.clearmash.api import ClearmashApi, parse_error_response_content, parse_clearmash_document
+from datapackage_pipelines_mojp.clearmash.api import ClearmashApi, parse_error_response_content, parse_clearmash_document, ClearmashRelatedDocuments
 import os, json
 from requests.exceptions import HTTPError
 from datapackage_pipelines_mojp.clearmash.constants import WEB_CONTENT_FOLDER_ID_Place
@@ -161,3 +161,48 @@ def test_get_related_docs_of_item():
     photo_url = related["Entities"][1]["Document"]["Fields_ChildDocuments"][2]["ChildDocuments"][0]["Value"]["Fields_MediaGalleries"][0]["Galleries"][0]["GalleryItems"][0]["ItemDocument"]["Value"]["Fields_LocalizedText"][1]["Value"][0]["Value"]
     assert photo_id == 123737
     assert photo_url == "~~st~~c72ca946fa684845b566949b38e35506.JPG"
+
+def test_related_documents():
+    res = ClearmashApi()._wcm_api_call("/Documents/Get", {'entitiesIds': [220590]})
+    entity_document = res["Entities"][0]["Document"]
+    entity_document.pop("Id")
+    entity_document.pop("TemplateReference")
+    doc = parse_clearmash_document(entity_document, res["ReferencedDatasourceItems"])
+    related_documents = ClearmashRelatedDocuments(doc, "_c6_beit_hatfutsot_bh_base_template_multimedia_photos")
+    assert related_documents.first_page_results(220590, "_c6_beit_hatfutsot_bh_base_template_multimedia_photos") == ['4d5e45cc663943698d6acc8d4cc0e3a8',
+    '593aa14924d14f28baa966edc77c375c',
+    'e04076a3e78c4be18a1e31d0cc7119b6',
+    '2d5533d9337b45238468d969fe47d963',
+    'ebf1c3851955457eab0ef14ae6f134e2',
+    '6cc8310607e24058a982c919235be9e4',
+    '9a1748725a454f9fa65b244b5ac9a48c',
+    'dfe9f984ba04472c97e1167cfdad4342',
+    '22c759dfe1c94d0888d31ebcf4c41456',
+    '6c86d96f39bc4d3eb09e6aa7ce1cf2ad',
+    '9eecbf049e5e431cbab8445d5e429dc7',
+    'f3724ce76a6d47dc8613e3dfe4f9b1dd',
+    '4026c28c04e94373b02410b95169c3fc']
+    all_related_by_field = related_documents.get_related_documents(220590, "_c6_beit_hatfutsot_bh_base_template_multimedia_photos")
+    assert len(all_related_by_field["Entities"]) == 13
+    first_doc = all_related_by_field["Entities"][1]
+    assert first_doc["Metadata"]["Id"] == 136844
+
+
+
+    # first_of_field = RelatedDocuments.get_first_page_of_field(220590, "_c6_beit_hatfutsot_bh_base_template_related_place")
+    # assert first_of_field[0] == []
+    
+    
+    
+    
+    
+    # documents_response = MockClearmashApi().get_document_related_docs_by_fields(238721)
+    # entity_document = documents_response["Entities"][0]["Document"]
+    # doc = parse_clearmash_document(entity_document, res["ReferencedDatasourceItems"])
+    # related_documents = doc["_c6_beit_hatfutsot_bh_base_template_related_place"]
+    # assert related_documents == ('RelatedDocuments',
+    #                              {'FirstPageOfReletedDocumentsIds': ['1d207020c555447d9a4fd4b4b5b8b7b0'],
+    #                               'FirstPageParams_ArchiveFilter': 2,
+    #                               'FirstPageParams_ReverseOrder': False,
+    #                               'Id': '_c6_beit_hatfutsot_bh_base_template_related_place',
+    #                               'TotalItemsCount': 1})

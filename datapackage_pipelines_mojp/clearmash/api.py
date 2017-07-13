@@ -15,6 +15,8 @@ def parse_error_response_content(content):
 def parse_clearmash_document(document, reference_datasource_items):
     parsed_doc = {}
     for k in document:
+        if k == "Metadata":
+            entity_id = k["Id"]
         if k.startswith("Fields_"):
             fields_type = k[7:]
             for field in document[k]:
@@ -31,8 +33,38 @@ def parse_clearmash_document(document, reference_datasource_items):
                 parsed_doc[field["Id"]] = value
         else:
             raise Exception("Unknown field: {}".format(k))
+        
     return parsed_doc
 
+
+
+class ClearmashRelatedDocuments():
+    def __init__(self, doc, field, entity_id=None, related_documents=None):
+        self.doc = doc
+        self.field = field
+        self.entity_id = entity_id
+        self.related_documents = related_documents
+
+    def get_related_documents(self, entity_id, field):
+        related_documents = ClearmashApi()._wcm_api_call("/Document/ByRelationField", {'EntityId': entity_id, 'FieldId': field, 'MaxNestingDepth': 1})
+        return related_documents
+
+    def get_docs_list(self, entity_id, field):
+        res = ClearmashApi()._wcm_api_call("/Documents/Get", {'entitiesIds': [entity_id]})
+        entity_document = res["Entities"][0]["Document"]
+        entity_document.pop("Id")
+        entity_document.pop("TemplateReference")
+        doc = parse_clearmash_document(entity_document, res["ReferencedDatasourceItems"])
+        related_list = doc[field]
+        related_docs = related_list[1]
+        return related_docs
+
+    def first_page_results(self, entity_id, field):
+        related_docs = self.get_docs_list(entity_id, field)
+        first_page_results = related_docs["FirstPageOfReletedDocumentsIds"]
+        return first_page_results
+
+    
 
 class ClearmashApi(object):
 
