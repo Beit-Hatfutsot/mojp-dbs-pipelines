@@ -71,6 +71,37 @@ class MockClearmashRelatedDocuments():
         related_documents = MockClearmashApi().get_document_related_docs_by_fields(self.entity_id, self.field_name)
         return related_documents
 
+def mock_parse_clearmash_document(document, reference_datasource_items):
+    parsed_doc = {}
+    for k in document:
+        if k.startswith("Fields_"):
+            fields_type = k[7:]
+            for field in document[k]:
+                value = (fields_type, field)
+                if fields_type in ["Boolean", "Int32", "Int64"]:
+                    value = field["Value"]
+                elif fields_type == "Datasource":
+                    value = []
+                    for rdi in reference_datasource_items:
+                        if rdi["Id"] in field["DatasourceItemsIds"]:
+                            value.append({i["ISO6391"]: i["Value"] for i in rdi["Name"]})
+                elif fields_type in ["LocalizedHtml", "LocalizedText"]:
+                    value = {i["ISO6391"]: i["Value"] for i in field["Value"]}
+                parsed_doc[field["Id"]] = value
+        else:
+            raise Exception("Unknown field: {}".format(k))
+    for k in document:
+        fields_type = k[7:]
+        for field in document[k]:
+            value = (fields_type, field)
+            if fields_type == "RelatedDocuments":
+                entity_id = parsed_doc["entity_id"]
+                first_page_of_results = field["FirstPageOfReletedDocumentsIds"]
+                value = MockClearmashRelatedDocuments(first_page_of_results, entity_id, field["Id"])
+                parsed_doc[field["Id"]] = value
+    
+    return parsed_doc
+
 def test_invalid_call():
     try:
         MockClearmashApi().mock_invalid_call()
@@ -155,7 +186,7 @@ def test_get_documents_places():
     assert metadata["Url"] == "http://bh.clearmash.com/skn/c6/dummy/e115325/dummy/"  # url in clearmash
     assert len(first_entity) == 0
     assert document.pop("Id") == "65e99e43a7164999971d8336a53f335e"
-    parsed_doc = parse_clearmash_document(document, reference_datasource_items)
+    parsed_doc = mock_parse_clearmash_document(document, reference_datasource_items)
     assert len(parsed_doc) == 35
     assert parsed_doc["entity_has_pending_changes"] == False
     assert parsed_doc["is_archived"] == False
@@ -180,7 +211,7 @@ def test_get_documents():
     entity_document = res["Entities"][0]["Document"]
     entity_document.pop("Id")
     entity_document.pop("TemplateReference")
-    parsed_doc = parse_clearmash_document(entity_document, res["ReferencedDatasourceItems"])
+    parsed_doc = mock_parse_clearmash_document(entity_document, res["ReferencedDatasourceItems"])
     related = parsed_doc["_c6_beit_hatfutsot_bh_base_template_multimedia_photos"]
     assert isinstance(related, MockClearmashRelatedDocuments)
     assert related.first_page_results() == ['aa7f0fa3c54d44a1b8e59f695f921dd5', '92e5a62105bc4813b61b3e702c0561d6']
