@@ -15,8 +15,6 @@ def parse_error_response_content(content):
 def parse_clearmash_document(document, reference_datasource_items):
     parsed_doc = {}
     for k in document:
-        if k == "Metadata": # to be used for getting related documents
-            entity_id = k["Id"]
         if k.startswith("Fields_"):
             fields_type = k[7:]
             for field in document[k]:
@@ -31,41 +29,36 @@ def parse_clearmash_document(document, reference_datasource_items):
                 elif fields_type in ["LocalizedHtml", "LocalizedText"]:
                     value = {i["ISO6391"]: i["Value"] for i in field["Value"]}
                 parsed_doc[field["Id"]] = value
-                # TODO: add use of ClearmashRelatedDocuments
+
         else:
             raise Exception("Unknown field: {}".format(k))
+
+    for k in document:
+        fields_type = k[7:]
+        for field in document[k]:
+            value = (fields_type, field)
+            if fields_type == "RelatedDocuments":
+                entity_id = parsed_doc["entity_id"]
+                first_page_of_results = field["FirstPageOfReletedDocumentsIds"]
+                value = ClearmashRelatedDocuments(first_page_of_results, entity_id, field["Id"])
+                parsed_doc[field["Id"]] = value
+    
     return parsed_doc
 
 
-
 class ClearmashRelatedDocuments():
-    def __init__(self, doc, field, entity_id=None, related_documents=None):
-        self.doc = doc
-        self.field = field
+    def __init__(self, first_page_of_results, entity_id, field_name):
+        self.first_page_of_results = first_page_of_results
         self.entity_id = entity_id
-        self.related_documents = related_documents
-
-    def get_related_documents(self, entity_id, field):
-        related_documents = ClearmashApi()._wcm_api_call("/Document/ByRelationField", {'EntityId': entity_id, 'FieldId': field, 'MaxNestingDepth': 1})
-        return related_documents
-
-    def get_docs_list(self, entity_id, field):
-        res = ClearmashApi()._wcm_api_call("/Documents/Get", {'entitiesIds': [entity_id]})
-        entity_document = res["Entities"][0]["Document"]
-        entity_document.pop("Id")
-        entity_document.pop("TemplateReference")
-        doc = parse_clearmash_document(entity_document, res["ReferencedDatasourceItems"])
-        related_list = doc[field]
-        related_docs = related_list[1]
-        return related_docs
-
-    def first_page_results(self, entity_id, field):
-        related_docs = self.get_docs_list(entity_id, field)
-        first_page_results = related_docs["FirstPageOfReletedDocumentsIds"]
-        return first_page_results
-
+        self.field_name = field_name
     
+    def first_page_results(self):
+        return self.first_page_of_results
 
+    def get_related_documents(self):
+        related_documents = ClearmashApi().get_document_related_docs_by_fields(self.entity_id, self.field_name)
+        return related_documents
+        
 class ClearmashApi(object):
 
     def __init__(self, token=None):
