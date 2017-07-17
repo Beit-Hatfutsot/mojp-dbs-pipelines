@@ -57,50 +57,16 @@ class MockClearmashApi(ClearmashApi):
         else:
             raise Exception("invalid url: {}".format(url))
 
-class MockClearmashRelatedDocuments():
+class MockClearmashRelatedDocuments(ClearmashRelatedDocuments):
     
     def __init__(self, first_page_of_results, entity_id, field_name):
         self.first_page_of_results = first_page_of_results
         self.entity_id = entity_id
         self.field_name = field_name
-    
-    def first_page_results(self):
-        return self.first_page_of_results
 
-    def get_related_documents(self):
+    def get_mock_related_documents(self):
         related_documents = MockClearmashApi().get_document_related_docs_by_fields(self.entity_id, self.field_name)
         return related_documents
-
-def mock_parse_clearmash_document(document, reference_datasource_items):
-    parsed_doc = {}
-    for k in document:
-        if k.startswith("Fields_"):
-            fields_type = k[7:]
-            for field in document[k]:
-                value = (fields_type, field)
-                if fields_type in ["Boolean", "Int32", "Int64"]:
-                    value = field["Value"]
-                elif fields_type == "Datasource":
-                    value = []
-                    for rdi in reference_datasource_items:
-                        if rdi["Id"] in field["DatasourceItemsIds"]:
-                            value.append({i["ISO6391"]: i["Value"] for i in rdi["Name"]})
-                elif fields_type in ["LocalizedHtml", "LocalizedText"]:
-                    value = {i["ISO6391"]: i["Value"] for i in field["Value"]}
-                parsed_doc[field["Id"]] = value
-        else:
-            raise Exception("Unknown field: {}".format(k))
-    for k in document:
-        fields_type = k[7:]
-        for field in document[k]:
-            value = (fields_type, field)
-            if fields_type == "RelatedDocuments":
-                entity_id = parsed_doc["entity_id"]
-                first_page_of_results = field["FirstPageOfReletedDocumentsIds"]
-                value = MockClearmashRelatedDocuments(first_page_of_results, entity_id, field["Id"])
-                parsed_doc[field["Id"]] = value
-    
-    return parsed_doc
 
 def test_invalid_call():
     try:
@@ -186,7 +152,7 @@ def test_get_documents_places():
     assert metadata["Url"] == "http://bh.clearmash.com/skn/c6/dummy/e115325/dummy/"  # url in clearmash
     assert len(first_entity) == 0
     assert document.pop("Id") == "65e99e43a7164999971d8336a53f335e"
-    parsed_doc = mock_parse_clearmash_document(document, reference_datasource_items)
+    parsed_doc = parse_clearmash_document(document, reference_datasource_items)
     assert len(parsed_doc) == 35
     assert parsed_doc["entity_has_pending_changes"] == False
     assert parsed_doc["is_archived"] == False
@@ -209,15 +175,18 @@ def test_get_related_docs_of_item():
 def test_get_documents():
     res = MockClearmashApi()._wcm_api_call("/Documents/Get", {'entitiesIds': [115353]})
     entity_document = res["Entities"][0]["Document"]
-    entity_document.pop("Id")
-    entity_document.pop("TemplateReference")
-    parsed_doc = mock_parse_clearmash_document(entity_document, res["ReferencedDatasourceItems"])
-    related = parsed_doc["_c6_beit_hatfutsot_bh_base_template_multimedia_photos"]
+    related_documents = entity_document["Fields_RelatedDocuments"]
+    for i in related_documents:
+        if i["Id"] == "_c6_beit_hatfutsot_bh_base_template_multimedia_photos":
+            first_related = i["FirstPageOfReletedDocumentsIds"]
+    assert first_related == ['aa7f0fa3c54d44a1b8e59f695f921dd5', '92e5a62105bc4813b61b3e702c0561d6']
+    # first_page_of_results = ['aa7f0fa3c54d44a1b8e59f695f921dd5', '92e5a62105bc4813b61b3e702c0561d6']
+    related = MockClearmashRelatedDocuments(first_related, 115353, "_c6_beit_hatfutsot_bh_base_template_multimedia_photos")
     assert isinstance(related, MockClearmashRelatedDocuments)
     assert related.first_page_results() == ['aa7f0fa3c54d44a1b8e59f695f921dd5', '92e5a62105bc4813b61b3e702c0561d6']
-    all_related = related.get_related_documents()
+    all_related = related.get_mock_related_documents()
     first_doc = all_related["Entities"][1]
     assert first_doc["Metadata"]["Id"] == 182346
-    assert related.first_page_results() == ['aa7f0fa3c54d44a1b8e59f695f921dd5', '92e5a62105bc4813b61b3e702c0561d6']
+
 
     
