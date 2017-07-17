@@ -47,6 +47,7 @@ def parse_clearmash_document(document, reference_datasource_items):
 
 
 class ClearmashRelatedDocuments():
+    
     def __init__(self, first_page_of_results, entity_id, field_name):
         self.first_page_of_results = first_page_of_results
         self.entity_id = entity_id

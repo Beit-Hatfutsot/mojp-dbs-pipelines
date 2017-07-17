@@ -57,6 +57,19 @@ class MockClearmashApi(ClearmashApi):
         else:
             raise Exception("invalid url: {}".format(url))
 
+class MockClearmashRelatedDocuments():
+    
+    def __init__(self, first_page_of_results, entity_id, field_name):
+        self.first_page_of_results = first_page_of_results
+        self.entity_id = entity_id
+        self.field_name = field_name
+    
+    def first_page_results(self):
+        return self.first_page_of_results
+
+    def get_related_documents(self):
+        related_documents = MockClearmashApi().get_document_related_docs_by_fields(self.entity_id, self.field_name)
+        return related_documents
 
 def test_invalid_call():
     try:
@@ -169,7 +182,7 @@ def test_get_documents():
     entity_document.pop("TemplateReference")
     parsed_doc = parse_clearmash_document(entity_document, res["ReferencedDatasourceItems"])
     related = parsed_doc["_c6_beit_hatfutsot_bh_base_template_multimedia_photos"]
-    assert isinstance(related, ClearmashRelatedDocuments)
+    assert isinstance(related, MockClearmashRelatedDocuments)
     assert related.first_page_results() == ['aa7f0fa3c54d44a1b8e59f695f921dd5', '92e5a62105bc4813b61b3e702c0561d6']
     all_related = related.get_related_documents()
     first_doc = all_related["Entities"][1]
