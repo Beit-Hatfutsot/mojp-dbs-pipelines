@@ -163,7 +163,7 @@ def test_get_related_docs_of_item():
     assert photo_url == "~~st~~c72ca946fa684845b566949b38e35506.JPG"
 
 def test_get_documents():
-    res = ClearmashApi()._wcm_api_call("/Documents/Get", {'entitiesIds': [115353]})
+    res = MockClearmashApi()._wcm_api_call("/Documents/Get", {'entitiesIds': [115353]})
     entity_document = res["Entities"][0]["Document"]
     entity_document.pop("Id")
     entity_document.pop("TemplateReference")
