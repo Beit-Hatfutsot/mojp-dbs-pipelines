@@ -46,11 +46,37 @@ def parse_clearmash_document(document, reference_datasource_items):
                 elif fields_type in ["LocalizedHtml", "LocalizedText"]:
                     value = {i["ISO6391"]: i["Value"] for i in field["Value"]}
                 parsed_doc[field["Id"]] = value
+
         else:
             raise Exception("Unknown field: {}".format(k))
+
+    for k in document:
+        fields_type = k[7:]
+        for field in document[k]:
+            value = (fields_type, field)
+            if fields_type == "RelatedDocuments":
+                entity_id = parsed_doc["entity_id"]
+                first_page_of_results = field["FirstPageOfReletedDocumentsIds"]
+                value = ClearmashRelatedDocuments(first_page_of_results, entity_id, field["Id"])
+                parsed_doc[field["Id"]] = value
+    
     return parsed_doc
 
 
+class ClearmashRelatedDocuments():
+    
+    def __init__(self, first_page_of_results, entity_id, field_name):
+        self.first_page_of_results = first_page_of_results
+        self.entity_id = entity_id
+        self.field_name = field_name
+    
+    def first_page_results(self):
+        return self.first_page_of_results
+
+    def get_related_documents(self):
+        related_documents = ClearmashApi().get_document_related_docs_by_fields(self.entity_id, self.field_name)
+        return related_documents
+        
 class ClearmashApi(object):
 
     def __init__(self, token=None):

@@ -1,0 +1,401 @@
+{
+    "Entities": [
+        {
+            "Acl": null,
+            "Changeset": 6219022,
+            "Document": {
+                "Fields_Boolean": [
+                    {
+                        "Id": "entity_has_pending_changes",
+                        "Value": false
+                    },
+                    {
+                        "Id": "is_archived",
+                        "Value": false
+                    },
+                    {
+                        "Id": "is_deleted",
+                        "Value": false
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_ugc",
+                        "Value": false
+                    }
+                ],
+                "Fields_ChildDocuments": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_old_numbers_parent",
+                        "ChildDocuments": [
+                            {
+                                "AllowedGroups": [],
+                                "Value": {
+                                    "Fields_Boolean": [],
+                                    "Fields_ChildDocuments": [],
+                                    "Fields_Datasource": [],
+                                    "Fields_Datetime": [],
+                                    "Fields_Files": [],
+                                    "Fields_Float32": [],
+                                    "Fields_Float64": [],
+                                    "Fields_FuzzyDate": [],
+                                    "Fields_FuzzyDateRange": [],
+                                    "Fields_Int32": [],
+                                    "Fields_Int64": [],
+                                    "Fields_LocalizedHtml": [],
+                                    "Fields_LocalizedText": [
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_base_template_file_child_old_num_fid",
+                                            "Value": [
+                                                {
+                                                    "ISO6391": "en",
+                                                    "Value": "HB000688.HTM-EB000234.HTM"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "Fields_MediaGalleries": [],
+                                    "Fields_RelatedDocuments": [],
+                                    "Id": "8b19eb08c1004949b5927ddb2698631a",
+                                    "TemplateReference": {
+                                        "ChangesetId": 5135675,
+                                        "TemplateId": "_c6_beit_hatfutsot_bh_base_template_old_number_child"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "Fields_Datasource": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_display_status",
+                        "DatasourceItemsIds": [
+                            "b9adf6f68ff34bd192a625f947c69382"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_rights",
+                        "DatasourceItemsIds": [
+                            "96eb7c641a2a4a2b9b6094a247d24a0a"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_working_status",
+                        "DatasourceItemsIds": [
+                            "29b539010497436aa15d18121e6fab05"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_place_type",
+                        "DatasourceItemsIds": [
+                            "18d9e92250a64d478c29991c703ff905"
+                        ]
+                    }
+                ],
+                "Fields_Datetime": [
+                    {
+                        "Id": "entity_creation_date",
+                        "Value": {
+                            "UtcTicks": 636297532295299968
+                        }
+                    },
+                    {
+                        "Id": "EntityFirstPublishDate",
+                        "Value": {
+                            "UtcTicks": 636297532295299968
+                        }
+                    },
+                    {
+                        "Id": "EntityLastPublishDate",
+                        "Value": {
+                            "UtcTicks": 636346742120466688
+                        }
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_last_updated_date_bhp",
+                        "Value": {
+                            "UtcTicks": 635731545000000000
+                        }
+                    }
+                ],
+                "Fields_Files": [],
+                "Fields_Float32": [],
+                "Fields_Float64": [],
+                "Fields_FuzzyDate": [],
+                "Fields_FuzzyDateRange": [],
+                "Fields_Int32": [
+                    {
+                        "Id": "community_id",
+                        "Value": 6
+                    },
+                    {
+                        "Id": "entity_id",
+                        "Value": 115353
+                    },
+                    {
+                        "Id": "entity_type_id",
+                        "Value": 1007
+                    }
+                ],
+                "Fields_Int64": [
+                    {
+                        "Id": "EntityViewsCount",
+                        "Value": 4
+                    }
+                ],
+                "Fields_LocalizedHtml": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_bibliography",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "ROTH, ENGLAND, INDEX.<br/><br/>Encyclopedia Judaica (2007)"
+                            },
+                            {
+                                "ISO6391": "he",
+                                "Value": "\u05d0\u05e0\u05e6\u05d9\u05e7\u05dc\u05d5\u05e4\u05d3\u05d9\u05d4 \u05d9\u05d5\u05d3\u05d0\u05d9\u05e7\u05d4 (2007)"
+                            }
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_description",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "Canterbury<br/><br/>Cathedral city, Kent, England. <br/><br/>Canterbury had one of the most important medieval Anglo-Jewish communities, first mentioned c1160. The Jewish quarter was in the modern Jewry Street. Traces of the synagogue were to be seen in the High Street as late as the 17th century. Canterbury was the seat of one of the local archa instituted after 1190 for registering Jewish-held debts.<br/><br/>The names of 20 Jewish Canterbury householders figure in the Northampton Donum of 1194; the contribution of the Jews of Canterbury on this occasion was exceeded only by those from London and Lincoln. In the levy of 1255, however, they ranked only eighth. <br/><br/>The community was attacked in 1261 and again in 1264, when the archa was seized and several Jews were killed. Subsequently, there seems to have been some immigration into Canterbury. In 1266, 18 local Jewish householders bound themselves to see that no \"liars, improper persons, or slanderers\" should be admitted to the Jewish community. After the Statutum de Judaismo of 1275, the Canterbury Jews began trading in corn and wool. In 1279 they were implicated in the general accusation of debasing the coinage. The whole community was confined in the castle and six Jews were eventually hanged. <br/><br/>Jews resettled in Canterbury early in the 18th century. A congregation was formed c. 1730 and a burial ground was acquired in 1760. A synagogue erected in 1763 was demolished in 1847 to make place for the railway and replaced by another building with a quaint semi-Egyptian exterior.<br/><br/>By the early 20th century there was no Jewish congregation in Canterbury and the former synagogue is now used as a parish hall.<br/><br/>In the mid- 1990's the Jewish population numbered approximately 35. However, according to the 2001 British census, 210 Jews lived in Canterbury and its surrounding districts."
+                            },
+                            {
+                                "ISO6391": "he",
+                                "Value": "\u05e7\u05e0\u05d8\u05e8\u05d1\u05e8\u05d9<br/><br/>\u05e2\u05d9\u05e8 \u05d1\u05d0\u05e0\u05d2\u05dc\u05d9\u05d4.<br/><br/><br/>\u05d1\u05d9\u05de\u05d9 \u05d4\u05d1\u05d9\u05e0\u05d9\u05d9\u05dd \u05d4\u05d9\u05d9\u05ea\u05d4 \u05d1\u05e7\u05e0\u05d8\u05e8\u05d1\u05e8\u05d9 \u05e7\u05d4\u05d9\u05dc\u05d4 \u05d9\u05d4\u05d5\u05d3\u05d9\u05ea \u05de\u05df \u05d4\u05d7\u05e9\u05d5\u05d1\u05d5\u05ea \u05d1\u05d0\u05e0\u05d2\u05dc\u05d9\u05d4. \u05d1\u05e1\u05d5\u05e3 \u05d4\u05de\u05d0\u05d4 \u05d4-12 \u05e0\u05e8\u05e9\u05de\u05d5 \u05d1\u05d4 20 \u05d1\u05ea\u05d9-\u05d0\u05d1 \u05d9\u05d4\u05d5\u05d3\u05d9\u05d9\u05dd.<br/><br/>\u05d1\u05e9\u05e0\u05d9\u05dd 1261 \u05d5-1264 \u05d4\u05d5\u05ea\u05e7\u05e4\u05d5 \u05d9\u05d4\u05d5\u05d3\u05d9 \u05d4\u05e2\u05d9\u05e8, \u05e4\u05e0\u05e7\u05e1\u05d9 \u05d4\u05d7\u05d5\u05d1\u05d5\u05ea \u05d4\u05d5\u05e9\u05de\u05d3\u05d5 \u05d5\u05db\u05de\u05d4 \u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05e0\u05e8\u05e6\u05d7\u05d5. \u05d1-1266 \u05d4\u05ea\u05d7\u05d9\u05d9\u05d1\u05d5 18 \u05de\u05d9\u05d4\u05d5\u05d3\u05d9 \u05d4\u05de\u05e7\u05d5\u05dd \u05e9\u05dc\u05d0 \u05dc\u05d4\u05db\u05e0\u05d9\u05e1 \u05dc\u05e7\u05d4\u05d9\u05dc\u05d4 \"\u05e9\u05e7\u05e8\u05e0\u05d9\u05dd, \u05e0\u05e7\u05dc\u05d9\u05dd \u05d0\u05d5 \u05de\u05dc\u05e9\u05d9\u05e0\u05d9\u05dd\". \u05d1\u05e2\u05e7\u05d1\u05d5\u05ea \"\u05d7\u05d5\u05e7 \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9\u05dd\" \u05de-1275 \u05d4\u05ea\u05d7\u05d9\u05dc\u05d5 \u05dc\u05e1\u05d7\u05d5\u05e8 \u05d1\u05ea\u05d1\u05d5\u05d0\u05d4 \u05d5\u05d1\u05e6\u05de\u05e8; \u05db\u05e2\u05d1\u05d5\u05e8 \u05d0\u05e8\u05d1\u05e2 \u05e9\u05e0\u05d9\u05dd \u05e0\u05ea\u05dc\u05d5 \u05e9\u05d9\u05e9\u05d4 \u05d9\u05d4\u05d5\u05d3\u05d9\u05dd \u05d1\u05d0\u05e9\u05de\u05ea \u05d2\u05d9\u05d6\u05d5\u05dd \u05de\u05d8\u05d1\u05e2.<br/><br/>\u05d1- 1290 \u05d2\u05d5\u05e8\u05e9\u05d5 \u05d9\u05d4\u05d5\u05d3\u05d9 \u05e7\u05e0\u05d8\u05e8\u05d1\u05e8\u05d9 \u05e2\u05dd \u05d2\u05d9\u05e8\u05d5\u05e9 \u05d9\u05d4\u05d5\u05d3\u05d9 \u05d0\u05e0\u05d2\u05dc\u05d9\u05d4.<br/><br/>\u05d4\u05d9\u05d9\u05e9\u05d5\u05d1 \u05d4\u05d9\u05d4\u05d5\u05d3\u05d9 \u05d1\u05e2\u05d9\u05e8 \u05d4\u05ea\u05d7\u05d3\u05e9 \u05d1\u05ea\u05d7\u05d9\u05dc\u05ea \u05d4\u05de\u05d0\u05d4 \u05d4- 18, \u05d5\u05d4\u05ea\u05e7\u05d9\u05d9\u05dd \u05db\u05de\u05d0\u05ea\u05d9\u05d9\u05dd \u05e9\u05e0\u05d4. \u05d1\u05e0\u05d9\u05d9\u05df \u05d1\u05d9\u05ea-\u05d4\u05db\u05e0\u05e1\u05ea \u05dc\u05e9\u05e2\u05d1\u05e8 \u05de\u05e9\u05de\u05e9 \u05db\u05d0\u05d5\u05dc\u05dd \u05e6\u05d9\u05d1\u05d5\u05e8\u05d9."
+                            }
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_editor_remarks",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "hasavot from Places"
+                            }
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_google_maps",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "<p><iframe allowfullscreen=\"\" frameborder=\"0\" height=\"450\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39932.285496415716!2d1.0487456853235286!3d51.27859234205036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d94ac50d832c89%3A0x9ef1e5533783f98a!2sCanterbury%2C+UK!5e0!3m2!1sen!2sil!4v1499077032131\" style=\"border:0\" width=\"600\"></iframe></p>\n"
+                            }
+                        ]
+                    }
+                ],
+                "Fields_LocalizedText": [
+                    {
+                        "Id": "entity_name",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "CANTERBURY"
+                            },
+                            {
+                                "ISO6391": "he",
+                                "Value": "\u05e7\u05e0\u05d8\u05e8\u05d1\u05e8\u05d9"
+                            }
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_bhp_unit",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "71507"
+                            }
+                        ]
+                    }
+                ],
+                "Fields_MediaGalleries": [],
+                "Fields_RelatedDocuments": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_family_name",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_movies",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_music",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_photos",
+                        "FirstPageOfReletedDocumentsIds": [
+                            "aa7f0fa3c54d44a1b8e59f695f921dd5",
+                            "92e5a62105bc4813b61b3e702c0561d6"
+                        ],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 2
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_exhibition",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_musictext",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_personality",
+                        "FirstPageOfReletedDocumentsIds": [
+                            "3efb420489684249887b8951b95a101b"
+                        ],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 1
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_place",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_recieve_unit",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_source",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_located_in",
+                        "FirstPageOfReletedDocumentsIds": [
+                            "0097419026234f63b5f911f83cab7925"
+                        ],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 1
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_locations",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_personality_birth",
+                        "FirstPageOfReletedDocumentsIds": [
+                            "3efb420489684249887b8951b95a101b"
+                        ],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 1
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_place_personality_death",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    }
+                ],
+                "Id": "63078f969b9a4567a72fc2da409927a8",
+                "TemplateReference": {
+                    "ChangesetId": 5135675,
+                    "TemplateId": "_c6_beit_hatfutsot_bh_place"
+                }
+            },
+            "Metadata": {
+                "ActiveLock": null,
+                "CreatorUserId": 2,
+                "EntityTypeId": 1007,
+                "Id": 115353,
+                "IsArchived": false,
+                "IsBookmarked": false,
+                "IsLiked": false,
+                "LikesCount": 0,
+                "Url": "http://bh.clearmash.com/skn/c6/dummy/e115353/dummy/"
+            }
+        }
+    ],
+    "ReferencedDatasourceItems": [
+        {
+            "Id": "b9adf6f68ff34bd192a625f947c69382",
+            "ImageUrl": null,
+            "Name": [
+                {
+                    "ISO6391": "en",
+                    "Value": "Museum only"
+                },
+                {
+                    "ISO6391": "he",
+                    "Value": "\u05de\u05d5\u05d6\u05d9\u05d0\u05d5\u05df \u05d1\u05dc\u05d1\u05d3"
+                }
+            ]
+        },
+        {
+            "Id": "96eb7c641a2a4a2b9b6094a247d24a0a",
+            "ImageUrl": null,
+            "Name": [
+                {
+                    "ISO6391": "en",
+                    "Value": "Full"
+                },
+                {
+                    "ISO6391": "he",
+                    "Value": "\u05de\u05dc\u05d0"
+                }
+            ]
+        },
+        {
+            "Id": "29b539010497436aa15d18121e6fab05",
+            "ImageUrl": null,
+            "Name": [
+                {
+                    "ISO6391": "en",
+                    "Value": "Completed"
+                },
+                {
+                    "ISO6391": "he",
+                    "Value": "\u05d4\u05e1\u05ea\u05d9\u05d9\u05dd"
+                }
+            ]
+        },
+        {
+            "Id": "18d9e92250a64d478c29991c703ff905",
+            "ImageUrl": null,
+            "Name": [
+                {
+                    "ISO6391": "en",
+                    "Value": "City"
+                },
+                {
+                    "ISO6391": "he",
+                    "Value": "\u05e2\u05d9\u05e8"
+                }
+            ]
+        }
+    ]
+}

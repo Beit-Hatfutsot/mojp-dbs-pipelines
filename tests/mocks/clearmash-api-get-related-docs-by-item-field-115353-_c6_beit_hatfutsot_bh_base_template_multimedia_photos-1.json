@@ -1,0 +1,1130 @@
+{
+    "Entities": [
+        {
+            "Acl": null,
+            "Changeset": 6219240,
+            "Document": {
+                "Fields_Boolean": [
+                    {
+                        "Id": "entity_has_pending_changes",
+                        "Value": true
+                    },
+                    {
+                        "Id": "is_archived",
+                        "Value": false
+                    },
+                    {
+                        "Id": "is_deleted",
+                        "Value": false
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_ugc",
+                        "Value": false
+                    }
+                ],
+                "Fields_ChildDocuments": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_old_numbers_parent",
+                        "ChildDocuments": [
+                            {
+                                "AllowedGroups": [],
+                                "Value": {
+                                    "Fields_Boolean": [],
+                                    "Fields_ChildDocuments": [],
+                                    "Fields_Datasource": [],
+                                    "Fields_Datetime": [],
+                                    "Fields_Files": [],
+                                    "Fields_Float32": [],
+                                    "Fields_Float64": [],
+                                    "Fields_FuzzyDate": [],
+                                    "Fields_FuzzyDateRange": [],
+                                    "Fields_Int32": [],
+                                    "Fields_Int64": [],
+                                    "Fields_LocalizedHtml": [],
+                                    "Fields_LocalizedText": [
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_base_template_file_child_old_num_fid",
+                                            "Value": [
+                                                {
+                                                    "ISO6391": "en",
+                                                    "Value": "2061815"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "Fields_MediaGalleries": [],
+                                    "Fields_RelatedDocuments": [],
+                                    "Id": "d9ced6fcd2ef4a05b54286f4e9e899f2",
+                                    "TemplateReference": {
+                                        "ChangesetId": 5135675,
+                                        "TemplateId": "_c6_beit_hatfutsot_bh_base_template_old_number_child"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_photos_multimedia",
+                        "ChildDocuments": [
+                            {
+                                "AllowedGroups": [],
+                                "Value": {
+                                    "Fields_Boolean": [],
+                                    "Fields_ChildDocuments": [],
+                                    "Fields_Datasource": [
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_multimedia_photo_photo_orientation_fid",
+                                            "DatasourceItemsIds": [
+                                                "9a5a6df15aff4b0e84e902a3dcc5c5de"
+                                            ]
+                                        },
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_multimedia_photo_photo_type",
+                                            "DatasourceItemsIds": [
+                                                "ad08886a-9d75-4ffd-b62b-c50b9283654d"
+                                            ]
+                                        }
+                                    ],
+                                    "Fields_Datetime": [],
+                                    "Fields_Files": [],
+                                    "Fields_Float32": [],
+                                    "Fields_Float64": [],
+                                    "Fields_FuzzyDate": [
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_photos_photo_date_fid",
+                                            "Value": {
+                                                "__type": "FuzzyDateTreeExpression:http://www.clearmash.com/api/v5/services.Documents",
+                                                "Value": {
+                                                    "__type": "ExplicitFuzzyDate:http://www.clearmash.com/api/v5/services",
+                                                    "Begin": {
+                                                        "Edge": 1,
+                                                        "Offset": 3,
+                                                        "ReducedAccuracyDate": {
+                                                            "__type": "YearAccuracyDate:http://www.clearmash.com/api/v5/services",
+                                                            "Era": 2,
+                                                            "YearNumber": 1988
+                                                        },
+                                                        "Subrange": 1
+                                                    },
+                                                    "End": {
+                                                        "Edge": 1,
+                                                        "Offset": 3,
+                                                        "ReducedAccuracyDate": {
+                                                            "__type": "YearAccuracyDate:http://www.clearmash.com/api/v5/services",
+                                                            "Era": 2,
+                                                            "YearNumber": 1988
+                                                        },
+                                                        "Subrange": 1
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "Fields_FuzzyDateRange": [],
+                                    "Fields_Int32": [
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_multimedia_photo_dpi",
+                                            "Value": 100
+                                        }
+                                    ],
+                                    "Fields_Int64": [],
+                                    "Fields_LocalizedHtml": [],
+                                    "Fields_LocalizedText": [
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_multimedia_photo_negative_number",
+                                            "Value": [
+                                                {
+                                                    "ISO6391": "en",
+                                                    "Value": "EXH.63.64.12"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_multimedia_photo_photo_number_fid",
+                                            "Value": [
+                                                {
+                                                    "ISO6391": "en",
+                                                    "Value": "106/II.45.8"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "Fields_MediaGalleries": [
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_multimedia_photo_mg",
+                                            "Galleries": [
+                                                {
+                                                    "GalleryItems": [
+                                                        {
+                                                            "__type": "MediaGalleryImageItem:http://www.clearmash.com/api/v5/services.Documents",
+                                                            "ItemDocument": {
+                                                                "AllowedGroups": [],
+                                                                "Value": {
+                                                                    "Fields_Boolean": [],
+                                                                    "Fields_ChildDocuments": [],
+                                                                    "Fields_Datasource": [],
+                                                                    "Fields_Datetime": [],
+                                                                    "Fields_Files": [],
+                                                                    "Fields_Float32": [],
+                                                                    "Fields_Float64": [],
+                                                                    "Fields_FuzzyDate": [],
+                                                                    "Fields_FuzzyDateRange": [],
+                                                                    "Fields_Int32": [
+                                                                        {
+                                                                            "Id": "FileEditor_EntityId",
+                                                                            "Value": 78110
+                                                                        },
+                                                                        {
+                                                                            "Id": "MediaGalleryItem_Height",
+                                                                            "Value": 480
+                                                                        },
+                                                                        {
+                                                                            "Id": "MediaGalleryItem_Width",
+                                                                            "Value": 386
+                                                                        },
+                                                                        {
+                                                                            "Id": "MediaGalleryImageItem_CropX",
+                                                                            "Value": 0
+                                                                        },
+                                                                        {
+                                                                            "Id": "MediaGalleryImageItem_CropY",
+                                                                            "Value": 0
+                                                                        },
+                                                                        {
+                                                                            "Id": "MediaGalleryImageItem_ImageId",
+                                                                            "Value": 28190
+                                                                        }
+                                                                    ],
+                                                                    "Fields_Int64": [],
+                                                                    "Fields_LocalizedHtml": [],
+                                                                    "Fields_LocalizedText": [
+                                                                        {
+                                                                            "Id": "FileEditor_FileId",
+                                                                            "Value": [
+                                                                                {
+                                                                                    "ISO6391": "en",
+                                                                                    "Value": "novalue"
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "Id": "FileEditor_PublicUrl",
+                                                                            "Value": [
+                                                                                {
+                                                                                    "ISO6391": "en",
+                                                                                    "Value": "~~st~~242bafa636de4fd1a41ddc2669267859.jpg"
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "Id": "FileEditor_UnmanagedFileName",
+                                                                            "Value": [
+                                                                                {
+                                                                                    "ISO6391": "en",
+                                                                                    "Value": "novalue"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "Fields_MediaGalleries": [],
+                                                                    "Fields_RelatedDocuments": [],
+                                                                    "Id": "682774640c214418b8669eae0601c2d2",
+                                                                    "TemplateReference": {
+                                                                        "ChangesetId": 5135675,
+                                                                        "TemplateId": "_c6_beit_hatfutsot_bh_base_template_mg_items_image"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "MediaUrl": "~~st~~242bafa636de4fd1a41ddc2669267859.jpg"
+                                                        }
+                                                    ],
+                                                    "GalleryMainDocument": {
+                                                        "AllowedGroups": [],
+                                                        "Value": {
+                                                            "Fields_Boolean": [],
+                                                            "Fields_ChildDocuments": [],
+                                                            "Fields_Datasource": [],
+                                                            "Fields_Datetime": [],
+                                                            "Fields_Files": [],
+                                                            "Fields_Float32": [],
+                                                            "Fields_Float64": [],
+                                                            "Fields_FuzzyDate": [],
+                                                            "Fields_FuzzyDateRange": [],
+                                                            "Fields_Int32": [],
+                                                            "Fields_Int64": [],
+                                                            "Fields_LocalizedHtml": [],
+                                                            "Fields_LocalizedText": [],
+                                                            "Fields_MediaGalleries": [],
+                                                            "Fields_RelatedDocuments": [],
+                                                            "Id": "0cc7c123062f430d8dd0b1ba817ce73f",
+                                                            "TemplateReference": {
+                                                                "ChangesetId": 5135675,
+                                                                "TemplateId": "_c6_beit_hatfutsot_bh_base_template_mg_child"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "Fields_RelatedDocuments": [
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_multimedia_photo_source",
+                                            "FirstPageOfReletedDocumentsIds": [],
+                                            "FirstPageParams_ArchiveFilter": 2,
+                                            "FirstPageParams_ReverseOrder": false,
+                                            "TotalItemsCount": 0
+                                        }
+                                    ],
+                                    "Id": "291d5aeced97414a8f599197ab74d3fd",
+                                    "TemplateReference": {
+                                        "ChangesetId": 5135675,
+                                        "TemplateId": "_c6_beit_hatfutsot_bh_multimedia_photo"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "Fields_Datasource": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_display_status",
+                        "DatasourceItemsIds": [
+                            "1feb8fa3ba1d4944897a60d5be706a9e"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_rights",
+                        "DatasourceItemsIds": [
+                            "96eb7c641a2a4a2b9b6094a247d24a0a"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_working_status",
+                        "DatasourceItemsIds": [
+                            "0058e35489e84f42b6fde7630a493dfa"
+                        ]
+                    }
+                ],
+                "Fields_Datetime": [
+                    {
+                        "Id": "entity_creation_date",
+                        "Value": {
+                            "UtcTicks": 636297938976166656
+                        }
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_last_updated_date_bhp",
+                        "Value": {
+                            "UtcTicks": 634732764600000000
+                        }
+                    }
+                ],
+                "Fields_Files": [],
+                "Fields_Float32": [],
+                "Fields_Float64": [],
+                "Fields_FuzzyDate": [],
+                "Fields_FuzzyDateRange": [],
+                "Fields_Int32": [
+                    {
+                        "Id": "community_id",
+                        "Value": 6
+                    },
+                    {
+                        "Id": "entity_id",
+                        "Value": 166676
+                    },
+                    {
+                        "Id": "entity_type_id",
+                        "Value": 1006
+                    }
+                ],
+                "Fields_Int64": [
+                    {
+                        "Id": "EntityViewsCount",
+                        "Value": 0
+                    }
+                ],
+                "Fields_LocalizedHtml": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_description",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "Naim Dangoor and the Archbishop of Canterbury<br/>at a Confrence relating to Religion, London, England 1988.<br/>(Beth Hatefutsoth Photo Archive,<br/>courtesy of Naim Dangoor, Israel)"
+                            },
+                            {
+                                "ISO6391": "he",
+                                "Value": "\u05e0\u05e2\u05d9\u05dd \u05d3\u05e0\u05d2\u05d5\u05e8 \u05d5\u05d4\u05d0\u05e8\u05db\u05d9\u05d1\u05d9\u05e9\u05d5\u05e3 \u05de\u05e7\u05e0\u05d8\u05e8\u05d1\u05e8\u05d9 \u05d1\u05db\u05e0\u05e1 <br/>\u05d1\u05e2\u05e0\u05d9\u05d9\u05e0\u05d9 \u05d3\u05ea\u05d5\u05ea, \u05dc\u05d5\u05e0\u05d3\u05d5\u05df, \u05d0\u05e0\u05d2\u05dc\u05d9\u05d4 1988.<br/>(\u05d1\u05d9\u05ea \u05d4\u05ea\u05e4\u05d5\u05e6\u05d5\u05ea, \u05d0\u05e8\u05db\u05d9\u05d5\u05df \u05d4\u05ea\u05e6\u05dc\u05d5\u05de\u05d9\u05dd,<br/>\u05d1\u05d0\u05d3\u05d9\u05d1\u05d5\u05ea \u05e0\u05e2\u05d9\u05dd \u05d3\u05e0\u05d2\u05d5\u05e8, \u05d9\u05e9\u05e8\u05d0\u05dc)"
+                            }
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_editor_remarks",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "Picture - Onyx"
+                            }
+                        ]
+                    }
+                ],
+                "Fields_LocalizedText": [
+                    {
+                        "Id": "entity_name",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "Naim Dangoor and the Archbishop of Canterbury, London, England 1988"
+                            },
+                            {
+                                "ISO6391": "he",
+                                "Value": "\u05e0\u05e2\u05d9\u05dd \u05d3\u05e0\u05d2\u05d5\u05e8 \u05d5\u05d4\u05d0\u05e8\u05db\u05d9\u05d1\u05d9\u05e9\u05d5\u05e3 \u05de\u05e7\u05e0\u05d8\u05e8\u05d1\u05e8\u05d9 \u05d1\u05db\u05e0\u05e1 \u05dc\u05e2\u05e0\u05d9\u05d9\u05e0\u05d9 \u05d3\u05ea\u05d5\u05ea, \u05dc\u05d5\u05e0\u05d3\u05d5\u05df, \u05d0\u05e0\u05d2\u05dc\u05d9\u05d4 1988"
+                            }
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_bhp_unit",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "33393"
+                            }
+                        ]
+                    }
+                ],
+                "Fields_MediaGalleries": [],
+                "Fields_RelatedDocuments": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_family_name",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_movies",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_music",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_photos",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_exhibition",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_musictext",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_personality",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_place",
+                        "FirstPageOfReletedDocumentsIds": [
+                            "8e51217e3a354b86ab996957a2482285"
+                        ],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 1
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_recieve_unit",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_source",
+                        "FirstPageOfReletedDocumentsIds": [
+                            "f9eb6bd9ac6e4438a6cf11af1f5c70ef"
+                        ],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 1
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_photos_related_items",
+                        "FirstPageOfReletedDocumentsIds": [
+                            "63078f969b9a4567a72fc2da409927a8",
+                            "5066d3a448ce4fab8e5f157c85163344"
+                        ],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 2
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_photos_relation_to_familytree_gedcom",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    }
+                ],
+                "Id": "aa7f0fa3c54d44a1b8e59f695f921dd5",
+                "TemplateReference": {
+                    "ChangesetId": 5135675,
+                    "TemplateId": "_c6_beit_hatfutsot_bh_photos"
+                }
+            },
+            "Metadata": {
+                "ActiveLock": null,
+                "CreatorUserId": 2,
+                "EntityTypeId": 1006,
+                "Id": 166676,
+                "IsArchived": false,
+                "IsBookmarked": false,
+                "IsLiked": false,
+                "LikesCount": 0,
+                "Url": "http://bh.clearmash.com/skn/c6/dummy/e166676/dummy/"
+            }
+        },
+        {
+            "Acl": null,
+            "Changeset": 6219240,
+            "Document": {
+                "Fields_Boolean": [
+                    {
+                        "Id": "entity_has_pending_changes",
+                        "Value": false
+                    },
+                    {
+                        "Id": "is_archived",
+                        "Value": false
+                    },
+                    {
+                        "Id": "is_deleted",
+                        "Value": false
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_ugc",
+                        "Value": false
+                    }
+                ],
+                "Fields_ChildDocuments": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_old_numbers_parent",
+                        "ChildDocuments": [
+                            {
+                                "AllowedGroups": [],
+                                "Value": {
+                                    "Fields_Boolean": [],
+                                    "Fields_ChildDocuments": [],
+                                    "Fields_Datasource": [],
+                                    "Fields_Datetime": [],
+                                    "Fields_Files": [],
+                                    "Fields_Float32": [],
+                                    "Fields_Float64": [],
+                                    "Fields_FuzzyDate": [],
+                                    "Fields_FuzzyDateRange": [],
+                                    "Fields_Int32": [],
+                                    "Fields_Int64": [],
+                                    "Fields_LocalizedHtml": [],
+                                    "Fields_LocalizedText": [
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_base_template_file_child_old_num_fid",
+                                            "Value": [
+                                                {
+                                                    "ISO6391": "en",
+                                                    "Value": "2061816"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "Fields_MediaGalleries": [],
+                                    "Fields_RelatedDocuments": [],
+                                    "Id": "c11515a52626496eac789013c4afe96b",
+                                    "TemplateReference": {
+                                        "ChangesetId": 5135675,
+                                        "TemplateId": "_c6_beit_hatfutsot_bh_base_template_old_number_child"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_photos_multimedia",
+                        "ChildDocuments": [
+                            {
+                                "AllowedGroups": [],
+                                "Value": {
+                                    "Fields_Boolean": [],
+                                    "Fields_ChildDocuments": [],
+                                    "Fields_Datasource": [
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_multimedia_photo_photo_orientation_fid",
+                                            "DatasourceItemsIds": [
+                                                "9a5a6df15aff4b0e84e902a3dcc5c5de"
+                                            ]
+                                        },
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_multimedia_photo_photo_type",
+                                            "DatasourceItemsIds": [
+                                                "ad08886a-9d75-4ffd-b62b-c50b9283654d"
+                                            ]
+                                        }
+                                    ],
+                                    "Fields_Datetime": [],
+                                    "Fields_Files": [],
+                                    "Fields_Float32": [],
+                                    "Fields_Float64": [],
+                                    "Fields_FuzzyDate": [
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_photos_photo_date_fid",
+                                            "Value": {
+                                                "__type": "FuzzyDateTreeExpression:http://www.clearmash.com/api/v5/services.Documents",
+                                                "Value": {
+                                                    "__type": "ExplicitFuzzyDate:http://www.clearmash.com/api/v5/services",
+                                                    "Begin": {
+                                                        "Edge": 1,
+                                                        "Offset": 3,
+                                                        "ReducedAccuracyDate": {
+                                                            "__type": "YearAccuracyDate:http://www.clearmash.com/api/v5/services",
+                                                            "Era": 2,
+                                                            "YearNumber": 1988
+                                                        },
+                                                        "Subrange": 1
+                                                    },
+                                                    "End": {
+                                                        "Edge": 1,
+                                                        "Offset": 3,
+                                                        "ReducedAccuracyDate": {
+                                                            "__type": "YearAccuracyDate:http://www.clearmash.com/api/v5/services",
+                                                            "Era": 2,
+                                                            "YearNumber": 1988
+                                                        },
+                                                        "Subrange": 1
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "Fields_FuzzyDateRange": [],
+                                    "Fields_Int32": [
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_multimedia_photo_dpi",
+                                            "Value": 100
+                                        }
+                                    ],
+                                    "Fields_Int64": [],
+                                    "Fields_LocalizedHtml": [],
+                                    "Fields_LocalizedText": [
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_multimedia_photo_negative_number",
+                                            "Value": [
+                                                {
+                                                    "ISO6391": "en",
+                                                    "Value": "EXH.63.64.17"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_multimedia_photo_photo_number_fid",
+                                            "Value": [
+                                                {
+                                                    "ISO6391": "en",
+                                                    "Value": "106/II.45.11"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "Fields_MediaGalleries": [
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_multimedia_photo_mg",
+                                            "Galleries": [
+                                                {
+                                                    "GalleryItems": [
+                                                        {
+                                                            "__type": "MediaGalleryImageItem:http://www.clearmash.com/api/v5/services.Documents",
+                                                            "ItemDocument": {
+                                                                "AllowedGroups": [],
+                                                                "Value": {
+                                                                    "Fields_Boolean": [],
+                                                                    "Fields_ChildDocuments": [],
+                                                                    "Fields_Datasource": [],
+                                                                    "Fields_Datetime": [],
+                                                                    "Fields_Files": [],
+                                                                    "Fields_Float32": [],
+                                                                    "Fields_Float64": [],
+                                                                    "Fields_FuzzyDate": [],
+                                                                    "Fields_FuzzyDateRange": [],
+                                                                    "Fields_Int32": [
+                                                                        {
+                                                                            "Id": "FileEditor_EntityId",
+                                                                            "Value": 29428
+                                                                        },
+                                                                        {
+                                                                            "Id": "MediaGalleryItem_Height",
+                                                                            "Value": 480
+                                                                        },
+                                                                        {
+                                                                            "Id": "MediaGalleryItem_Width",
+                                                                            "Value": 584
+                                                                        },
+                                                                        {
+                                                                            "Id": "MediaGalleryImageItem_CropX",
+                                                                            "Value": 0
+                                                                        },
+                                                                        {
+                                                                            "Id": "MediaGalleryImageItem_CropY",
+                                                                            "Value": 0
+                                                                        },
+                                                                        {
+                                                                            "Id": "MediaGalleryImageItem_ImageId",
+                                                                            "Value": 36799
+                                                                        }
+                                                                    ],
+                                                                    "Fields_Int64": [],
+                                                                    "Fields_LocalizedHtml": [],
+                                                                    "Fields_LocalizedText": [
+                                                                        {
+                                                                            "Id": "FileEditor_FileId",
+                                                                            "Value": [
+                                                                                {
+                                                                                    "ISO6391": "en",
+                                                                                    "Value": "novalue"
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "Id": "FileEditor_PublicUrl",
+                                                                            "Value": [
+                                                                                {
+                                                                                    "ISO6391": "en",
+                                                                                    "Value": "~~st~~e233af9e0f73415b80bfe64506ec73c8.jpg"
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "Id": "FileEditor_UnmanagedFileName",
+                                                                            "Value": [
+                                                                                {
+                                                                                    "ISO6391": "en",
+                                                                                    "Value": "novalue"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "Fields_MediaGalleries": [],
+                                                                    "Fields_RelatedDocuments": [],
+                                                                    "Id": "3c5a0a933f4a4262883515439b6b2299",
+                                                                    "TemplateReference": {
+                                                                        "ChangesetId": 5135675,
+                                                                        "TemplateId": "_c6_beit_hatfutsot_bh_base_template_mg_items_image"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "MediaUrl": "~~st~~e233af9e0f73415b80bfe64506ec73c8.jpg"
+                                                        }
+                                                    ],
+                                                    "GalleryMainDocument": {
+                                                        "AllowedGroups": [],
+                                                        "Value": {
+                                                            "Fields_Boolean": [],
+                                                            "Fields_ChildDocuments": [],
+                                                            "Fields_Datasource": [],
+                                                            "Fields_Datetime": [],
+                                                            "Fields_Files": [],
+                                                            "Fields_Float32": [],
+                                                            "Fields_Float64": [],
+                                                            "Fields_FuzzyDate": [],
+                                                            "Fields_FuzzyDateRange": [],
+                                                            "Fields_Int32": [],
+                                                            "Fields_Int64": [],
+                                                            "Fields_LocalizedHtml": [],
+                                                            "Fields_LocalizedText": [],
+                                                            "Fields_MediaGalleries": [],
+                                                            "Fields_RelatedDocuments": [],
+                                                            "Id": "41520c25f0c74d4aabbd9133f9d64b1b",
+                                                            "TemplateReference": {
+                                                                "ChangesetId": 5135675,
+                                                                "TemplateId": "_c6_beit_hatfutsot_bh_base_template_mg_child"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "Fields_RelatedDocuments": [
+                                        {
+                                            "Id": "_c6_beit_hatfutsot_bh_multimedia_photo_source",
+                                            "FirstPageOfReletedDocumentsIds": [],
+                                            "FirstPageParams_ArchiveFilter": 2,
+                                            "FirstPageParams_ReverseOrder": false,
+                                            "TotalItemsCount": 0
+                                        }
+                                    ],
+                                    "Id": "ca8cf76aa6f347db9c4ca7b3f974625e",
+                                    "TemplateReference": {
+                                        "ChangesetId": 5135675,
+                                        "TemplateId": "_c6_beit_hatfutsot_bh_multimedia_photo"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "Fields_Datasource": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_display_status",
+                        "DatasourceItemsIds": [
+                            "b9adf6f68ff34bd192a625f947c69382"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_rights",
+                        "DatasourceItemsIds": [
+                            "96eb7c641a2a4a2b9b6094a247d24a0a"
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_working_status",
+                        "DatasourceItemsIds": [
+                            "29b539010497436aa15d18121e6fab05"
+                        ]
+                    }
+                ],
+                "Fields_Datetime": [
+                    {
+                        "Id": "entity_creation_date",
+                        "Value": {
+                            "UtcTicks": 636298067729299968
+                        }
+                    },
+                    {
+                        "Id": "EntityFirstPublishDate",
+                        "Value": {
+                            "UtcTicks": 636298067729299968
+                        }
+                    },
+                    {
+                        "Id": "EntityLastPublishDate",
+                        "Value": {
+                            "UtcTicks": 636298067729299968
+                        }
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_last_updated_date_bhp",
+                        "Value": {
+                            "UtcTicks": 634725079200000000
+                        }
+                    }
+                ],
+                "Fields_Files": [],
+                "Fields_Float32": [],
+                "Fields_Float64": [],
+                "Fields_FuzzyDate": [],
+                "Fields_FuzzyDateRange": [],
+                "Fields_Int32": [
+                    {
+                        "Id": "community_id",
+                        "Value": 6
+                    },
+                    {
+                        "Id": "entity_id",
+                        "Value": 182346
+                    },
+                    {
+                        "Id": "entity_type_id",
+                        "Value": 1006
+                    }
+                ],
+                "Fields_Int64": [
+                    {
+                        "Id": "EntityViewsCount",
+                        "Value": 0
+                    }
+                ],
+                "Fields_LocalizedHtml": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_description",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "Naim Dangoor (left) and the Archbishop of Cantenbury (center) in a Confrenece about religions, London, <br/>England 1988.<br/>(Beth Hatefutsoth Photo Archive,<br/>courtesy of Naim Dangoor, London)"
+                            },
+                            {
+                                "ISO6391": "he",
+                                "Value": "\u05e0\u05e2\u05d9\u05dd \u05d3\u05e0\u05d2\u05d5\u05e8 (\u05de\u05e9\u05de\u05d0\u05dc) \u05d5\u05d4\u05d0\u05e8\u05db\u05d9\u05d1\u05d9\u05e9\u05d5\u05e3 \u05de\u05e7\u05e0\u05d8\u05e8\u05d1\u05e8\u05d9 (\u05d1\u05de\u05e8\u05db\u05d6) <br/>\u05d1\u05db\u05e0\u05e1 \u05d1\u05e2\u05e0\u05d9\u05d9\u05e0\u05d9 \u05d3\u05ea\u05d5\u05ea, \u05dc\u05d5\u05e0\u05d3\u05d5\u05df, \u05d0\u05e0\u05d2\u05dc\u05d9\u05d4 1988.<br/>(\u05d1\u05d9\u05ea \u05d4\u05ea\u05e4\u05d5\u05e6\u05d5\u05ea, \u05d0\u05e8\u05db\u05d9\u05d5\u05df \u05d4\u05ea\u05e6\u05dc\u05d5\u05de\u05d9\u05dd,<br/>\u05d1\u05d0\u05d3\u05d9\u05d1\u05d5\u05ea \u05e0\u05e2\u05d9\u05dd \u05d3\u05e0\u05d2\u05d5\u05e8, \u05dc\u05d5\u05e0\u05d3\u05d5\u05df)"
+                            }
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_editor_remarks",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "Picture - Onyx"
+                            }
+                        ]
+                    }
+                ],
+                "Fields_LocalizedText": [
+                    {
+                        "Id": "entity_name",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "Naim Dangoor (left) and the Archbishop of Cantenbury (center), London 1988"
+                            },
+                            {
+                                "ISO6391": "he",
+                                "Value": "\u05e0\u05e2\u05d9\u05dd \u05d3\u05e0\u05d2\u05d5\u05e8 (\u05de\u05e9\u05de\u05d0\u05dc) \u05d5\u05d4\u05d0\u05e8\u05db\u05d9\u05d1\u05d9\u05e9\u05d5\u05e3 \u05de\u05e7\u05e0\u05d8\u05e8\u05d1\u05e8\u05d9 (\u05d1\u05de\u05e8\u05db\u05d6) \u05d1\u05db\u05e0\u05e1 \u05d1\u05e2\u05e0\u05d9\u05d9\u05e0\u05d9 \u05d3\u05ea\u05d5\u05ea, \u05dc\u05d5\u05e0\u05d3\u05d5\u05df 1988"
+                            }
+                        ]
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_bhp_unit",
+                        "Value": [
+                            {
+                                "ISO6391": "en",
+                                "Value": "33394"
+                            }
+                        ]
+                    }
+                ],
+                "Fields_MediaGalleries": [],
+                "Fields_RelatedDocuments": [
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_family_name",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_movies",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_music",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_multimedia_photos",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_exhibition",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_musictext",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_personality",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_place",
+                        "FirstPageOfReletedDocumentsIds": [
+                            "8e51217e3a354b86ab996957a2482285"
+                        ],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 1
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_related_recieve_unit",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_base_template_source",
+                        "FirstPageOfReletedDocumentsIds": [
+                            "f9eb6bd9ac6e4438a6cf11af1f5c70ef"
+                        ],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 1
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_photos_related_items",
+                        "FirstPageOfReletedDocumentsIds": [
+                            "63078f969b9a4567a72fc2da409927a8",
+                            "5066d3a448ce4fab8e5f157c85163344"
+                        ],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 2
+                    },
+                    {
+                        "Id": "_c6_beit_hatfutsot_bh_photos_relation_to_familytree_gedcom",
+                        "FirstPageOfReletedDocumentsIds": [],
+                        "FirstPageParams_ArchiveFilter": 2,
+                        "FirstPageParams_ReverseOrder": false,
+                        "TotalItemsCount": 0
+                    }
+                ],
+                "Id": "92e5a62105bc4813b61b3e702c0561d6",
+                "TemplateReference": {
+                    "ChangesetId": 5135675,
+                    "TemplateId": "_c6_beit_hatfutsot_bh_photos"
+                }
+            },
+            "Metadata": {
+                "ActiveLock": null,
+                "CreatorUserId": 2,
+                "EntityTypeId": 1006,
+                "Id": 182346,
+                "IsArchived": false,
+                "IsBookmarked": false,
+                "IsLiked": false,
+                "LikesCount": 0,
+                "Url": "http://bh.clearmash.com/skn/c6/dummy/e182346/dummy/"
+            }
+        }
+    ],
+    "ReferencedDatasourceItems": [
+        {
+            "Id": "b9adf6f68ff34bd192a625f947c69382",
+            "ImageUrl": null,
+            "Name": [
+                {
+                    "ISO6391": "en",
+                    "Value": "Museum only"
+                },
+                {
+                    "ISO6391": "he",
+                    "Value": "\u05de\u05d5\u05d6\u05d9\u05d0\u05d5\u05df \u05d1\u05dc\u05d1\u05d3"
+                }
+            ]
+        },
+        {
+            "Id": "1feb8fa3ba1d4944897a60d5be706a9e",
+            "ImageUrl": null,
+            "Name": [
+                {
+                    "ISO6391": "en",
+                    "Value": "Internal Use"
+                },
+                {
+                    "ISO6391": "he",
+                    "Value": "\u05e9\u05d9\u05de\u05d5\u05e9 \u05e4\u05e0\u05d9\u05de\u05d9"
+                }
+            ]
+        },
+        {
+            "Id": "96eb7c641a2a4a2b9b6094a247d24a0a",
+            "ImageUrl": null,
+            "Name": [
+                {
+                    "ISO6391": "en",
+                    "Value": "Full"
+                },
+                {
+                    "ISO6391": "he",
+                    "Value": "\u05de\u05dc\u05d0"
+                }
+            ]
+        },
+        {
+            "Id": "0058e35489e84f42b6fde7630a493dfa",
+            "ImageUrl": null,
+            "Name": [
+                {
+                    "ISO6391": "en",
+                    "Value": "Edit"
+                },
+                {
+                    "ISO6391": "he",
+                    "Value": "\u05e2\u05e8\u05d9\u05db\u05d4"
+                }
+            ]
+        },
+        {
+            "Id": "29b539010497436aa15d18121e6fab05",
+            "ImageUrl": null,
+            "Name": [
+                {
+                    "ISO6391": "en",
+                    "Value": "Completed"
+                },
+                {
+                    "ISO6391": "he",
+                    "Value": "\u05d4\u05e1\u05ea\u05d9\u05d9\u05dd"
+                }
+            ]
+        },
+        {
+            "Id": "ad08886a-9d75-4ffd-b62b-c50b9283654d",
+            "ImageUrl": null,
+            "Name": [
+                {
+                    "ISO6391": "en",
+                    "Value": "Negative"
+                },
+                {
+                    "ISO6391": "he",
+                    "Value": "\u05e0\u05d2\u05d8\u05d9\u05d1 - \u05e9/\u05dc"
+                }
+            ]
+        },
+        {
+            "Id": "9a5a6df15aff4b0e84e902a3dcc5c5de",
+            "ImageUrl": null,
+            "Name": [
+                {
+                    "ISO6391": "en",
+                    "Value": "Portrait"
+                },
+                {
+                    "ISO6391": "he",
+                    "Value": "\u05e4\u05d5\u05e8\u05d8\u05e8\u05d8"
+                },
+                {
+                    "ISO6391": "he",
+                    "Value": "\u05d3\u05d9\u05d5\u05e7\u05df, \u05e4\u05d5\u05e8\u05d8\u05e8\u05d8"
+                }
+            ]
+        }
+    ]
+}

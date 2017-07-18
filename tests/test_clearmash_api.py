@@ -1,4 +1,4 @@
-from datapackage_pipelines_mojp.clearmash.api import ClearmashApi, parse_error_response_content, parse_clearmash_document
+from datapackage_pipelines_mojp.clearmash.api import ClearmashApi, parse_error_response_content, parse_clearmash_document, ClearmashRelatedDocuments
 import os, json
 from requests.exceptions import HTTPError
 from datapackage_pipelines_mojp.clearmash.constants import WEB_CONTENT_FOLDER_ID_Place
@@ -57,6 +57,16 @@ class MockClearmashApi(ClearmashApi):
         else:
             raise Exception("invalid url: {}".format(url))
 
+class MockClearmashRelatedDocuments(ClearmashRelatedDocuments):
+    
+    def __init__(self, first_page_of_results, entity_id, field_name):
+        self.first_page_of_results = first_page_of_results
+        self.entity_id = entity_id
+        self.field_name = field_name
+
+    def get_mock_related_documents(self):
+        related_documents = MockClearmashApi().get_document_related_docs_by_fields(self.entity_id, self.field_name)
+        return related_documents
 
 def test_invalid_call():
     try:
@@ -161,3 +171,22 @@ def test_get_related_docs_of_item():
     photo_url = related["Entities"][1]["Document"]["Fields_ChildDocuments"][2]["ChildDocuments"][0]["Value"]["Fields_MediaGalleries"][0]["Galleries"][0]["GalleryItems"][0]["ItemDocument"]["Value"]["Fields_LocalizedText"][1]["Value"][0]["Value"]
     assert photo_id == 123737
     assert photo_url == "~~st~~c72ca946fa684845b566949b38e35506.JPG"
+
+def test_get_documents():
+    res = MockClearmashApi()._wcm_api_call("/Documents/Get", {'entitiesIds': [115353]})
+    entity_document = res["Entities"][0]["Document"]
+    related_documents = entity_document["Fields_RelatedDocuments"]
+    for i in related_documents:
+        if i["Id"] == "_c6_beit_hatfutsot_bh_base_template_multimedia_photos":
+            first_related = i["FirstPageOfReletedDocumentsIds"]
+    assert first_related == ['aa7f0fa3c54d44a1b8e59f695f921dd5', '92e5a62105bc4813b61b3e702c0561d6']
+    # first_page_of_results = ['aa7f0fa3c54d44a1b8e59f695f921dd5', '92e5a62105bc4813b61b3e702c0561d6']
+    related = MockClearmashRelatedDocuments(first_related, 115353, "_c6_beit_hatfutsot_bh_base_template_multimedia_photos")
+    assert isinstance(related, MockClearmashRelatedDocuments)
+    assert related.first_page_results() == ['aa7f0fa3c54d44a1b8e59f695f921dd5', '92e5a62105bc4813b61b3e702c0561d6']
+    all_related = related.get_mock_related_documents()
+    first_doc = all_related["Entities"][1]
+    assert first_doc["Metadata"]["Id"] == 182346
+
+
+    
