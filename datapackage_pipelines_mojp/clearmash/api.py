@@ -6,6 +6,7 @@ import os, json
 from itertools import cycle
 from copy import deepcopy
 import logging
+import datetime
 
 
 def parse_error_response_content(content):
@@ -58,6 +59,41 @@ def parse_clearmash_document_field(document_field):
     return {"document_id": value.pop("Id"),
             "template_reference": value.pop("TemplateReference"),
             "doc": parse_clearmash_document(value, [])}
+
+
+
+class ClearmashStartDate(object):
+    
+    def __init__(self, field_id, date_parameters):
+        self.field_id = field_id
+        self.date_parameters = date_parameters
+
+    def get_iso_date(self):
+        val = self.date_parameters.pop("Value")
+        val_dates = val.pop("Value")
+        datedata = val_dates.pop("ReducedAccuracyDate")
+        info = []
+        for k in datedata:
+            if k == "DayNumberOfMonth":
+                day = datedata[k]
+                info.append(day)
+            elif k == "MonthNumberOfYear":
+                month = datedata[k]
+                info.append(month)
+            elif k == "YearNumber":
+                year = datedata[k]
+                info.append(year)
+
+        if len(info) == 1:
+            date = "1 1 {}".format(info[0])
+        elif len(info) == 2:
+            date = "1 {} {}".format(info[0], info[1])
+        elif len(info) == 3:
+            date = "{} {} {}".format(info[0], info[1], info[2])
+
+        test_date = datetime.datetime.strptime(date, '%d %m %Y').isoformat()
+        return "{}Z".format(test_date)
+       
 
 class ClearmashRelatedDocuments(object):
     
