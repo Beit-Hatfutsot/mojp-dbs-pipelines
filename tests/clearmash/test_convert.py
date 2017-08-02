@@ -56,3 +56,15 @@ def test_clearmash_convert_photoUnits():
     assert len(resource) == 1
     assert_dict(resource[0], {'main_image_url': 'https://bhfiles.clearmash.com/MediaServer/Images/fff406c76ce942f9a37a19dcc061a36b_1024x1024.JPG',
                               'main_thumbnail_image_url': 'https://bhfiles.clearmash.com/MediaServer/Images/fff406c76ce942f9a37a19dcc061a36b_260x260.JPG'})
+
+def test_clearmash_should_skip_entity_with_pending_changes():
+    # these entities are duplicates of other published entities
+    # see #75
+    entity_ids = [{"item_id": 200292, "collection": "photoUnits"}]
+    downloaded_docs = get_downloaded_docs(entity_ids)
+    # entity has pending changes
+    assert downloaded_docs[0]["parsed_doc"].get("entity_has_pending_changes") == True
+    resource = get_clearmash_convert_resource_data(get_downloaded_docs(entity_ids))
+    # skipped by convert processor
+    assert len(resource) == 0
+
