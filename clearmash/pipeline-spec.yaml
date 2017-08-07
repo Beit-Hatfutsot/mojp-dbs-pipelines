@@ -59,6 +59,10 @@ download-related-entities:
         datapackage: ../data/clearmash/download-new-entities/datapackage.json
         load-resource: entities
         load-table: clearmash-entities
+    - run: ..datapackage_pipelines_mojp.common.processors.delay_limit
+      parameters:
+        resource: entities
+        stop_after_minutes: 60
     # gets all the document ids from related fields in the source entry
     # makes the call to get related fields only when needed
     # compares against all document ids in the entities table
