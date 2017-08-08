@@ -24,7 +24,7 @@ class BagnowkaDownloadProcessor(BaseProcessor):
                             "description": "enumerated ID given when scraped"},
                            {"name": "approximate_date_taken", "type": "string",
                             "description": "Date of the photo, extracted from name. "},
-                           {"name": "pictures", "type": "object", "description": "List of image IDs created by AWS S3"}]}
+                           {"name": "pictures", "type": "array", "description": "List of image & thumbnail urls created by AWS S3"}]}
 
     def _get_resource(self):
         with open(os.path.join(os.path.dirname(__file__), "bagnowka_all.json")) as f:
@@ -55,17 +55,15 @@ class BagnowkaDownloadProcessor(BaseProcessor):
         return new_doc
 
     def creat_img_urls(self, item_data):
-        images = {}
-        count = 0
+        images = []
         all_pics = item_data["Pictures"]
         ids = [i["PictureId"] for i in all_pics]
         full_size_bucket_base_url = "https://s3-us-west-2.amazonaws.com/bagnowka-scraped/full/"
         thumb_bucket_base_url = "https://s3-us-west-2.amazonaws.com/bagnowka-scraped/thumbs/small/"
         for img_id in ids:
-            count += 1
-            img_url = "{}{}.jpg".format(full_size_bucket_base_url, img_id)
-            thumb_url = "{}{}.jpg".format(thumb_bucket_base_url, img_id)
-            images["{}".format(count)] = {"img_id": img_id, "img_url": img_url, "thumbnail_url": thumb_url}
+            url = "{}{}.jpg".format(full_size_bucket_base_url, img_id)
+            thumbnail_url = "{}{}.jpg".format(thumb_bucket_base_url, img_id)
+            images.append({'url': url, 'thumbnail_url': thumbnail_url})
         return images
 
 if __name__ == '__main__':

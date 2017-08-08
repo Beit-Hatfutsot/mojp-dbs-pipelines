@@ -44,7 +44,8 @@ DBS_DOCS_TABLE_SCHEMA = {"fields": [{"name": "source", "type": "string"},
                                     {"name": "main_thumbnail_image_url", "type": "string",
                                      "description": "url to the main thumbnail image"},
                                     {"name": "related_documents", "type": "object",
-                                     "description": "related documents of different types (source-specific)"}]}
+                                     "description": "related documents of different types (source-specific)"},
+                                    {"name": "images", "type": "array"},]}
 
 DBS_DOCS_SYNC_LOG_TABLE_SCHEMA = {"fields": [{"name": "source", "type": "string"},
                                              {'name': 'id', 'type': 'string'},

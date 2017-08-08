@@ -99,8 +99,12 @@ class ClearmashChildDocuments(object):
 
     @classmethod
     def get_for_doc(cls, doc):
+        return cls.get_for_parsed_doc(doc["parsed_doc"])
+
+    @classmethod
+    def get_for_parsed_doc(cls, parsed_doc):
         res = {}
-        for k, v in doc["parsed_doc"].items():
+        for k, v in parsed_doc.items():
             if isinstance(v, (tuple, list)) and len(v) == 2 and v[0] == "ChildDocuments":
                 field = v[1]
                 field_id = field.pop("Id")

@@ -53,14 +53,14 @@ Running the tests using docker
 
 Make sure you have Python 3.6 in a virtualenv
 
-* `make install`
+* `bin/install.sh`
 * `cp .env.example.full .env`
 * modify .env as needed
   * most likely you will need to connect to the db / elasticsearch instances
   * the default file connects to the docker instances, so if you ran `bin/docker/start.sh` it should work as is
 * `source .env`
 * `export DPP_DB_ENGINE=$DPP_DB_ENGINE`
-* `make test`
+* `bin/test.sh`
 * `dpp`
 
 

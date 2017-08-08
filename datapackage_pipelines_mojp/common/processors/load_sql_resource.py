@@ -57,6 +57,7 @@ class LoadSqlResource(BaseProcessor):
                 if i > 0 and i % 500 == 0:
                     logging.info("loaded {} / {}".format(i, num_total))
             logging.info("loaded {} / {}".format(num_rows, num_total))
+            self._stats["load_sql_resource_num_rows_yielded"] = num_rows
 
 
 if __name__ == '__main__':

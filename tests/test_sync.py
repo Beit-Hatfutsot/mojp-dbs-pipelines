@@ -2,6 +2,8 @@ from datapackage_pipelines_mojp.common.processors.sync import CommonSyncProcesso
 from .clearmash.test_convert import get_clearmash_convert_resource_data
 from .common import (assert_processor, get_mock_settings, assert_dict, given_empty_elasticsearch_instance,
                      es_doc)
+from tests.clearmash.test_convert import (get_downloaded_docs as get_clearmash_downloaded_docs,
+                                          image as get_clearmash_image)
 
 def assert_sync_processor(input_data=None):
     if not input_data:
@@ -45,9 +47,12 @@ def test_sync():
                           'source': 'clearmash',
                           'collection': 'places',
                           'keys': []})
-    assert_dict(docs[2], {'id': '115800', 'version': '6468918-460fe9869c46412db95daa136634be57', 'sync_msg': 'added to ES', 'source': 'clearmash', 'collection': 'movies', 'keys': []})
-    assert_dict(docs[3], {'id': '115318', 'version': '6468918-ec135e2eb4a54022a4ece9e2ce4f46c4', 'sync_msg': 'added to ES', 'source': 'clearmash', 'collection': 'personalities', 'keys': []})
-    assert_dict(docs[4], {'id': '115301', 'version': '6468918-6de9cf72a9ae4cc690a6c2437d21e0a6', 'sync_msg': 'added to ES', 'source': 'clearmash', 'collection': 'photoUnits', 'keys': []})
+    assert_dict(docs[2], {'id': '115800', 'version': '6468918-460fe9869c46412db95daa136634be57',
+                          'sync_msg': 'added to ES', 'source': 'clearmash', 'collection': 'movies', 'keys': []})
+    assert_dict(docs[3], {'id': '115318', 'version': '6468918-ec135e2eb4a54022a4ece9e2ce4f46c4',
+                          'sync_msg': 'added to ES', 'source': 'clearmash', 'collection': 'personalities', 'keys': []})
+    assert_dict(docs[4], {'id': '115301', 'version': '6468918-6de9cf72a9ae4cc690a6c2437d21e0a6',
+                          'sync_msg': 'added to ES', 'source': 'clearmash', 'collection': 'photoUnits', 'keys': []})
     es_docs = [es_doc(es, "clearmash", id) for id in ["115306", "115325", "115800", "115318", "115301"]]
     assert len(es_docs) == 5
     assert_dict(es_docs[0], {'slug_he': 'שםמשפחה_בן-עמרה', 'title_en': 'BEN AMARA', 'collection': 'familyNames',
@@ -56,7 +61,8 @@ def test_sync():
                                       'main_thumbnail_image_url', 'title_he_lc', 'version', 'source',
                                       'main_image_url', 'source_id', 'parsed_doc', 'title_he', 'document_id',
                                       'content_html_he', 'title_he_suggest', 'item_url',
-                                      'last_synced', 'hours_to_next_download', 'last_downloaded', 'display_allowed'}})
+                                      'last_synced', 'hours_to_next_download', 'last_downloaded', 'display_allowed',
+                                      'images'}})
 
 
 def test_sync_with_invalid_collection():
@@ -145,3 +151,14 @@ def test_unique_slugs():
     assert_sync_processor([input_doc])
     # got a different slug, to prevent slug conflict
     assert_dict(es_doc(es, "clearmash", "115325"), {'slugs': ['familyname_ben-amara-115325', 'שםמשפחה_נשאטל']})
+
+def test_sync_images():
+    es = given_empty_elasticsearch_instance()
+    # an entity with some images
+    entity_ids = [{"item_id": 233953, "collection": "places"},]
+    input_doc = get_clearmash_convert_resource_data(get_clearmash_downloaded_docs(entity_ids))[0]
+    assert_sync_processor([input_doc])
+    doc = es_doc(es, "clearmash", "233953")
+    assert doc["images"][:3] == [get_clearmash_image("031017ece2cc49d2ba73311e336408a2"),
+                                 get_clearmash_image("1245931e49264167a801a8f31a24eaed"),
+                                 get_clearmash_image("49efc3eb16e44689b5dd9b4b078201ec"),]

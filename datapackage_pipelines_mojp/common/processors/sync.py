@@ -68,8 +68,7 @@ class CommonSyncProcessor(BaseProcessor):
         self._update_doc_slugs(new_doc, old_doc)
         with temp_loglevel(logging.ERROR):
             self._es.index(index=self._idx, doc_type=constants.PIPELINES_ES_DOC_TYPE,
-                            id="{}_{}".format(
-                                new_doc["source"], new_doc["source_id"]),
+                            id="{}_{}".format(new_doc["source"], new_doc["source_id"]),
                             body=new_doc)
         return self._get_sync_response(new_doc, "updated doc in ES")
 
