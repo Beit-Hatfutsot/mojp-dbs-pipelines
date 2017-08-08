@@ -20,8 +20,8 @@ class DelayLimit(BaseProcessor):
     for row in resource_data:
       time_gap = self.get_time_gap()
       row = self._filter_row(row)
-      if time_gap < delay_limit:
-        yield row
+      if time_gap > delay_limit:
+        break
 
 if __name__ == '__main__':
     DelayLimit.main()

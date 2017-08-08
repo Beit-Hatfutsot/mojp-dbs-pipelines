@@ -1,0 +1,101 @@
+# these settings include the full environment including all services
+
+version: '3.2'
+
+services:
+
+  redis:
+    build:
+      context: .
+      dockerfile: Dockerfile.redis
+    image: mojp/pipelines-redis
+    ports:
+      - "16379:6379"
+    volumes:
+      - ./.docker/.data/redis:/data
+
+  db:
+    build:
+      context: .
+      dockerfile: Dockerfile.db
+    image: mojp/pipelines-db
+    ports:
+      - "15432:5432"
+    volumes:
+      - ./.docker/.data/db:/var/lib/postgresql/data
+
+  elasticsearch:
+    build:
+      context: .
+      dockerfile: Dockerfile.elasticsearch
+    image: mojp/pipelines-elasticsearch
+    ports:
+      - "19200:9200"
+      - "19300:9300"
+    volumes:
+      - ./.docker/.data/elasticsearch:/usr/share/elasticsearch/data
+
+  elasticsearch-index:
+    build:
+      context: .
+      dockerfile: Dockerfile.elasticsearch-index
+    image: mojp/pipelines-elasticsearch-index
+    depends_on:
+      - elasticsearch
+
+  app:
+    build: .
+    # command: echo "app is disabled, only using the infrastructure to test locally"
+    depends_on:
+      - db
+      - elasticsearch-index
+      - redis
+    environment:
+      - "DPP_REDIS_HOST=redis"
+      - "DPP_DB_ENGINE=postgresql://postgres:123456@db:5432/postgres"
+      - "MOJP_ELASTICSEARCH_DB=elasticsearch:9200"
+      - "MOJP_ELASTICSEARCH_INDEX=mojp"
+      # required for clearmash pipelines
+      - "CLEARMASH_CLIENT_TOKEN="
+      # - "OVERRIDE_CLEARMASH_ITEM_IDS=180470,115878,115883,115884,115890,115898,115906,115907,115918,115922,115931,115961"
+    volumes:
+      - ./.docker/.data:/mojp/data
+      - ./.docker/.data/.cache:/mojp/.cache
+
+# optional services - for debugging / tests
+# should not be exposed publicly
+
+  tests:
+    build:
+      context: .
+      dockerfile: Dockerfile.tests
+    image: mojp/pipelines-tests
+    depends_on:
+      - elasticsearch
+    environment:
+      - "TESTS_MOJP_ELASTICSEARCH_INDEX=mojptests"
+      - "TESTS_MOJP_ELASTICSEARCH_DB=elasticsearch:9200"
+
+  kibana:
+    build:
+      context: .
+      dockerfile: Dockerfile.kibana
+    image: mojp/pipelines-kibana
+    depends_on:
+      - elasticsearch
+    ports:
+      - "15601:5601"
+
+  adminer:
+    build:
+      context: .
+      dockerfile: Dockerfile.adminer
+    image: mojp/pipelines-adminer
+    ports:
+      - "18080:8080"
+
+  dbs-back:
+    build:
+      context: https://github.com/beit-hatfutsot/dbs-back.git
+    image: mojp/dbs-back
+    command: echo "dbs_back is disabled, only using for build"
