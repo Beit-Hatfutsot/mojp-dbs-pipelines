@@ -22,6 +22,8 @@ class DelayLimit(BaseProcessor):
       row = self._filter_row(row)
       if time_gap > delay_limit:
         break
+      else:
+        yield row
 
 if __name__ == '__main__':
     DelayLimit.main()
