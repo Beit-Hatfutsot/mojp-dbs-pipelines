@@ -1,6 +1,7 @@
 from datapackage_pipelines_mojp.common.processors.base_processors import BaseProcessor
 from datapackage_pipelines_mojp.common.utils import parse_import_func_parameter
-import json, logging
+import json
+import logging
 from sqlalchemy import *
 
 
@@ -9,7 +10,8 @@ class LoadSqlResource(BaseProcessor):
     STATS_NUM_ROWS = "number of loaded rows from DB"
 
     def _process(self, *args, **kwargs):
-        self._db_table = self.db_meta.tables.get(self._parameters["load-table"])
+        self._db_table = self.db_meta.tables.get(
+            self._parameters["load-table"])
         return super(LoadSqlResource, self)._process(*args, **kwargs)
 
     def _get_schema(self):
@@ -29,21 +31,24 @@ class LoadSqlResource(BaseProcessor):
         if primary_keys and len(primary_keys) == 1:
             return getattr(self._db_table.c, primary_keys[0])
         else:
-            raise Exception("failed to find an appropriate primary key in the schema")
+            raise Exception(
+                "failed to find an appropriate primary key in the schema")
 
     def _get_resource(self):
         if self._db_table is not None:
             self._id_column = self._get_id_column()
-            self._where = parse_import_func_parameter(self._parameters.get("where"))
+            self._where = parse_import_func_parameter(
+                self._parameters.get("where"))
             query = self.db_session.query(self._id_column)
             if self._where:
                 query = query.filter(text(self._where))
-            all_ids = [getattr(row, self._id_column.name) for row in query.all()]
+            all_ids = [getattr(row, self._id_column.name)
+                       for row in query.all()]
             num_total = len(all_ids)
             batch_size = 10
             num_rows = 0
             for i in range(0, num_total, batch_size):
-                ids = all_ids[i:i+batch_size]
+                ids = all_ids[i:i + batch_size]
                 for db_row in self.db_session.query(self._db_table).filter(self._id_column.in_(ids)).all():
                     row = {}
                     for field in self._schema["fields"]:
