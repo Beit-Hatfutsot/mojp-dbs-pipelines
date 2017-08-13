@@ -62,7 +62,7 @@ def test_sync():
                                       'main_image_url', 'source_id', 'parsed_doc', 'title_he', 'document_id',
                                       'content_html_he', 'title_he_suggest', 'item_url',
                                       'last_synced', 'hours_to_next_download', 'last_downloaded', 'display_allowed',
-                                      'images'}})
+                                      'images', 'location'}})
 
 
 def test_sync_with_invalid_collection():
@@ -162,3 +162,12 @@ def test_sync_images():
     assert doc["images"][:3] == [get_clearmash_image("031017ece2cc49d2ba73311e336408a2"),
                                  get_clearmash_image("1245931e49264167a801a8f31a24eaed"),
                                  get_clearmash_image("49efc3eb16e44689b5dd9b4b078201ec"),]
+
+def test_sync_locations():
+    es = given_empty_elasticsearch_instance()
+    # an entity with some images
+    entity_ids = [{"item_id": 233953, "collection": "places"},]
+    input_doc = get_clearmash_convert_resource_data(get_clearmash_downloaded_docs(entity_ids))[0]
+    assert_sync_processor([input_doc])
+    doc = es_doc(es, "clearmash", "233953")
+    assert doc["location"] == [{'document_id': '233953'}, {'geo_location': 'Moscow'}, {'lan': '', 'lat': ''}]

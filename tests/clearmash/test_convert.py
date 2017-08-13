@@ -124,7 +124,8 @@ def test_clearmash_convert():
                               "main_image_url": "",
                               "main_thumbnail_image_url": "",
                               "keys": ['source_doc'],
-                              "images": [],})
+                              "images": [],
+                              "geo_location": ""})
     assert_dict(resource[1], {"collection": "places"})
     assert_dict(resource[2], {"collection": "movies"})
     assert_dict(resource[3], {"collection": "personalities"})
@@ -158,3 +159,18 @@ def test_clearmash_convert_place_with_related_photoUnits():
     assert resource[0]["images"][:3] == [image("031017ece2cc49d2ba73311e336408a2"),
                                           image("1245931e49264167a801a8f31a24eaed"),
                                           image("49efc3eb16e44689b5dd9b4b078201ec"),]
+
+def test_geocode_location():
+    # places sude have location
+    entity_ids = [{"item_id": 233953, "collection": "places"},]
+    resource = get_clearmash_convert_resource_data(get_downloaded_docs(entity_ids))
+    assert_dict(resource[0], {'title_en': 'Moscow'})
+    assert_dict(resource[0], {'geo_location': 'Moscow'})
+    # other collections should have an empty string
+    entity_ids = [{"item_id": 203884, "collection": "photoUnits"},]
+    resource = get_clearmash_convert_resource_data(get_downloaded_docs(entity_ids))
+    assert_dict(resource[0], {'title_en': 'The Rema Synagogue, Cracow, Poland. Model. Permanent Exhibitio'})
+    assert_dict(resource[0], {'geo_location': ''})
+
+
+
