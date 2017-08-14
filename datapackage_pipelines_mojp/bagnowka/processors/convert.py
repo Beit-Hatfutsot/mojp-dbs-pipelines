@@ -33,7 +33,8 @@ class BagnowkaConvertProcessor(BaseProcessor):
                    "content_html_he": "",
                    "related_documents": {},
                    "source_doc": bagnowka_row,
-                    "images": bagnowka_row["pictures"]
+                   "images": bagnowka_row["pictures"],
+                   "geo_location": ""
                    }
         return dbs_row
 

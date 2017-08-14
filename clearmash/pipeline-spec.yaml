@@ -115,6 +115,7 @@ entities-sync:
           table: clearmash-entities
           item-id-column: item_id
           document-id-column: document_id
+        
     # sync to elasticsearch
     - run: ..datapackage_pipelines_mojp.common.processors.sync
       parameters:
@@ -124,6 +125,15 @@ entities-sync:
     - run: dump.to_path
       parameters:
         out-path: ../data/clearmash/new-entities-sync
+    # dump geocode_location table
+    - run: dump.to_sql
+      parameters:
+        add-resource: dbs-geocode-location
+        table: geocode-location
+        document-id-column: id
+        location-column: geo_location
+        lat-column:
+        lan-column:
 
 entities-delete:
   description: "go over all items in ElasticSearch and delete any items which are not in entities or have display_allowed=false"
@@ -149,3 +159,23 @@ entities-delete:
         id-field: item_id
         source: clearmash
         delete-all-input: true
+
+geocode:
+  # schedule:
+  #   crontab: "0 0 * * *"
+  pipeline:
+    - run: ..datapackage_pipelines_mojp.common.processors.load_sql_resource
+      parameters:
+        input-resource: dbs-geocode-location
+        table: geocode_location
+    - run: ..datapackage_pipelines_mojp.common.processors.geocode
+      parameters:
+        input-resource: geocode_location
+        output-resource: entities-geo
+        geo-table: entities-geo
+    - run: dump.to_sql
+      parameters:
+        tables:
+          entities_geo:
+            resource-name: entities-geo
+            mode: update

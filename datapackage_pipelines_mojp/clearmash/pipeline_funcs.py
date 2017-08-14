@@ -1,6 +1,7 @@
 import logging, os
 from datapackage_pipelines_mojp.clearmash.processors.download import CLEARMASH_DOWNLOAD_SCHEMA
 from datapackage_pipelines_mojp.clearmash.processors.add_entity_ids import Processor as AddEntityIdsProcesor
+from datapackage_pipelines_mojp.common.constants import GEOCODE_LOCATION_SCHEMA
 
 
 def get_override_item_ids_where():
@@ -28,3 +29,6 @@ def entities_schema():
 
 def entity_ids_schema():
     return AddEntityIdsProcesor._get_schema()
+
+def geocode_location_schema():
+    return GEOCODE_LOCATION

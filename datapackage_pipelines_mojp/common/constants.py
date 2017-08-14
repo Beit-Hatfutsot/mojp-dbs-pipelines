@@ -32,7 +32,7 @@ DBS_DOCS_TABLE_SCHEMA = {"fields": [{"name": "source", "type": "string"},
                                         "description": COLLECTION_FIELD_DESCRIPTION},
                                     {"name": "source_doc", "type": "object"},
                                     {"name": "title", "type": "object",
-                                    "description": "languages other then he/en, will be flattened on elasticsearch to content_html_LANG"},
+                                     "description": "languages other then he/en, will be flattened on elasticsearch to content_html_LANG"},
                                     {"name": "title_he", "type": "string"},
                                     {"name": "title_en", "type": "string"},
                                     {"name": "content_html", "type": "object",
@@ -45,7 +45,8 @@ DBS_DOCS_TABLE_SCHEMA = {"fields": [{"name": "source", "type": "string"},
                                      "description": "url to the main thumbnail image"},
                                     {"name": "related_documents", "type": "object",
                                      "description": "related documents of different types (source-specific)"},
-                                    {"name": "images", "type": "array"},]}
+                                    {"name": "images", "type": "array"},
+                                    {"name": "geo_location", "type": "string"}]}
 
 DBS_DOCS_SYNC_LOG_TABLE_SCHEMA = {"fields": [{"name": "source", "type": "string"},
                                              {'name': 'id', 'type': 'string'},
@@ -54,3 +55,8 @@ DBS_DOCS_SYNC_LOG_TABLE_SCHEMA = {"fields": [{"name": "source", "type": "string"
                                              {"name": "collection", "type": "string",
                                                  "description": COLLECTION_FIELD_DESCRIPTION},
                                              {"name": "sync_msg", "type": "string"}]}
+
+GEOCODE_LOCATION_SCHEMA = {"fields": [{"name": "document_id", "type": "sting"},
+                                      {"name": "geo_location", "type": "string"},
+                                      {"name": "lan", "type": "string"},
+                                      {"name": "lan", "type": "string"}]}

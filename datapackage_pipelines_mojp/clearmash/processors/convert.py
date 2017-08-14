@@ -30,6 +30,7 @@ class Processor(BaseProcessor):
             if self._doc_show_filter(dbs_row):
                 self._add_related_documents(dbs_row, cm_row)
                 self._populate_image_fields(dbs_row, cm_row)
+                self._add_geocode_location(dbs_row, cm_row)
                 yield dbs_row
                 self._stats["num_converted_rows"] += 1
             else:
@@ -111,6 +112,18 @@ class Processor(BaseProcessor):
 
     def _get_collection(self, cm_row):
         return cm_row["collection"]
+
+    def _add_geocode_location(self, dbs_row, cm_row):
+        # TODO: for collections other than 'places', get 
+        # place from title and/or other fileds (maybe by comparing words in title to list of places?)
+        if self._get_collection(cm_row) == "places":
+            if dbs_row["title_en"]:
+                dbs_row["geo_location"] = dbs_row["title_en"]
+            else:
+                dbs_row["geo_location"] = ""
+        else:
+            dbs_row["geo_location"] = ""
+
 
     def _get_images_from_parsed_doc(self, item_id, parsed_doc):
         images = []
