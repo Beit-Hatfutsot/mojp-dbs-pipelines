@@ -55,10 +55,35 @@ download-entities:
 #      - id: 115316
 #      - id: 232814
 #      - id: 232855
+#      - id: 4309699
+#      - id: 5096050
+#      - id: 7436488
+#      - id: 115412
+#      - id: 115423
+#      - id: 115432
+#      - id: 115662
+#      - id: 115693
+#      - id: 115737
+#      - id: 116176
+#      - id: 116376
+#      - id: 3746750
+#      - id: 123942
+#      - id: 124140
+#      - id: 124299
+#      - id: 124341
+#      - id: 124404
   - run: download_entities
   - run: dump.to_path
     parameters:
       out-path: ../data/clearmash/download-entities
+
+
+#dump_entities_to_elasticsearch:
+#  pipeline:
+#  - run: load_resource
+#    parameters:
+#      url: ../data/clearmash/download-entities/datapackage.json
+
 
 #download-entities:
 #  description: "downloads entities - both new and updated, according to last downloaded and hours_to_next_download, updates db table clearmash-entities"
