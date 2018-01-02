@@ -46,7 +46,7 @@ download-entities:
   pipeline:
   - run: load_resource
     parameters:
-      url: ../data/clearmash/web-content-folder-entity-ids/datapackage.json
+      url: ../data/clearmash/entity-ids/datapackage.json
       resource: entity-ids
 #  - run: filter
 #    parameters:
