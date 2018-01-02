@@ -77,13 +77,113 @@ download-entities:
     parameters:
       out-path: ../data/clearmash/download-entities
 
+places:
+  pipeline:
+  - run: load_resource
+    parameters:
+      url: ../data/clearmash/download-entities/datapackage.json
+      resource: entities
+  - run: prep_entities_for_search
+    parameters:
+      resource-name: places
+      collection-name: places
+  - run: dump.to_path
+    parameters:
+      out-path: ../data/clearmash/places
 
-#dump_entities_to_elasticsearch:
-#  pipeline:
-#  - run: load_resource
-#    parameters:
-#      url: ../data/clearmash/download-entities/datapackage.json
+familynames:
+  pipeline:
+  - run: load_resource
+    parameters:
+      url: ../data/clearmash/download-entities/datapackage.json
+      resource: entities
+  - run: prep_entities_for_search
+    parameters:
+      resource-name: familynames
+      collection-name: familyNames
+  - run: dump.to_path
+    parameters:
+      out-path: ../data/clearmash/familynames
 
+movies:
+  pipeline:
+  - run: load_resource
+    parameters:
+      url: ../data/clearmash/download-entities/datapackage.json
+      resource: entities
+  - run: prep_entities_for_search
+    parameters:
+      resource-name: movies
+      collection-name: movies
+  - run: dump.to_path
+    parameters:
+      out-path: ../data/clearmash/movies
+
+personalities:
+  pipeline:
+  - run: load_resource
+    parameters:
+      url: ../data/clearmash/download-entities/datapackage.json
+      resource: entities
+  - run: prep_entities_for_search
+    parameters:
+      resource-name: personalities
+      collection-name: personalities
+  - run: dump.to_path
+    parameters:
+      out-path: ../data/clearmash/personalities
+
+photounits:
+  pipeline:
+  - run: load_resource
+    parameters:
+      url: ../data/clearmash/download-entities/datapackage.json
+      resource: entities
+  - run: prep_entities_for_search
+    parameters:
+      resource-name: photounits
+      collection-name: photoUnits
+  - run: dump.to_path
+    parameters:
+      out-path: ../data/clearmash/photounits
+
+
+dump_entities_to_elasticsearch:
+  pipeline:
+  - run: load_resource
+    parameters:
+      url: ../data/clearmash/places/datapackage.json
+      resource: places
+  - run: load_resource
+    parameters:
+      url: ../data/clearmash/familynames/datapackage.json
+      resource: familynames
+  - run: load_resource
+    parameters:
+      url: ../data/clearmash/movies/datapackage.json
+      resource: movies
+  - run: load_resource
+    parameters:
+      url: ../data/clearmash/personalities/datapackage.json
+      resource: personalities
+  - run: load_resource
+    parameters:
+      url: ../data/clearmash/photounits/datapackage.json
+      resource: photounits
+  - run: dump_to_es
+    parameters:
+      indexes:
+        mojp:
+        - resource-name: places
+          doc-type: places
+        - resource-name: familynames
+          doc-type: familynames
+        - resource-name: movies
+          doc-type: movies
+        - resource-name: personalities
+          doc-type: personalities
+        - resource-name: photounits
+          doc-type: photounits
 
 #download-entities:
 #  description: "downloads entities - both new and updated, according to last downloaded and hours_to_next_download, updates db table clearmash-entities"

@@ -3,7 +3,18 @@
 version: '3.2'
 
 services:
+
   app:
     image: mojp/pipelines-app
     ports:
       - "5000:5000"
+
+  elasticsearch:
+    image: budgetkey/open-budget-elasticsearch
+    ports:
+    - "9200:9200"
+
+  kibana:
+    image: kibana:5.3
+    ports:
+    - "5601:5601"

@@ -8,9 +8,10 @@ name = "pypi"
 [packages]
 
 setuptools = "*"
-distribute = "*"
 "datapackage-pipelines[speedup]" = "*"
 pyquery = "*"
+elasticsearch = "*"
+"beautifulsoup4" = "*"
 
 
 [dev-packages]
