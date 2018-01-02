@@ -79,7 +79,7 @@ download-entities:
 
 places:
   pipeline:
-  - run: load_resource
+  - run: load_large_csv_resource
     parameters:
       url: ../data/clearmash/download-entities/datapackage.json
       resource: entities
@@ -93,7 +93,7 @@ places:
 
 familynames:
   pipeline:
-  - run: load_resource
+  - run: load_large_csv_resource
     parameters:
       url: ../data/clearmash/download-entities/datapackage.json
       resource: entities
@@ -107,7 +107,7 @@ familynames:
 
 movies:
   pipeline:
-  - run: load_resource
+  - run: load_large_csv_resource
     parameters:
       url: ../data/clearmash/download-entities/datapackage.json
       resource: entities
@@ -121,7 +121,7 @@ movies:
 
 personalities:
   pipeline:
-  - run: load_resource
+  - run: load_large_csv_resource
     parameters:
       url: ../data/clearmash/download-entities/datapackage.json
       resource: entities
@@ -135,7 +135,7 @@ personalities:
 
 photounits:
   pipeline:
-  - run: load_resource
+  - run: load_large_csv_resource
     parameters:
       url: ../data/clearmash/download-entities/datapackage.json
       resource: entities
@@ -150,23 +150,23 @@ photounits:
 
 dump_entities_to_elasticsearch:
   pipeline:
-  - run: load_resource
+  - run: load_large_csv_resource
     parameters:
       url: ../data/clearmash/places/datapackage.json
       resource: places
-  - run: load_resource
+  - run: load_large_csv_resource
     parameters:
       url: ../data/clearmash/familynames/datapackage.json
       resource: familynames
-  - run: load_resource
+  - run: load_large_csv_resource
     parameters:
       url: ../data/clearmash/movies/datapackage.json
       resource: movies
-  - run: load_resource
+  - run: load_large_csv_resource
     parameters:
       url: ../data/clearmash/personalities/datapackage.json
       resource: personalities
-  - run: load_resource
+  - run: load_large_csv_resource
     parameters:
       url: ../data/clearmash/photounits/datapackage.json
       resource: photounits
