@@ -43,7 +43,7 @@ class ESDumper(DumperBase):
             assert engine is not None, \
                 "Couldn't connect to ES Instance - " \
                 "Please set your '%s' environment variable" % env_var
-        self.engine = Elasticsearch(hosts=[engine])
+        self.engine = Elasticsearch(hosts=[engine], timeout=240)
         try:
             if not self.engine.ping():
                 logging.exception('Failed to connect to database %s', engine)
