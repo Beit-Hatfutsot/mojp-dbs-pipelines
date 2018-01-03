@@ -1,5 +1,9 @@
 from datapackage_pipelines_mojp.datapackage_pipelines_elasticsearch.processors.dump.to_index import ESDumper
 from datapackage_pipelines_mojp.tableschema_elasticsearch.mappers import MappingGenerator
+import socket
+
+
+socket.setdefaulttimeout(240)
 
 
 class BoostingMappingGenerator(MappingGenerator):
