@@ -71,8 +71,7 @@ def get_folder_items(folder_id, recursion_depth=0, recursion_folders=None):
         for folder in doc["Folders"]:
             yield get_row(folder, parent_folder_names, parent_folder_ids)
             if parameters["max-recursion-depth"] == -1 or recursion_depth < parameters["max-recursion-depth"]:
-                recursion_folders.append(folder)
-                yield from get_folder_items(folder["Id"], recursion_depth + 1, recursion_folders)
+                yield from get_folder_items(folder["Id"], recursion_depth + 1, recursion_folders + [folder])
             else:
                 logging.warning("Reached folders max recursion depth")
     except Exception:
