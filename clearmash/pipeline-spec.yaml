@@ -7,6 +7,7 @@ web-content-folder-item-ids:
   - run: dump.to_path
     parameters:
       out-path: ../data/clearmash/web-content-folder-entity-ids
+      # https://console.cloud.google.com/storage/browser/mojp-dbs-pipelines-data/clearmash-get-entity-ids-job-2017-12-29-05-00/clearmash/web-content-folder-entity-ids/?project=bh-org-01
 
 
 folders:
@@ -23,6 +24,8 @@ folders:
   - run: dump.to_path
     parameters:
       out-path: ../data/clearmash/folders
+      # https://console.cloud.google.com/storage/browser/mojp-dbs-pipelines-data/2018-01-02-10-30/clearmash/folders/?project=bh-org-01
+      # https://console.cloud.google.com/storage/browser/mojp-dbs-pipelines-data/2018-01-10-15-37/clearmash/?project=bh-org-01
 
 
 entity-ids:
@@ -39,6 +42,8 @@ entity-ids:
   - run: dump.to_path
     parameters:
       out-path: ../data/clearmash/entity-ids
+      # https://console.cloud.google.com/storage/browser/mojp-dbs-pipelines-data/2018-01-02-10-30/clearmash/entity-ids/?project=bh-org-01
+      # https://console.cloud.google.com/storage/browser/mojp-dbs-pipelines-data/2018-01-10-15-37/clearmash/?project=bh-org-01
 
 
 download-entities:
@@ -76,6 +81,8 @@ download-entities:
   - run: dump.to_path
     parameters:
       out-path: ../data/clearmash/download-entities
+      # https://console.cloud.google.com/storage/browser/mojp-dbs-pipelines-data/2018-01-02-12-29/clearmash/download-entities/?project=bh-org-01
+      # https://console.cloud.google.com/storage/browser/mojp-dbs-pipelines-data/2018-01-10-15-37/clearmash/?project=bh-org-01
 
 places:
   pipeline:
@@ -90,6 +97,8 @@ places:
   - run: dump.to_path
     parameters:
       out-path: ../data/clearmash/places
+      # https://console.cloud.google.com/storage/browser/mojp-dbs-pipelines-data/2018-01-03-07-58/clearmash/?project=bh-org-01
+      # https://console.cloud.google.com/storage/browser/mojp-dbs-pipelines-data/2018-01-10-15-38/clearmash/?project=bh-org-01
 
 familynames:
   pipeline:
@@ -104,6 +113,8 @@ familynames:
   - run: dump.to_path
     parameters:
       out-path: ../data/clearmash/familynames
+      # https://console.cloud.google.com/storage/browser/mojp-dbs-pipelines-data/2018-01-03-07-58/clearmash/?project=bh-org-01
+      # https://console.cloud.google.com/storage/browser/mojp-dbs-pipelines-data/2018-01-10-15-38/clearmash/?project=bh-org-01
 
 movies:
   pipeline:
@@ -118,6 +129,8 @@ movies:
   - run: dump.to_path
     parameters:
       out-path: ../data/clearmash/movies
+      # https://console.cloud.google.com/storage/browser/mojp-dbs-pipelines-data/2018-01-03-07-58/clearmash/?project=bh-org-01
+      # https://console.cloud.google.com/storage/browser/mojp-dbs-pipelines-data/2018-01-10-15-38/clearmash/?project=bh-org-01
 
 personalities:
   pipeline:
@@ -132,6 +145,8 @@ personalities:
   - run: dump.to_path
     parameters:
       out-path: ../data/clearmash/personalities
+      # https://console.cloud.google.com/storage/browser/mojp-dbs-pipelines-data/2018-01-03-07-58/clearmash/?project=bh-org-01
+      # https://console.cloud.google.com/storage/browser/mojp-dbs-pipelines-data/2018-01-10-15-38/clearmash/?project=bh-org-01
 
 photounits:
   pipeline:
@@ -146,6 +161,8 @@ photounits:
   - run: dump.to_path
     parameters:
       out-path: ../data/clearmash/photounits
+      # https://console.cloud.google.com/storage/browser/mojp-dbs-pipelines-data/2018-01-03-07-58/clearmash/?project=bh-org-01
+      # https://console.cloud.google.com/storage/browser/mojp-dbs-pipelines-data/2018-01-10-15-38/clearmash/?project=bh-org-01
 
 
 dump_entities_to_elasticsearch:
