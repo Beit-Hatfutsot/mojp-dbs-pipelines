@@ -1,4 +1,4 @@
-from .constants import WCM_BASE_URL, FOLDER_TYPE_WebDocumentSystemFolder
+from .constants import WCM_BASE_URL, FOLDER_TYPE_WebDocumentFolder
 from datapackage_pipelines_mojp import settings
 import requests
 from pyquery import PyQuery as pq
@@ -244,7 +244,7 @@ class ClearmashApi(object):
 
     def get_web_document_system_folder(self, folder_id):
         return self._wcm_api_call("/Document/Folder/Get", {"FolderId": folder_id,
-                                                           "FolderType": FOLDER_TYPE_WebDocumentSystemFolder})
+                                                           "FolderType": FOLDER_TYPE_WebDocumentFolder})
 
     def get_documents(self, entity_ids):
         return self._wcm_api_call("/Documents/Get", {"entitiesIds": entity_ids})

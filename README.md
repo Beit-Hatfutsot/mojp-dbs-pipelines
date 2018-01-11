@@ -24,7 +24,6 @@ sudo pip3 install pipenv
 Install the app depepdencies
 
 ```
-
 pipenv install
 ```
 

@@ -89,15 +89,19 @@ def get_resource():
 
 
 if CLI_MODE:
-    folder_ids = list(map(int, sys.argv[2].split(","))) if len(sys.argv) > 1 else None
-    if folder_ids:
-        print("folder_ids={}".format(folder_ids))
-        for folder_id in folder_ids:
-            for item in get_folder_items(folder_id):
-                print(item)
+    if "--root" in sys.argv:
+        for folder in api.get_documents_root_folders():
+            print(folder)
     else:
-        for item in get_resource():
-            print(item)
+        folder_ids = list(map(int, sys.argv[2].split(","))) if len(sys.argv) > 2 else None
+        if folder_ids:
+            print("folder_ids={}".format(folder_ids))
+            for folder_id in folder_ids:
+                for item in get_folder_items(folder_id):
+                    print(item)
+        else:
+            for item in get_resource():
+                print(item)
 else:
     entity_ids_resource = {PROP_STREAMING: True,
                            "name": "entity-ids",
