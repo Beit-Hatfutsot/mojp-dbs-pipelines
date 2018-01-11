@@ -13,7 +13,7 @@ cd /ops
 cd /pwd
 
 ! gcloud container builds submit --substitutions _IMAGE_TAG=${IMAGE_TAG},_CLOUDSDK_CORE_PROJECT=${CLOUDSDK_CORE_PROJECT},_PROJECT_NAME=${PROJECT_NAME} \
-                                 --config bin/continuous_deployment_cloudbuild.yaml . \
+                                 --config continuous_deployment_cloudbuild.yaml . \
     && echo 'failed to build ${PROJECT_NAME} image' && RES=1;
 
 exit $RES
