@@ -7,6 +7,8 @@ env:
   - OPS_REPO_BRANCH=master
   - CLOUDSDK_CORE_PROJECT=bh-org-01
   - PROJECT_NAME=mojp-dbs-pipelines
+  # --force causes helm to delete and recreate modified jobs
+  - HELM_UPGRADE_CMD="./helm_upgrade_external_chart.sh mojp-dbs-pipelines --force"
   matrix:
   - DEPLOY_ENVIRONMENT=staging DEPLOY_BRANCH=master
 #  - DEPLOY_ENVIRONMENT=production DEPLOY_TAGS=true
