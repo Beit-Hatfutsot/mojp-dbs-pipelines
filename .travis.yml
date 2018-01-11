@@ -1,33 +1,47 @@
 language: bash
 sudo: required
 env:
+  global:
+  - 'OPENSSL_CMD=openssl aes-256-cbc -K $encrypted_debe730ce1aa_key -iv $encrypted_debe730ce1aa_iv -in ./k8s-ops-secret.json.enc -out ./secret-k8s-ops.json -d'
+  - OPS_REPO_SLUG=Beit-Hatfutsot/mojp-k8s
+  - OPS_REPO_BRANCH=master
+  - CLOUDSDK_CORE_PROJECT=bh-org-01
+  - PROJECT_NAME=mojp-dbs-pipelines
   matrix:
-#  - DEPLOY_ENVIRONMENT=staging DEPLOY_BRANCH=master DEPLOY_REPO=Beit-Hatfutsot/mojp-k8s
+  - DEPLOY_ENVIRONMENT=staging DEPLOY_BRANCH=master
+#  - DEPLOY_ENVIRONMENT=production DEPLOY_TAGS=true
 services:
 - docker
 script:
 - |
   if [ "${DEPLOY_ENVIRONMENT}" != "" ] && [ "${TRAVIS_PULL_REQUEST}" == "false" ] &&\
-     [ "${TRAVIS_BRANCH}" == "${DEPLOY_BRANCH}" ] &&\
-     [ "${TRAVIS_COMMIT_MESSAGE}" != "" ] && ! echo "${TRAVIS_COMMIT_MESSAGE}" | grep -- --no-deploy && [ "${TRAVIS_COMMIT}" != "" ]
+     ([ "${TRAVIS_BRANCH}" == "${DEPLOY_BRANCH}" ] || ([ "${DEPLOY_TAGS}" == "true" ] && [ "${TRAVIS_TAG}" != "" ])) &&\
+     ! echo "${TRAVIS_COMMIT_MESSAGE}" | grep -- --no-deploy
   then
-      openssl aes-256-cbc -K $encrypted_debe730ce1aa_key -iv $encrypted_debe730ce1aa_iv -in k8s-ops-secret.json.enc -out secret-k8s-ops.json -d
-      K8S_ENVIRONMENT_NAME="${DEPLOY_ENVIRONMENT}"
-      IMAGE_TAG="gcr.io/bh-org-01/mojp-dbs-pipelines:${TRAVIS_COMMIT}"
-      B64_UPDATE_VALUES=`echo '{"mojp-dbs-pipelines":{"image":"'${IMAGE_TAG}'"}}' | base64 -w0`
-      wget https://raw.githubusercontent.com/Beit-Hatfutsot/mojp-k8s/master/run_docker_ops.sh
-      chmod +x run_docker_ops.sh
-      ./run_docker_ops.sh "${K8S_ENVIRONMENT_NAME}" "
-           ! ./helm_update_values.sh '${B64_UPDATE_VALUES}' \
-                                     '${K8S_ENVIRONMENT_NAME} mojp-dbs-pipelines image update --no-deploy' \
-                                     '${K8S_OPS_GITHUB_REPO_TOKEN}' \
-                                     '${DEPLOY_REPO}' \
-                                     '${DEPLOY_BRANCH}' \
-              && echo 'failed helm update values' && exit 1
-           ! gcloud container builds submit --tag $IMAGE_TAG /app \
-              && echo 'failed to build app image' && exit 1
-           exit 0
-      " \
-      "orihoch/sk8s-ops@sha256:6c368f75207229c8bb2ccb99bd6414dfb21289c5c988d2381a9da2015f55bd38" \
-      "${DEPLOY_REPO}" "${DEPLOY_BRANCH}" "" "-v `pwd`:/app"
+      $OPENSSL_CMD
+      if [ "${TRAVIS_TAG}" != "" ]; then
+          IMAGE_TAG="gcr.io/${CLOUDSDK_CORE_PROJECT}/${PROJECT_NAME}-tag:${TRAVIS_TAG}"
+      else
+          IMAGE_TAG="gcr.io/${CLOUDSDK_CORE_PROJECT}/${PROJECT_NAME}-cd:${TRAVIS_COMMIT}"
+      fi
+      B64_UPDATE_VALUES=`echo '{"'${PROJECT_NAME}'":{"image":"'${IMAGE_TAG}'"}}' | base64 -w0`
+      wget https://raw.githubusercontent.com/OriHoch/sk8s-ops/master/run_docker_ops.sh
+      chmod +x run_docker_ops.sh bin/continuous_deployment.sh
+      if ./run_docker_ops.sh "${DEPLOY_ENVIRONMENT}" "/pwd/continuous_deployment.sh" \
+                            "orihoch/sk8s-ops" "${OPS_REPO_SLUG}" "${OPS_REPO_BRANCH}" "" "
+                            -v `pwd`:/pwd
+                            -e B64_UPDATE_VALUES=${B64_UPDATE_VALUES}
+                            -e K8S_OPS_GITHUB_REPO_TOKEN=${K8S_OPS_GITHUB_REPO_TOKEN}
+                            -e OPS_REPO_SLUG=${OPS_REPO_SLUG}
+                            -e OPS_REPO_BRANCH=${OPS_REPO_BRANCH}
+                            -e B64_UPDATE_VALUES=${B64_UPDATE_VALUES}
+                            -e IMAGE_TAG=${IMAGE_TAG}"; then
+        true
+      else
+        echo "failed to run docker ops"
+        false
+      fi
+  else
+    echo "skipping deployment"
+    true
   fi
