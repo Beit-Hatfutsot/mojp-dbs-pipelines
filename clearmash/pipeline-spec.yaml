@@ -2,8 +2,8 @@ web-content-folder-item-ids:
   description: "recursively downloads list of entity ids from clearmash web content folders"
   pipeline:
   - run: get_web_content_folder_item_ids
-    parameters:
-      max-recursion-depth: 2
+#    parameters:
+#      max-recursion-depth: 2
   - run: dump.to_path
     parameters:
       out-path: ../data/clearmash/web-content-folder-entity-ids

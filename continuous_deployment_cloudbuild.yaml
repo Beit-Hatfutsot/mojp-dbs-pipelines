@@ -1,8 +1,9 @@
 steps:
-#- name: gcr.io/cloud-builders/docker
-#  args:
-#  - pull
-#  - "gcr.io/${_CLOUDSDK_CORE_PROJECT}/${_PROJECT_NAME}-latest"
+# comment this step on first build
+- name: gcr.io/cloud-builders/docker
+  args:
+  - pull
+  - "gcr.io/${_CLOUDSDK_CORE_PROJECT}/${_PROJECT_NAME}-latest"
 - name: gcr.io/cloud-builders/docker
   args:
   - build
