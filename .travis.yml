@@ -2,7 +2,7 @@ language: bash
 sudo: required
 env:
   global:
-  - 'OPENSSL_CMD=openssl aes-256-cbc -K $encrypted_debe730ce1aa_key -iv $encrypted_debe730ce1aa_iv -in ./k8s-ops-secret.json.enc -out ./secret-k8s-ops.json -d'
+  - OPENSSL_CMD="openssl aes-256-cbc -K $encrypted_debe730ce1aa_key -iv $encrypted_debe730ce1aa_iv -in ./k8s-ops-secret.json.enc -out ./secret-k8s-ops.json -d"
   - OPS_REPO_SLUG=Beit-Hatfutsot/mojp-k8s
   - OPS_REPO_BRANCH=master
   - CLOUDSDK_CORE_PROJECT=bh-org-01
