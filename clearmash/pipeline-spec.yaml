@@ -7,7 +7,7 @@ web-content-folder-item-ids:
   - run: dump.to_path
     parameters:
       out-path: ../data/clearmash/web-content-folder-entity-ids
-      # https://console.cloud.google.com/storage/browser/mojp-dbs-pipelines-data/clearmash-get-entity-ids-job-2017-12-29-05-00/clearmash/web-content-folder-entity-ids/?project=bh-org-01
+      # https://console.cloud.google.com/storage/browser/mojp-dbs-pipelines-data/2018-01-11-16-09/clearmash/web-content-folder-entity-ids/?project=bh-org-01
 
 
 folders:
